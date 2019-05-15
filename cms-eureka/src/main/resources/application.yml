@@ -1,0 +1,17 @@
+server:
+  port: 8180
+
+spring:
+  application:
+    name: cms-eureka
+
+eureka:
+  client:
+    register-with-eureka: false #防止自己注册自己
+    fetch-registry: false #注册中心的职责就是维护服务实例，它并不需要去检索服务，所以设置成false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+  server:
+    enable-self-preservation: false #测试时关闭自我保护机制，保证不可用服务及时踢出
+  instance:
+    hostname: localhosr

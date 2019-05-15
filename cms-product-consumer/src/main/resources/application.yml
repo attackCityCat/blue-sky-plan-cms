@@ -1,0 +1,22 @@
+server:
+  port: 8184
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8180/eureka
+spring:
+  application:
+    name: cms-product-consumer
+
+  main:
+    allow-bean-definition-overriding: true #允许相同key情况下beanDefinition实例的覆盖
+  thymeleaf:
+    cache: false
+    enabled: true
+
+feign:
+  hystrix:
+    enabled: true
+  httpclient:
+    connection-timeout: 30000

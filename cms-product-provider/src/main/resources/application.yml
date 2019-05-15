@@ -1,0 +1,25 @@
+server:
+  port: 8183
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8180/eureka #默认注册中心地址
+  instance:
+    lease-renewal-interval-in-seconds: 1     #表示eureka client发送心跳给server端的频率。如果在leaseExpirationDurationInSeconds后，
+    #server端没有收到client的心跳，则将摘除该instance
+    lease-expiration-duration-in-seconds: 2 #表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，
+    #在这个时间内若没收到下一次心跳，则将移除该instance
+
+spring:
+  application:
+    name: cms-user-provider #应用名称  保证唯一   一般采用项目名
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://192.168.1.156/blue_sky_plan?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+
+mybatis:
+  type-aliases-package: org.bs.cms.pojo
