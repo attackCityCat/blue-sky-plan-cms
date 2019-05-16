@@ -5,9 +5,9 @@ import org.apache.ibatis.annotations.Update;
 public interface ShopManagementMapper {
     @Update("<script>  " +
             "UPDATE  " +
-            "管理员商品管理表  " +
+            "cms_product  " +
             "SET " +
-            "STATUS = 上架 " +
+            "product_state = 0 " +
             "WHERE " +
             "id IN <foreach open='(' close=')' collection = 'array' item = 'ids' separator = ',' > #{ids} " +
             "</foreach>" +
@@ -19,7 +19,7 @@ public interface ShopManagementMapper {
             "UPDATE  " +
             "商户商品管理表  " +
             "SET " +
-            "STATUS = 上架 " +
+            "STATUS = 0 " +
             "WHERE " +
             "id IN <foreach open='(' close=')' collection = 'array' item = 'ids' separator = ',' > #{ids} " +
             "</foreach>" +
