@@ -1,0 +1,373 @@
+//上传插件
+
+//引入文件
+<link rel="stylesheet" href="<%=basePath%>js/uploadify/uploadify.css" type="text/css"></link>
+ <script type="text/javascript" src="<%=basePath%>js/uploadify/jquery.uploadify.js"></script>
+
+
+//对应实体类图片属性名
+<input type="hidden" name="" id="imgName">
+
+<input type="file" id="imgFile">
+
+<div id="divDom"></div>
+
+<img id="imgDom" width="120" height="80">
+
+$(function(){
+		
+	ready();
+});
+
+
+ready = function(){
+    		//文件域ID
+	    	$("#imgFile").uploadify({
+			//插件自带  不可忽略的参数                                  
+				'swf': '<%=basePath%>/js/uploadify/uploadify.swf',
+			//前台请求后台的url 不可忽略的参数                          //*****要修改路经
+				'uploader': '<%=basePath%>/user/addFile.do',
+			//给div的进度条加背景 不可忽略 DIV ID
+				'queueID': 'divDom',
+			//上传文件文件名，和后台参数列表中形式参数保持一致
+				'fileObjName' : 'file',
+			//给上传按钮设置文字
+				'buttonText': '上传图片',
+			//设置文件是否自动上传
+				'auto': true,
+			//可以同时选择多个文件 默认为true  不可忽略
+				'multi': false,
+			//上传后队列是否消失
+				'removeCompleted': true,
+			//允许上传的文件后缀  
+				'fileExt': '*.jpg;*.gif;*.png', 
+			//
+				'cancelImg': '<%=basePath%>/js/uploadify/uploadify-cancel.png',  
+			//队列消失时间
+				'removeTimeout' : 1,
+			//上传文件的个数，项目中一共可以上传文件的个数
+				'uploadLimit':  -1,
+				'fileTypeExts': '*.jpg;*.png;*.gif',
+			//开始执行上传
+				'onUploadStart':function(files){
+					//$.messager.progress({ title:'提示',msg:'上传中...' });
+				},
+			//上传失败
+				'onUploadError':function(){
+					//$.messager.progress('close');
+					//$.messager.alert('提示','上传失败');
+				  	alert("上传失败");
+				},
+			//成功回调函数 file：文件对象。data后台输出数据
+				'onUploadSuccess':function(file,data,response){
+				  	//$.messager.progress('close');
+					//  alert(data+file.name)
+					if(data.substr(0,1)==("\"")){
+						data = data.substr(1,data.length-2);
+					}
+					  var imgurl = "<%=basePath%>/upload/"+data;
+					  $("#imgDom").prop("src",imgurl);
+					  $("#imgName").val(data);
+				}
+			});
+	}
+
+
+
+
+
+	//编辑器渲染
+	
+	//引入文件
+
+	<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/js/kindeditor-4.1.10/themes/default/default.css"/>
+	<script src="<%=request.getContextPath() %>/js/kindeditor-4.1.10/kindeditor-all.js"></script>
+	
+	//富文本编辑器
+	var editor = null;
+KindEditor.ready(function(K) {//将编辑器添加到文档中
+	editor = K.create('#content', {
+		cssPath : '<%=request.getContextPath()%>/js/kindeditor-4.1.10/plugins/code/prettify.css',
+		uploadJson : '<%=request.getContextPath()%>/js/kindeditor-4.1.10/jsp/upload_json.jsp', 
+		fileManagerJson : '<%=request.getContextPath()%>/js/kindeditor-4.1.10/jsp/file_manager_json.jsp',
+		allowFileManager : true,  //true时显示浏览远程服务器按钮 ;默认值: false  
+		afterCreate : function() {
+			//alert("创建完成了")
+		},afterChange : function() {
+		K('.word_count1').html(this.count());
+		K('.word_count2').html(this.count('text'));
+	}
+		
+	});
+	});
+	
+	$(function(){
+	 K.create('#content');
+	})
+
+
+	//easyui 引入文件
+	<script type="text/javascript" src="<%=basePath%>js/jquery-1.8.0.js"></script>
+	<script type="text/javascript" src="<%=basePath%>js/easyui_util.js"></script>
+	<script type="text/javascript" src="<%=basePath%>js/easyui1.5/jquery.easyui.min.js"></script>
+  	<script type="text/javascript" src="<%=basePath%>js/easyui1.5/locale/easyui-lang-zh_CN.js"></script>
+ 	<link rel="stylesheet" href="<%=basePath%>js/easyui1.5/themes/default/easyui.css" type="text/css"></link>
+ 	<link rel="stylesheet" href="<%=basePath%>js/easyui1.5/themes/icon.css" type="text/css"></link>
+ 	
+ 	
+
+
+
+
+//bootstrap
+<script src="<%=basePath%>js/bootstrap/bootstrap3/js/bootstrap.js"></script>
+<link rel="stylesheet" href="<%=basePath%>js/bootstrap/bootstrap3/css/bootstrap.css"/>
+
+<!-- 导航条 -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">金科</a>
+				</div>
+			</div>
+		</nav>
+
+ 	
+<!-- 导航树js css -->
+<link rel="stylesheet" href="<%=basePath%>js/bootstrap/bootstrap-treeview/bootstrap-treeview.min.css">
+<script src="<%=basePath%>js/bootstrap/bootstrap-treeview/bootstrap-treeview.min.js"></script>
+
+ 	
+<!-- 选项卡 js css -->
+<link rel="stylesheet" href="<%=basePath%>js/bootstrap/bootStrap-addTabs/bootstrap.addtabs.css">
+<script src="<%=basePath%>js/bootstrap/bootStrap-addTabs/bootstrap.addtabs.min.js"></script>
+ 	
+<!-- 布局内容 -->
+		<div class="container-fluid" style="margin-top:50px">
+			<div class="row">
+				<div class="col-sm-2">
+					<div id="myTree">
+						
+					</div>
+				</div>
+				<div class="col-sm-10">
+					<div id="myTabs">
+						<!-- 新选项卡 -->
+						<ul class="nav nav-tabs" id="tablist">
+							<li role=""presentation class="active">
+								<a href="#home" role="tab" data-toggle="tab">欢迎</a>
+							</li>
+						</ul>				
+						<!-- 选项卡下内容 -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="home"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+ 	
+<!-- 展示表格 js css -->
+<link rel="stylesheet" href="<%=basePath%>js/bootstrap/bootstrap-table/bootstrap-table.css">
+<script src="<%=basePath%>js/bootstrap/bootstrap-table/bootstrap-table.js"></script>
+<script src="<%=basePath%>js/bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+
+initMyTable = function(){
+				$('#myTable').bootstrapTable({
+					//toolbar:'#toolbar',
+					url:'user/findUserBeanListByPage.do',
+					pagination:true, //是否展示分页
+					pageList:[1,2,5, 10, 20, 50],//分页组件
+					pageNumber:1,
+					pageSize:5,//默认每页条数
+					//search:true,//是否显示搜索框
+					//searchText:'试试',//初始化搜索文字
+					showColumns:false,//是否显示 内容列下拉框
+					showToggle:false,//是否显示 切换试图（table/card）按钮
+					showPaginationSwitch:false,//是否显示 数据条数选择框
+					showRefresh:false,//是否显示刷新按钮
+					detailView:false,//设置为 true 可以显示详细页面模式。
+					showFooter:false,//是否显示列脚
+					clickToSelect: true, //是否启用点击选中行
+					sidePagination:'server',//分页方式：client客户端分页，server服务端分页（*
+					striped:true,
+					queryParams:function(){
+						var name = $('#name').val();
+						return {
+							page: this.pageNumber,
+							rows: this.pageSize,
+							name:name
+						}
+					},
+					columns:[
+						{checkbox:true},
+						{field:'id',title:'id'},
+						{field:'headImg',title:'头像',formatter:function(value,row,index){
+							return '<img width="50px" height="50px" src="'+value+'"/>'
+						}},
+						{field:'loginNumber',title:'账号'},
+						{field:'password',title:'密码'},
+						{field:'sex',title:'性别',formatter:function(value,row,index){
+							return value == 1 ? "男" : "女";
+						}},
+						{field:'birthday',title:'生日'},
+						{field:'deptName',title:'部门'},
+						{field:'status',title:'状态',formatter:function(value,row,index){
+							return value == 0 ? "正常" : "<font color='red'>锁定</font>";
+						}},
+						{field:'detail',title:'简介'},
+						{field:'email',title:'邮箱'},
+						{field:'roleName',title:'角色'},
+						{field:'provinceName',title:'地区',formatter:function(value,row,index){
+							return value + "-" + row.cityName;
+						}},
+						{field:'123',title:'操作',formatter:function(value,row,index){
+							return '<a href="javascript:openUserEdit('+row.id+');">修改</a>';
+						}}
+					]
+				})
+			}
+			
+			
+			searchUser = function(){
+				$('#myTable').bootstrapTable('refresh');
+			};
+ 	
+ 	
+<!-- 弹框组件 -->
+<script src="<%=basePath%>js/bootstrap/bootstrap-bootbox/bootbox.js"></script>
+
+openAddUserDialog = function(){
+				bootbox.dialog({
+					size:'big',
+					title:'添加用户',
+					message:createAddPage('page/toBootAddUser.do'),
+					className:'add-dialog',
+					closeButton:true,
+					buttons:{
+						'success':{
+							'label':'<i class="icon-ok"></i> 保存',
+							'className':'btn-sm btn-success',
+							'callback':function(){
+								alert('保存');
+							}
+						},
+						'cancel':{
+							'label':'<i class="icon-cancel"></i> 关闭',
+							'className':'btn-sm btn-danger',
+							'callback':function(){
+								alert('关闭');
+							}
+						}
+						
+					}
+				})
+			}
+ 	
+			createAddPage = function(url){
+				$.ajax({
+					url:url,
+					async:false,
+					success:function(data){
+						res = data;
+					}
+					
+				});
+				return res;
+			}
+			
+<!-- 时间组件 -->		
+  <script type="text/javascript" src="<%=basePath%>js/bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+  <script type="text/javascript" src="<%=basePath%>js/bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+  <link rel="stylesheet" href="<%=basePath%>js/bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" type="text/css"></link>
+ 
+ 
+ 	
+$('.date').datetimepicker({
+	  language: 'zh-CN',//显示中文
+//    format: 'yyyy-mm-dd hh:ii:ss',//显示格式
+	  format: 'yyyy-mm-dd',//显示格式
+	  minView: "month",//设置只显示到月份
+	  initialDate: new Date(),//初始化当前日期
+	  autoclose: true,//选中自动关闭
+	  todayBtn: true//显示今日按钮
+});
+ 	
+ 	
+<!-- 上传组件 -->
+<script src="<%=basePath%>js/bootstrap/bootstrap-fileinput/js/fileinput.js"></script>
+<script src="<%=basePath%>js/bootstrap/bootstrap-fileinput/js/locales/zh.js"></script>
+<link rel="stylesheet" href="<%=basePath%>js/bootstrap/bootstrap-fileinput/css/fileinput.css">
+
+<!-- html -->
+<input type="hidden" id="img" name="headImg" />
+	<!-- projectfile -->
+<input type="file" multiple class="projectfile" accept="image/*" name="file" id="fileDom">	--multiple 支持多选
+ 	
+<!-- javascript -->
+
+$('#fileDom').fileinput({
+	language: 'zh', //设置语言
+	uploadUrl: 'upload/addFile2.do', //上传的地址
+	allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+	showUpload: true, //是否显示上传按钮
+	showCaption: false,//是否显示标题
+	browseClass: "btn btn-primary", //按钮样式 
+	//dropZoneEnabled: false,//是否显示拖拽区域
+	//minImageWidth: 50, //图片的最小宽度
+	//minImageHeight: 50,//图片的最小高度
+	//maxImageWidth: 1000,//图片的最大宽度
+	//maxImageHeight: 1000,//图片的最大高度
+	//maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+	//minFileCount: 0,
+	maxFileCount: 2, //表示允许同时上传的最大文件个数
+	enctype: 'multipart/form-data',
+	validateInitialCount:true,
+	previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+	msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+	
+}).on('fileuploaded', function(event, data, previewId, index) {
+	var imgval = $('#img').val();
+	if(imgval == null || imgval == "" || imgval == undefined){
+		imgval = "http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/upload/"+data.response.img;
+	}else{
+		imgval += ","+"http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/upload/"+data.response.img;
+	}
+	$('#img').val(imgval);
+});
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+	
