@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f62ff864-775c-43f6-8084-807a641afc00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/ShopManagement/ShopManagementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/ShopManagement/ShopManagementMapper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -327,7 +326,7 @@
       <workItem from="1557924132694" duration="1235000" />
       <workItem from="1557925648379" duration="7059000" />
       <workItem from="1557968361515" duration="11065000" />
-      <workItem from="1557987089917" duration="15445000" />
+      <workItem from="1557987089917" duration="16031000" />
     </task>
     <task id="LOCAL-00001" summary="蓝天计划电商平台CMS端 V1.1.0&#10;段毓霖第一次提交代码&#10;管理员模块">
       <created>1558008324694</created>
@@ -336,11 +335,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558008324695</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="蓝天计划电商平台CMS端 V1.1.0&#10;段毓霖第一次提交代码&#10;管理员模块">
+      <created>1558014477944</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558014477944</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39434000" />
+    <option name="totallyTimeSpent" value="40020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1843" height="1096" extended-state="6" />
