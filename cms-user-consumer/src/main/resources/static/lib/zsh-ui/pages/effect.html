@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/font.css">
+        <link rel="stylesheet" href="../js/layui/css/layui.css">
+        <link rel="stylesheet" href="../js/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/effect.css">
+      
+        
+    </head>
+    <body>
+        <div class="effect-page container-fluid">
+            <nav class="layui-nav navbar  navbar-defaultflex-between">
+                <div class="nav-item">
+                    <i class="iconfont icon-liebiaolist46"></i>
+                    <span>
+                        效果报告</span>
+
+                </div>
+                <div>
+                    <i class="iconfont icon-shuaxin1"></i>
+                    <i class="iconfont icon-guanbi"></i>
+                </div>
+            </nav>
+            <div class="effect-top">
+                <form class="form-inline flex-even">
+
+                    <div class="form-group  mb-3 input-group-sm">
+                        <label for="email">
+                            <i class="iconfont icon-rili"></i>
+                        </label>:
+                        <input
+                            type="text"
+                            class="form-control date"
+                            type="text"
+                            name="startDate"
+                            class=" date"
+                            id="startDate"
+                            placeholder="开始日期">-<input
+                            type="text"
+                            class="form-control date"
+                            type="text"
+                            name="endDate"
+                            placeholder="结束日期">
+                    </div>
+                    <div class="form-group   mb-3 input-group-sm">
+                        <label for="planId">
+                            <i class="iconfont icon-liebiaolist46"></i>广告计划</label>:
+
+                        <select class="form-control" id="planId" name="planId">
+                            <option value="">全部</option>
+
+                            <option value="17">微视推广</option>
+
+                            <option value="16">腾讯手机管家推广</option>
+
+                            <option value="15">钠镁股票</option>
+
+                            <option value="14">易车投放</option>
+
+                            <option value="13">yy直播</option>
+
+                            <option value="12">内涵段子投放</option>
+
+                            <option value="11">懂车帝投放</option>
+
+                            <option value="10">今日头条投放</option>
+
+                            <option value="9">西瓜视频投放</option>
+
+                            <option value="8">火山小视频投放</option>
+
+                            <option value="7">腾讯qq浏览器</option>
+
+                            <option value="6">腾讯wifi管家</option>
+
+                            <option value="5">天天快报推广</option>
+
+                            <option value="3">腾讯快报</option>
+
+                            <option value="2">腾讯新闻</option>
+
+                            <option value="1">腾讯视频</option>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group   mb-3 input-group-sm">
+                        <label for="schemeId">
+                            <i class="iconfont icon-bianji1"></i>广告方案</label>:
+
+                        <select class="form-control" id="schemeId" name="schemeId">
+                            <option value="">全部</option>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group  mb-3 input-group-sm">
+                        <label for="ideaId">
+                            <i class="iconfont icon-bianji1"></i>广告创意</label>:
+
+                        <select class="form-control" id="ideaId" name="ideaId">
+                            <option value="">全部</option>
+
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-success  mb-3 btn-sm">
+                        搜索</button>
+                </form>
+
+                <div class="chart">
+                        <div id="main" style="width:100%;height: 250px;"></div>
+
+                        <div class="chart-select dropdown">
+                            <button type="button" class="btn btn-default btn-sm btn-select dropdown-toggle" data-toggle="dropdown">
+                                展示量
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:;">展示量</a>
+                              <a class="dropdown-item" href="javascript:;">下载量</a>
+                              <a class="dropdown-item" href="javascript:;">总费用</a>
+                            </div>
+                          </div>
+                        <!-- <div class="chart-select">
+                                <select class="form-control">
+                                        <option>展示量</option>
+                                        <option>下载量</option>
+                                        <option>总费用</option>
+                                      </select>
+                        </div> -->
+                      
+                </div>
+                <table data-toggle="table" class="static-table">
+                    <thead>
+                        <tr>
+                            <th>总展示数</th>
+                            <th>总下载数</th>
+                            <th>总转化率(%)</th>
+                            <th>总费用(元)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20035061</td>
+                            <td>979115</td>
+                            <td>4.89</td>
+                            <td>992063.30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="effect-bottom">
+                <div class="tool">
+                    <button class="btn btn-sm download">
+                        <i class="iconfont icon-daochu1"></i>
+                        <a href="javascript:;">导出</a>
+                    </button>
+                </div>
+
+                <table id="table" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Item ID</th>
+                            <th>Item Name</th>
+                            <th>Item Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Item 1</td>
+                            <td>$1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Item 1</td>
+                            <td>$1</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="../js/jQuery-1.11.3.min.js"></script>
+        <script src="../js/propper.js"></script>
+        <script src="../js/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap-table/dist/bootstrap-table.min.js"></script>
+        <script src="../js/layui/layui.js"></script>
+        <script src="../js/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+        <script src="../js/echarts.common.min.js"></script>
+        <script>
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('main'));
+
+            // 指定图表的配置项和数据
+            var option = {
+                // title: {
+                //     text: '展示量'
+                // },
+                brush: {
+                    // brushType:'lineY'
+                },
+                tooltip: {},
+                legend: {
+                    data: ['销量']
+                },
+                xAxis: {
+                    data: [
+                        "2018-9-23",
+                        "2018-9-30",
+                        "2018-9-12",
+                        "2018-9-19",
+                        "2018-9-3",
+                        "2018-9-1"
+                    ]
+                },
+                yAxis: {},
+                series: [
+                    {
+                        name: '销量',
+                        type: 'line',
+                        data: [
+                            5,
+                            20,
+                            36,
+                            10,
+                            10,
+                            20
+                        ],
+                        smooth: 0.3,
+                        itemStyle: {
+                            normal: { //颜色渐变函数 前四个参数分别表示四个位置依次为左、下、右、上
+                                color: new echarts
+                                    .graphic
+                                    .LinearGradient(0, 0, 0, 1, [
+                                        {
+                                            offset: 0,
+                                            color: 'rgba(78, 215, 143, 0.8)'
+                                        }
+                                    ]), //背景渐变色
+                                lineStyle: { // 系列级个性化折线样式
+                                    width: 3,
+                                    type: 'solid',
+                                    color: "rgba(78, 215, 143, 1)"
+                                }
+                            }
+                        }, //线条样式
+                        symbolSize: 10, //折线点的大小
+                        areaStyle: {
+                            normal: {}
+                        }
+
+                    }
+                ]
+            };
+
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+           
+           //下拉菜单
+           $('.dropdown-menu').click(function(e){
+                 var txt=$(e.target).html();
+                 $('.btn-select').html(txt)
+           })
+
+            layui.use('laydate', function () {
+                var laydate = layui.laydate;
+
+                lay('.date').each(function () {
+                    laydate.render({elem: this, trigger: 'click'});
+                });
+            });
+
+           //从广告页面跳过来切换导航
+           $(parent.window.document).find(".layui-nav-item").removeClass('layui-this');
+           $(parent.window.document).find(".effect").addClass('layui-this');
+           
+            //表格 JavaScript代码区域  table
+            $('#table').bootstrapTable({
+
+                // url: 'http://192.168.6.188:9010/plan/list', //数据接口
+                cache: false, //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+                pagination: true, //是否显示分页（*）
+
+                queryParams: function (params) { // 请求服务器数据时发送的参数，可以在这里添加额外的查询参数，返回false则终止请求
+                    return {
+                        limit: 1, // 每页要显示的数据条数
+                        offset: 1, // 每页显示数据的开始行号
+                    }
+                }, //传递参数
+                // pageNumber: 1, //初始化加载第一页，默认第一页 pageSize: 1, //每页的记录行数（*）
+                pageList: [
+                    5, 25, 50, 100, 'all'
+                ], //可供选择的每页的行数
+                // cols: [     [         { field: 'plan',             title: '广告计划',         },
+                // {             field: 'date',             title: '日期',         }, {  field:
+                // 'state',             title: '状态',         }, {             field: 'display',
+                //      title: '展示',         }, {             field: 'download',   title: '下载',
+                //        }, {             field: 'experience', title: '转化率', sort: true }, {
+                //        field: 'score',           title: '消费',        sort: true    }, {
+                //       field: 'classify',             title: '操作', }  ] ]
+
+            });
+      
+        </script>
+    </body>
+</html>

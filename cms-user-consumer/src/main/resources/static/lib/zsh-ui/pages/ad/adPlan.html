@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link
+        rel="stylesheet"
+        href="../../css/font.css">
+    <link rel="stylesheet" href="../../js/layui/css/layui.css">
+    <link rel="stylesheet" href="../../js/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../../js/bootstrap-table/dist/bootstrap-table.min.css">
+        <link rel="stylesheet" href="../../css/ad.css">
+        <link rel="stylesheet" href="../../css/common.css">
+
+        
+    </head>
+    <body>
+        <div class="addplan-page container-fluid">
+            <div class="addplan-top">
+                <form class="layui-form">
+                    <div class="layui-inline">
+                        <div class="layui-input-inline">
+                            <button class="layui-btn layui-btn-fluid " lay-submit lay-filter="formDemo">查询</button>
+                        </div>
+                        <div class="layui-inline">
+                            <div class="layui-input-inline">
+                                <input
+                                    type="text"
+                                    name="title"
+                                    required
+                                    lay-verify="required"
+                                    placeholder="输入计划名称"
+                                    autocomplete="off"
+                                    class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <div class="layui-input-inline">
+                                <input
+                                    type="text"
+                                    name="startDate"
+                                    required
+                                    lay-verify="required"
+                                    id="startDate"
+                                    placeholder="输入起始日期"
+                                    autocomplete="off"
+                                    class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline layui-page">
+                            <div class="layui-input-inline">
+                                <input
+                                    type="text"
+                                    name="endDate"
+                                    required
+                                    lay-verify="required"
+                                    id="endDate"
+                                    placeholder="输入截止日期"
+                                    autocomplete="off"
+                                    class="layui-input">
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+                <div class="top-right">
+                    <i class="iconfont icon-daochu"></i>
+                    <span>导出</span>
+                    <i class="iconfont icon-shuaxin"></i>
+                </div>
+
+            </div>
+
+            <div class="addPlan-bottom">
+                <div class="bottom-title flex-between">
+                    <span>所有广告计划</span>
+                    <span>推广余额 &nbsp;|<i class="orange">¥ 200元</i>
+                    </span>
+                </div>
+                <table data-toggle="table" id='table'></table>
+            </div>
+        </div>
+        <script src="../../js/jQuery-1.11.3.min.js"></script>
+        <script src="../../js/layui/layui.js"></script>
+        <script src="../../js/propper.js"></script>
+        <script src="../../js/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+        <script src="../../js/bootstrap-table/dist/bootstrap-table.min.js"></script>
+       <script src="../../js/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+        <!-- <script src="../../js/bootstrap-table-export.min.js"></script> -->
+        <script type="text/javascript">
+            var data = [
+                {
+                    "advertPlanId": 1,
+                    "title": "腾讯视频",
+                    "beginTime": 1479657600000,
+                    "endTime": 1609344000000,
+                    "budget": "0",
+                    "status": "1",
+                    "dissum": 30688989,
+                    "clisum": 0,
+                    "loadsum": 1282282,
+                    "loadrate": 4.18,
+                    "clirate": 0,
+                    "totalConsume": 769369.2,
+                    "creator": "tencent",
+                    "creatorId": "4",
+                    "createTime": 1479732232000,
+                    "modifer": "tencent",
+                    "modiferId": "4",
+                    "modifyTime": 1481575452000,
+                    "bidding": 0
+                }, {
+                    "advertPlanId": 2,
+                    "title": "腾讯新闻",
+                    "beginTime": 1479657600000,
+                    "endTime": 1609344000000,
+                    "budget": "0",
+                    "status": "0",
+                    "dissum": 1135153536,
+                    "clisum": 0,
+                    "loadsum": 45450700,
+                    "loadrate": 4,
+                    "clirate": 0,
+                    "totalConsume": 31751219.4,
+                    "creator": "tencent",
+                    "creatorId": "4",
+                    "createTime": 1479732806000,
+                    "modifyTime": 1481574473000,
+                    "bidding": 0
+                }, {
+                    "advertPlanId": 3,
+                    "title": "腾讯快报",
+                    "beginTime": 1479657600000,
+                    "endTime": 1609344000000,
+                    "budget": "0",
+                    "status": "1",
+                    "dissum": 353381399,
+                    "clisum": 0,
+                    "loadsum": 13891103,
+                    "loadrate": 3.93,
+                    "clirate": 0,
+                    "totalConsume": 12453637.8,
+                    "creator": "tencent",
+                    "creatorId": "4",
+                    "createTime": 1479732867000,
+                    "modifyTime": 1481574480000,
+                    "bidding": 0
+                }, {
+                    "advertPlanId": 5,
+                    "title": "天天快报推广",
+                    "beginTime": 1498838400000,
+                    "endTime": 1546185600000,
+                    "status": "0",
+                    "dissum": 163291256,
+                    "clisum": 0,
+                    "loadsum": 6664576,
+                    "loadrate": 4.08,
+                    "clirate": 0,
+                    "totalConsume": 5998118.4,
+                    "creator": "kuaibao",
+                    "creatorId": "5",
+                    "createTime": 1500768505000,
+                    "bidding": 0
+                }, {
+                    "advertPlanId": 6,
+                    "title": "腾讯wifi管家",
+                    "beginTime": 1506787200000,
+                    "endTime": 1546185600000,
+                    "status": "0",
+                    "dissum": 99256669,
+                    "clisum": 0,
+                    "loadsum": 3995060,
+                    "loadrate": 4.02,
+                    "clirate": 0,
+                    "totalConsume": 3651198.3,
+                    "creator": "kuaibao",
+                    "creatorId": "5",
+                    "createTime": 1510488424000,
+                    "bidding": 0
+                }, {
+                    "advertPlanId": 7,
+                    "title": "腾讯qq浏览器",
+                    "beginTime": 1512489600000,
+                    "endTime": 1575561600000,
+                    "budget": "0",
+                    "status": "1",
+                    "dissum": 13546399,
+                    "clisum": 0,
+                    "loadsum": 541768,
+                    "loadrate": 4,
+                    "clirate": 0,
+                    "totalConsume": 487591.2,
+                    "creator": "kuaibao",
+                    "creatorId": "5",
+                    "createTime": 1514385835000,
+                    "bidding": 0
+                }, {
+                    "advertPlanId": 8,
+                    "title": "火山小视频投放",
+                    "beginTime": 1519920000000,
+                    "endTime": 1640966400000,
+                    "status": "0",
+                    "dissum": 76158078,
+                    "clisum": 0,
+                    "loadsum": 5131436,
+                    "loadrate": 6.74,
+                    "clirate": 0,
+                    "totalConsume": 7728797,
+                    "creator": "toutiao",
+                    "creatorId": "7",
+                    "createTime": 1522736017000,
+                    "bidding": 0
+                }, {
+                    "advertPlanId": 9,
+                    "title": "西瓜视频投放",
+                    "beginTime": 1521129600000,
+                    "endTime": 1640966400000,
+                    "status": "0",
+                    "dissum": 78438089,
+                    "clisum": 0,
+                    "loadsum": 5270210,
+                    "loadrate": 6.72,
+                    "clirate": 0,
+                    "totalConsume": 7883567,
+                    "creator": "toutiao",
+                    "creatorId": "7",
+                    "createTime": 1522736082000,
+                    "bidding": 0
+                }, {
+                    "advertPlanId": 10,
+                    "title": "今日头条投放",
+                    "beginTime": 1521561600000,
+                    "endTime": 1640966400000,
+                    "status": "0",
+                    "dissum": 78047627,
+                    "clisum": 0,
+                    "loadsum": 5238569,
+                    "loadrate": 6.71,
+                    "clirate": 0,
+                    "totalConsume": 7848427.8,
+                    "creator": "toutiao",
+                    "creatorId": "7",
+                    "createTime": 1522736147000,
+                    "bidding": 0
+                }, {
+                    "advertPlanId": 11,
+                    "title": "懂车帝投放",
+                    "beginTime": 1521648000000,
+                    "endTime": 1640966400000,
+                    "status": "1",
+                    "dissum": 2233861,
+                    "clisum": 0,
+                    "loadsum": 145387,
+                    "loadrate": 6.51,
+                    "clirate": 0,
+                    "totalConsume": 204573.5,
+                    "creator": "toutiao",
+                    "creatorId": "7",
+                    "createTime": 1522736174000,
+                    "bidding": 0
+                }
+            ];
+            $('#table').bootstrapTable({
+                //url:'http://192.168.6.188:9010/plan/list',
+                data: data,
+                pagination: true,
+                queryParams: function (params) { // 请求服务器数据时发送的参数，可以在这里添加额外的查询参数，返回false则终止请求
+                    return {
+                        limit: 5, // 每页要显示的数据条数
+                        offset: 1, // 每页显示数据的开始行号
+                    }
+                }, //传递参数
+                pageNumber: 1, //初始化加载第一页，默认第一页
+                pageSize: 5, //每页的记录行数（*）
+                pageList: [
+                    1,10, 25, 50, 100, 'all'
+                ], //可供选择的每页的行数（
+
+                columns: [
+                    {
+                        field: 'advertPlanId',
+                        title: '计划ID'
+                    }, {
+                        field: 'title',
+                        title: '广告计划'
+                    }, {
+                        field: 'status',
+                        title: '状态'
+                    }, {
+                        field: 'budget',
+                        title: '预算'
+                    }, {
+                        field: 'dissum',
+                        title: '展现次数'
+                    }, {
+                        field: 'loadsum',
+                        title: '下载次数'
+                    }, {
+                        field: 'loadrate',
+                        title: '转化率',
+                        sort: true
+                    }, {
+                        field: 'totalConsume',
+                        title: '总费用',
+                        sort: true
+                    }, {
+                        field: 'operation',
+                        title: '操作',
+                        color: 'gray',
+                        formatter: function (value, row, index) {
+                         
+                            var status = row.status;
+                            var a = [
+                                '<a class="like link" target="iframe_a"   href="./detail.html" title="Like">',
+                                '每日明细',
+                                '</a>  ',
+                                '<a class="like link" href="../effect.html"  target="iframe_a" title="Like">',
+                                '效果报告',
+                                '</a>  '
+                            ].join('');
+                            if (status == 1) {
+                                var b = '<i class="iconfont icon-bofang"></i>';
+                            } else {
+                                var b = '<i class="iconfont icon-zanting"></i>';
+                            }
+                            return a + b;
+
+                        }
+                    }
+                ],
+            });
+
+            layui.use('laydate', function () {
+                var laydate = layui.laydate;
+
+                //执行一个laydate实例
+                laydate.render({
+                    elem: '#startDate' //指定元素
+                });
+                laydate.render({
+                    elem: '#endDate' //指定元素
+                });
+            });
+
+            //刷新
+            $('.icon-shuaxin').click(function () {
+      $table.bootstrapTable('refresh')
+    })
+        </script>
+    </body>
+</html>

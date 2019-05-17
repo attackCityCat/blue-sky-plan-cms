@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../js/layui/css/layui.css">
+        <link rel="stylesheet" href="../js/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+        <link
+            rel="stylesheet"
+            href="../js/bootstrap-table/dist/bootstrap-table.min.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/ad.css">
+
+    </head>
+    <body>
+        <div class="container-fluid idea-detail-page">
+            <div id="toolbar">
+                <button
+                    class="btn btn-success submit tip"
+                    id="submit"
+                    >提交</button>
+
+                <button class="btn btn-success"
+                data-toggle="modal" data-target="#rechargeModal"
+                >充值</button>
+
+                <button
+                    class="btn btn-success" 
+                    data-toggle="modal" data-target="#syncModal"
+                   >同步</button>
+
+            </div>
+            <table data-toggle="table" data-classes="table table-no-bordered" id='detail'></table>
+
+            <!-- submit模态框 -->
+            <div class="modal fade" id="submitModal">
+                <div class="modal-dialog  modal-dialog-centered" role="document">
+                    <div class="modal-content">
+
+                        <!-- 模态框头部 -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">提交</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- 模态框主体 -->
+                        <div class="modal-body">
+                            <!-- 模态框内容.. -->
+
+                            <form>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label" for="date">日期:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class=" form-control" id="date" placeholder="请输入日期"></div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class=" col-sm-3 col-form-label" for="clicknum">点击:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control " id="clicknum" placeholder="请输入点击数"></div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <label class=" col-sm-3 col-form-label" for="disnum">展示量:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control " id="disnum" placeholder="请输入展示量"></div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class=" col-sm-3 col-form-label" for="loadnum">下载量:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control " id="loadnum" placeholder="请输入下载量"></div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <label class=" col-sm-3 col-form-label" for="price">当前出价:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control " id="price" placeholder="请输入当前出价"></div>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <!-- 模态框底部 -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">保存</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- recharge模态框 -->
+            <div class="modal fade" id="rechargeModal">
+                <div class="modal-dialog  modal-dialog-centered" role="document">
+                    <div class="modal-content">
+
+                        <!-- 模态框头部 -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">充值</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- 模态框主体 -->
+                        <div class="modal-body">
+                            <!-- 模态框内容.. -->
+
+                            <form>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label" for="rechargeUser">充值用户:</label>
+
+                                    <div class="dropdown col-sm-9">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="rechargeUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            请选择充值用户
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="rechargeUser">
+                                          <button class="dropdown-item" type="button">Action</button>
+                                          <button class="dropdown-item" type="button">Another action</button>
+                                          <button class="dropdown-item" type="button">Something else here</button>
+                                            <button class="dropdown-item" type="button">Action</button>
+                                            <button class="dropdown-item" type="button">Another action</button>
+                                            <button class="dropdown-item" type="button">Something else here</button>
+                                            <button class="dropdown-item" type="button">Action</button>
+                                            <button class="dropdown-item" type="button">Another action</button>
+                                            <button class="dropdown-item" type="button">Something else here</button>
+                                        </div>
+                                      </div>
+                                    <!-- <div class="col-sm-9">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="rechargeUser"
+                                            placeholder="请选择充值用户"></div> -->
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class=" col-sm-3 col-form-label" for="date">充值日期:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control " id="date" placeholder="请输入充值日期"></div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <label class=" col-sm-3 col-form-label" for="rechargeway">充值方式:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control " id="rechargeway" placeholder="请输入充值方式"></div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class=" col-sm-3 col-form-label" for="rechargenum">充值金额:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control " id="rechargenum" placeholder="请输入充值金额"></div>
+                                </div>
+
+                            </form>
+                            <!-- 模态框底部 -->
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">保存</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sync模态框 -->
+            <div class="modal fade" id="syncModal">
+                <div class="modal-dialog  modal-dialog-centered dialog-sm" role="document">
+                    <div class="modal-content">
+
+                        <!-- 模态框头部 -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">同步</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- 模态框主体 -->
+                        <div class="modal-body">
+                            <!-- 模态框内容.. -->
+
+                            <input type="file" class="form-control-file" id="file" accept="*.xls,*.csv">
+
+                        </div>
+                        <!-- 模态框底部 -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                            <a class="btn btn-primary"  role="button" href="./sync.html">保存</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--js-->
+            <script src="../js/jQuery-1.11.3.min.js"></script>
+            <script src="../js/propper.js"></script>
+            <script src="../js/layui/layui.js"></script>
+            <script src="../js/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+            <script src="../js/propper.js"></script>
+            <script src="../js/bootstrap-table/dist/bootstrap-table.min.js"></script>
+            <script src="../js/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+            <script>
+                var data = [
+                    {
+                        "advertPlanId": 1,
+                        "title": "腾讯视频",
+                        "beginTime": 1479657600000,
+                        "endTime": 1609344000000,
+                        "budget": "0",
+                        "status": "1",
+                        "dissum": 30688989,
+                        "clisum": 0,
+                        "loadsum": 1282282,
+                        "loadrate": 4.18,
+                        "clirate": 0,
+                        "totalConsume": 769369.2,
+                        "creator": "tencent",
+                        "creatorId": "4",
+                        "createTime": 1479732232000,
+                        "modifer": "tencent",
+                        "modiferId": "4",
+                        "modifyTime": 1481575452000,
+                        "bidding": 0
+                    }, {
+                        "advertPlanId": 2,
+                        "title": "腾讯新闻",
+                        "beginTime": 1479657600000,
+                        "endTime": 1609344000000,
+                        "budget": "0",
+                        "status": "0",
+                        "dissum": 1135153536,
+                        "clisum": 0,
+                        "loadsum": 45450700,
+                        "loadrate": 4,
+                        "clirate": 0,
+                        "totalConsume": 31751219.4,
+                        "creator": "tencent",
+                        "creatorId": "4",
+                        "createTime": 1479732806000,
+                        "modifyTime": 1481574473000,
+                        "bidding": 0
+                    }, {
+                        "advertPlanId": 3,
+                        "title": "腾讯快报",
+                        "beginTime": 1479657600000,
+                        "endTime": 1609344000000,
+                        "budget": "0",
+                        "status": "1",
+                        "dissum": 353381399,
+                        "clisum": 0,
+                        "loadsum": 13891103,
+                        "loadrate": 3.93,
+                        "clirate": 0,
+                        "totalConsume": 12453637.8,
+                        "creator": "tencent",
+                        "creatorId": "4",
+                        "createTime": 1479732867000,
+                        "modifyTime": 1481574480000,
+                        "bidding": 0
+                    }, {
+                        "advertPlanId": 5,
+                        "title": "天天快报推广",
+                        "beginTime": 1498838400000,
+                        "endTime": 1546185600000,
+                        "status": "0",
+                        "dissum": 163291256,
+                        "clisum": 0,
+                        "loadsum": 6664576,
+                        "loadrate": 4.08,
+                        "clirate": 0,
+                        "totalConsume": 5998118.4,
+                        "creator": "kuaibao",
+                        "creatorId": "5",
+                        "createTime": 1500768505000,
+                        "bidding": 0
+                    }, {
+                        "advertPlanId": 6,
+                        "title": "腾讯wifi管家",
+                        "beginTime": 1506787200000,
+                        "endTime": 1546185600000,
+                        "status": "0",
+                        "dissum": 99256669,
+                        "clisum": 0,
+                        "loadsum": 3995060,
+                        "loadrate": 4.02,
+                        "clirate": 0,
+                        "totalConsume": 3651198.3,
+                        "creator": "kuaibao",
+                        "creatorId": "5",
+                        "createTime": 1510488424000,
+                        "bidding": 0
+                    }
+                ];
+                $('#detail').bootstrapTable({
+                    //url:'http://192.168.6.188:9010/plan/list',
+                    data: data,
+                    pagination: true,
+                    queryParams: function (params) { // 请求服务器数据时发送的参数，可以在这里添加额外的查询参数，返回false则终止请求
+                        return {
+                            limit: 5, // 每页要显示的数据条数
+                            offset: 1, // 每页显示数据的开始行号
+                        }
+                    }, //传递参数
+                    pageNumber: 1, //初始化加载第一页，默认第一页
+                    pageSize: 3, //每页的记录行数（*）
+                    pageList: [
+                        10, 25, 50, 100, 'all'
+                    ], //可供选择的每页的行数（*）
+                    // showColumns: true, //是否显示所有的列
+                    showRefresh: false, //是否显示刷新按钮
+                    toolbar: '#toolbar',
+
+                    columns: [
+                        {
+                            field: 'beginTime',
+                            title: '日期'
+                        }, {
+                            field: 'dissum',
+                            title: '展现次数'
+                        }, {
+                            field: 'loadsum',
+                            title: '下载次数'
+                        }, {
+                            field: 'loadrate',
+                            title: '转化率'
+                        }, {
+                            field: 'creator',
+                            title: '用户'
+                        }, {
+                            field: 'currentPrice',
+                            title: '当前出价'
+                        }, {
+                            field: 'totalConsume',
+                            title: '花费'
+                        }, {
+                            // field: 'choose',
+                            title: '选择',
+                            radio: true
+                            // formatter: function (value, row, index) {
+                            //
+                            //     return '<input type="checkbox" name="choose">'
+                            //
+                            // }
+                        }
+                    ]
+                });
+
+                // 日期插件
+                layui.use('laydate', function () {
+                    var laydate = layui.laydate;
+
+                    //执行一个laydate实例
+                    laydate.render({
+                        elem: '#date' //指定元素
+                    });
+                });
+
+                //文件上传
+                $('#file').change(function () {
+                    console.log($('#file')[0].files[0]);
+                });
+
+                //下拉事件
+                $('.dropdown-menu').click(function (e) {
+                    if ( $(e.target).hasClass("dropdown-menu") ) return;
+                    $('#rechargeUser').html($(e.target).html());
+                })
+
+                //弹出框弹出事件
+                $('.tip').click(function () {
+                    var row= $('#detail').bootstrapTable('getAllSelections');
+                    var modal= '#'+$(this).attr('id')+'Modal';
+                    $('.tip').popover('dispose');
+                    if(!row.length){
+                        var options={
+                           container:"body",
+                            placement:"bottom",
+                            content:"请先选择一行数据"
+                        };
+                        $(this).popover(options);
+                        $(this).popover('show')
+                    }else {
+                        $(this).popover('dispose');
+                        $(modal).modal('show');
+                    }
+                })
+
+            </script>
+        </body>
+    </html>

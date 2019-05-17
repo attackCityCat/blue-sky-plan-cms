@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../../js/layui/css/layui.css">
+        <link rel="stylesheet" href="../../css/home.css">
+        
+    </head>
+    <body>
+        <div class="add-page ">
+            <div class="title">广告创意</div>
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">方案名称</label>
+                    <div class="layui-input-block">
+                        <select name="advert-scheme-id" lay-verify="required">
+                            <option value="">请选择</option>
+                            <option value="5">腾讯新闻-高铁wifi</option>
+                            <option value="6">腾讯新闻-小应用</option>
+                            <option value="9">天天快报推广-天天快报3107</option>
+                            <option value="10">腾讯wifi管家-WIFI管家推广</option>
+                            <option value="12">火山小视频投放-火山小视频</option>
+                            <option value="13">西瓜视频投放-西瓜视频</option>
+                            <option value="14">今日头条投放-今日头条</option>
+                            <option value="17">yy直播-yy直播</option>
+                            <option value="18">易车投放-易车app</option>
+                            <option value="19">钠镁股票-钠镁股票投放</option>
+                            <option value="20">腾讯手机管家推广-手机管家推广</option>
+                            <option value="21">微视推广-微视推广</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">创意名称</label>
+                    <div class="layui-input-block">
+                        <input
+                            type="text"
+                            name="ad"
+                            required
+                            lay-verify="required"
+                            placeholder="广告创意名称"
+                            autocomplete="off"
+                            value="admin"
+                            class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">广告类型</label>
+                    <div class="inline">
+                        <input type="radio" name="type" title="横幅">
+                        <input type="radio" name="type" title="全屏">
+                        <input type="radio" name="type" title="开屏">
+                        <input type="radio" name="type" title="原生">
+                        <input type="radio" name="type" title="H5">
+                        <input type="radio" name="type" title="插屏">
+                        <input type="radio" name="type" title="弹窗">
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">尺寸</label>
+                    <div class="layui-input-block">
+                        <select name="size" lay-verify="required">
+                            <option value="">请选择</option>
+                            <option value="960*300">960*300</option>
+                            <option value="700*160">700*160</option>
+                            <option value="800*1000">800*1000</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                        <label class="layui-form-label">着陆页</label>
+                        <div class="layui-input-block">
+                            <input
+                                type="text"
+                                name="website"
+                                required
+                                lay-verify="required"
+                                placeholder="着陆页"
+                                autocomplete="off"
+                                value="admin"
+                                class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                            <label class="layui-form-label">监测代码</label>
+                            <div class="layui-input-block">
+                                <input
+                                    type="text"
+                                    name="code"
+                                    required
+                                    lay-verify="required"
+                                    placeholder="监测代码"
+                                    autocomplete="off"
+                                    value="admin"
+                                    class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                                <label class="layui-form-label">物料类型</label>
+                                <div class="inline">
+                                    <input type="radio" name="ad_radio" title="图片">
+                                    <input type="radio" name="ad_radio" title="flash">
+                                    <input type="radio" name="ad_radio" title="html">
+                                    <input type="radio" name="ad_radio" title="视频">
+                                </div>
+                            </div>
+                <div class="submit">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo">保存</button>
+                        <button type="reset" class="layui-btn layui-btn-primary cancel">取消</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="../../js/jQuery-1.11.3.min.js"></script>
+
+        <script src="../../js/layui/layui.js"></script>
+        <script >
+            layui
+                .use('form', function () {
+                    var form = layui.form;
+
+                    //监听提交
+                    form.on('submit(formDemo)', function (data) {
+                        layer.msg(JSON.stringify(data.field));
+                        return false;
+                    });
+
+            });
+
+            layui.use('laydate', function () {
+                var laydate = layui.laydate;
+
+                //执行一个laydate实例
+                laydate.render({
+                    elem: '#date', //指定元素
+                    range: true
+                })
+            })
+        </script>
+    </body>
+</html>

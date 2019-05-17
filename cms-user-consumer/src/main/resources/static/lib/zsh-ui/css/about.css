@@ -1,0 +1,24 @@
+.flex-around{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-container img{
+    margin-top: 10px;
+    width: 45%;
+}
+.img{
+    width: 60%;
+    height: auto;
+}
+img{
+width: 100%;
+height: auto;
+}
+.item-title{
+    text-align: center;
+}
+
+.item{
+    margin-top: 20px;
+}

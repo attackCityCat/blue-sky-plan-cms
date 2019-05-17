@@ -1,0 +1,144 @@
+
+//SSM Oracle 分页
+
+SELECT * FROM
+		(
+		SELECT A.*,ROWNUM RN
+		FROM(
+			
+		) A
+WHERE ROWNUM &lt;= #{end,jdbcType=NUMERIC}
+		)
+WHERE RN > #{start,jdbcType=NUMERIC}
+
+
+
+
+//SSM Mysql 分页
+limit #{start,jdbcType=NUMERIC},#{count,jdbcType=NUMERIC}
+
+
+
+xml
+<?xml version="1.0" encoding="UTF-8"?>
+//约束
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
+
+
+
+//jsp页头
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>My JSP 'list.jsp' starting page</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+	<script type="text/javascript" src="<%=basePath%>js/jquery-1.8.0.js"></script>
+	<script type="text/javascript" src="<%=basePath%>js/easyui_util.js"></script>
+	<script type="text/javascript" src="<%=basePath%>js/SSM_JqueryUtil.js"></script>
+	
+	<script type="text/javascript" src="<%=basePath%>js/kindeditor-4.1.10/kindeditor-all.js"></script>
+	<link rel="styleSheet" href="<%=basePath%>js/kindeditor-4.1.10/themes/default/default.css" type="text/css">
+	
+	<script type="text/javascript" src="<%=basePath%>js/easyui1.5/jquery.easyui.min.js"></script>
+  	<script type="text/javascript" src="<%=basePath%>js/easyui1.5/locale/easyui-lang-zh_CN.js"></script>
+ 	<link rel="stylesheet" href="<%=basePath%>js/easyui1.5/themes/default/easyui.css" type="text/css"></link>
+ 	<link rel="stylesheet" href="<%=basePath%>js/easyui1.5/themes/icon.css" type="text/css"></link>
+ 	
+  <link rel="stylesheet" href="<%=basePath%>js/uploadify/uploadify.css" type="text/css"></link>
+  <script type="text/javascript" src="<%=basePath%>js/uploadify/jquery.uploadify.js"></script>
+  <script type="text/javascript" src="<%=basePath%>js/util-js.js"></script>
+
+
+  <script src="<%=basePath%>js/bootstrap/bootstrap3/js/bootstrap.js"></script>
+<link rel="stylesheet" href="<%=basePath%>js/bootstrap/bootstrap3/css/bootstrap.css"/>
+<!-- 导航树js css -->
+<link rel="stylesheet" href="<%=basePath%>js/bootstrap/bootstrap-treeview/bootstrap-treeview.min.css">
+<script src="<%=basePath%>js/bootstrap/bootstrap-treeview/bootstrap-treeview.min.js"></script>
+<!-- 选项卡 js css -->
+<link rel="stylesheet" href="<%=basePath%>js/bootstrap/bootStrap-addTabs/bootstrap.addtabs.css">
+<script src="<%=basePath%>js/bootstrap/bootStrap-addTabs/bootstrap.addtabs.min.js"></script>
+  
+  </head>
+
+
+
+	//下拉列表回显
+  $("#teamId > option[value=${item.teamId}]").prop('selected',true);
+
+
+
+//查询角色权限地址
+select distinct tn.url from t_nav tn 
+left join t_role_power trp on trp.power_id = tn.id
+left join t_user_role tur on tur.role_id = trp.role_id
+where tur.user_id = #{userId}
+
+union
+
+select DISTINCT tpm.url from  t_power_menu tpm 
+left join t_role_power trp on trp.power_id = tpm.power_id
+left join t_user_role tur on tur.role_id = trp.role_id
+
+WHERE
+	tur.user_id = #{userId}
+
+
+
+
+//先将body隐藏再显示，不会出现页面刷新效果，更美观
+	<body style="visibility:hidden;" >
+	$("body").css({visibility:"visible"});
+
+
+
+
+//返回新增主键
+
+	<selectKey order="AFTER" resultType="int" keyProperty="id">
+		select LAST_INSERT_ID() as id
+	</selectKey>
+
+
+
+
+
+//datagrid 添加 进度条 progressbar
+
+	var htmlstr='<div class="easyui-progressbar progressbar easyui-fluid" style="width: 100%; height: 20px;">'
+			+'<div class="progressbar-value" style="width: 100%; height: 20px; line-height: 20px;"> '
+			 +'<div class="progressbar-text" style="width: '+(value/row.maxCount*100)+'%; height: 20px; line-height: 20px;">'+ (value/row.maxCount*100) +'%--'+value+'</div>'
+			 +'</div>'
+			 +'</div>';
+	 return htmlstr;
+
+
+
+
+//mysql 续时间
+update t_server set sdate = ADDDATE(sdate,INTERVAL #{months} MONTH) where id = #{id}
