@@ -1,7 +1,7 @@
 package org.bs.cms.mapper.login;
 
 import org.apache.ibatis.annotations.Select;
-import org.bs.cms.model.User.UserBean;
+import org.bs.cms.pojo.User.UserBean;
 
 public interface LoginMapper {
 

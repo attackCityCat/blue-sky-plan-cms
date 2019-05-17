@@ -1,7 +1,7 @@
 package org.bs.cms.cmsuserconsumer.Controller.login;
 
 import org.bs.cms.cmsuserconsumer.Service.login.LoginService;
-import org.bs.cms.model.User.UserBean;
+import org.bs.cms.pojo.User.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

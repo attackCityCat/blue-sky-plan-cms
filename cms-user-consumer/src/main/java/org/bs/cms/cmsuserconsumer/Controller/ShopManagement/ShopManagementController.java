@@ -1,9 +1,7 @@
 package org.bs.cms.cmsuserconsumer.Controller.ShopManagement;
 
 import org.bs.cms.cmsuserconsumer.Service.ShopManagement.ShopManagementService;
-import org.bs.cms.model.User.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

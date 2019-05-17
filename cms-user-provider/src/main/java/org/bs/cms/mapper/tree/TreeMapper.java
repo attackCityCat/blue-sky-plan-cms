@@ -1,7 +1,7 @@
 package org.bs.cms.mapper.tree;
 
 import org.apache.ibatis.annotations.Select;
-import org.bs.cms.model.Tree.TreeBean;
+import org.bs.cms.pojo.Tree.TreeBean;
 
 import java.util.List;
 

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>bootstrap</title>
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap3/css/bootstrap.css"/>
+
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap-table/bootstrap-table.css">
+    <script src="/js/bootstrap/bootstrap-table/bootstrap-table.js"></script>
+    <script src="/js/bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+
+    <script src="/js/bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script src="/js/bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+
+    <script src="/js/bootstrap/bootstrap-bootbox/bootbox.js"></script>
+</head>
+<body>
+<div id="toolbar">
+    <button id="addBtn" type="button" class="btn btn-info glyphicon glyphicon-plus">新增</button>
+    <button id="updateBtn" type="button" class="btn btn-warning glyphicon glyphicon-pencil">修改</button>
+    <button id="delBtn" type="button" class="btn btn-danger glyphicon glyphicon-remove">删除</button>
+</div>
+<div class="table" id="myTable"></div>
+</body>
+<script type="text/javascript">
+    // 初始化加载
+    $(function(){
+        initMyTable();
+    })
+
+    // 页面加载表格
+    function initMyTable(){
+        $('#myTable').bootstrapTable({
+            url:'/product/findProductList',
+            toolbar:'#toolbar',
+            columns:[
+                {checkbox:true},
+                {field:'productTitle',title:'标题',width:200},
+                {field:'productPrice',title:'价格',width:200},
+                {field:'productStock',title:'库存',width:200},
+                {field:'productTime',title:'上架时间',width:200},
+                {field:'productSales',title:'销量',width:200},
+                {field:'productComments',title:'累计评论',width:200},
+                {field:'productConcern',title:'关注量',width:200},
+                {field:'productState',title:'状态',formatter:function(value,row,index){
+                        return value == 1 ? "未上架" : "上架";
+                    },width:200}
+            ]
+        })
+    }
+    /*// 时间插件
+    $('.date').datetimepicker({
+        language: 'zh-CN',//显示中文
+        format: 'yyyy-mm-dd hh:ii:ss',//显示格式
+        minView: "month",//设置只显示到月份
+        initialDate: new Date(),//初始化当前日期
+        autoclose: true,//选中自动关闭
+        todayBtn: true//显示今日按钮
+    });*/
+</script>
+</html>

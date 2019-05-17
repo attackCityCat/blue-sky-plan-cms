@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>美萌商城</title>
+    <script type="text/javascript" src="/js/jquery-1.8.0.js"></script>
+    <script type="text/javascript" src="/js/easyui_util.js"></script>
+
+    <script type="text/javascript" src="/js/kindeditor-4.1.10/kindeditor-all.js"></script>
+    <link rel="styleSheet" href="/js/kindeditor-4.1.10/themes/default/default.css" type="text/css">
+
+    <script type="text/javascript" src="/js/easyui1.5/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="/js/easyui1.5/locale/easyui-lang-zh_CN.js"></script>
+    <link rel="stylesheet" href="/js/easyui1.5/themes/default/easyui.css" type="text/css">
+    <link rel="stylesheet" href="/js/easyui1.5/themes/icon.css" type="text/css">
+
+    <link rel="stylesheet" href="/js/uploadify/uploadify.css" type="text/css">
+    <script type="text/javascript" src="/js/uploadify/jquery.uploadify.js"></script>
+
+    <script type="text/javascript" src="/js/util-js.js"></script>
+
+    <link rel="stylesheet" href="/js/uploadify/uploadify.css" type="text/css">
+    <script type="text/javascript" src="/js/uploadify/jquery.uploadify.js"></script>
+
+</head>
+<body style="visibility:hidden;">
+    <div id="toolbar">
+        <a id="addBtn" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true">新增</a>
+        <a id="deleteBtn" class="easyui-linkbutton" data-options="iconCls:'icon-cancel',plain:true">批量删除</a>
+        <a id="updateBtn" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">修改</a>
+    </div>
+    <table id="productTable"></table>
+</body>
+<script type="text/javascript">
+    // 初始化页面表格
+    $(function(){
+        initProductTable();
+    })
+    function initProductTable() {
+        $("body").css({visibility:"visible"});
+        $("#productTable").datagrid({
+            url:'/product/findProductList',
+            toolbar:"#toolbar",
+            fit:true,
+            columns:columns
+        })
+    }
+    var columns = [
+        [
+            {field:'id',title:'主鍵id',checkbox:true},
+            {field:'productTitle',title:'标题',width:200},
+            {field:'productPrice',title:'价格',width:200},
+            {field:'productStock',title:'库存',width:200},
+            {field:'productTime',title:'上架时间',width:200},
+            {field:'productSales',title:'销量',width:200},
+            {field:'productComments',title:'累计评论',width:200},
+            {field:'productConcern',title:'关注量',width:200},
+            {field:'productState',title:'状态',formatter:function(value,row,index){
+                    return value == 1 ? "未上架" : "上架";
+                },width:200}
+        ]
+    ]
+</script>
+</html>

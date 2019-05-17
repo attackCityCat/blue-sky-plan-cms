@@ -1,11 +1,10 @@
 package org.bs.cms.cmsuserconsumer.Controller.tree;
 
 import org.bs.cms.cmsuserconsumer.Service.tree.TreeService;
-import org.bs.cms.model.Tree.TreeBean;
-import org.bs.cms.model.User.UserBean;
+import org.bs.cms.pojo.Tree.TreeBean;
+import org.bs.cms.pojo.User.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpSession;

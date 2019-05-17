@@ -1,8 +1,7 @@
 package org.bs.cms.controller.tree;
 
 import org.bs.cms.mapper.tree.TreeMapper;
-import org.bs.cms.model.Tree.TreeBean;
-import org.bs.cms.model.User.UserBean;
+import org.bs.cms.pojo.Tree.TreeBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

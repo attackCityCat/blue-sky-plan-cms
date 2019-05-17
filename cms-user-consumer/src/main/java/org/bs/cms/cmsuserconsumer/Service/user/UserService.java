@@ -1,6 +1,6 @@
 package org.bs.cms.cmsuserconsumer.Service.user;
 
-import org.bs.cms.model.User.UserBean;
+import org.bs.cms.pojo.User.UserBean;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

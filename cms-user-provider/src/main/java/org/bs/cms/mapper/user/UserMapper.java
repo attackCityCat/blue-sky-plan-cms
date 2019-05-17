@@ -4,7 +4,7 @@ import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
-import org.bs.cms.model.User.UserBean;
+import org.bs.cms.pojo.User.UserBean;
 
 import java.util.List;
 
