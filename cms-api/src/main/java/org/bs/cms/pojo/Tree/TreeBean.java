@@ -1,9 +1,11 @@
 package org.bs.cms.pojo.Tree;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class TreeBean {
+public class TreeBean implements Serializable {
 
+    private static final long serialVersionUID = 1681555278893448064L;
     private Integer id;
     private String text;
     private Integer pid;

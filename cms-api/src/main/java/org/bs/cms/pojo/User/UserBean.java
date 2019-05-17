@@ -1,7 +1,10 @@
 package org.bs.cms.pojo.User;
 
-public class UserBean {
+import java.io.Serializable;
 
+public class UserBean implements Serializable {
+
+    private static final long serialVersionUID = -7387863058509882609L;
     private Integer userid;
 
     private String username;

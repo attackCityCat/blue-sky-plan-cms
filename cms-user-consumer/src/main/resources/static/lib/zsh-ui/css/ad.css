@@ -1,0 +1,181 @@
+html,body{
+    height: 100%;
+    /* overflow:auto; */
+}
+.ad-page{
+    height: 100%;
+}
+.ad-content{ 
+    margin-top: 10px;
+    height: calc(100% - 70px);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.active{
+    background: #fff;
+}
+.mt10{
+margin-top: 10px;
+}
+
+.bg224{
+    background:rgb(224,224,224);
+}
+.orange{
+    color: rgba(255, 152, 0, 1);
+    margin: 0 3px;
+}
+
+.layui-nav{
+    background:rgb(224,224,224);
+    /* height: 60px; */
+    padding: 0;
+}
+
+#ad-nav{
+  width: 300px;
+  height: 60px;
+}
+#ad-nav li{
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: center;
+}
+
+#iframe_ad{
+    width: 100%;
+    height: 100%;
+}
+.layui-nav .layui-nav-item a{
+    color: rgba(16, 16, 16, 1);
+}
+
+.layui-inline{
+    margin-left: 10px;
+}
+
+.addplan-page .layui-btn{
+    background: #28a745;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+}
+.top-right{
+    padding-right: 30px;
+    text-align: right;
+    font-size: 16px;
+}
+.top-right i{
+    margin: 0 5px ;
+}
+
+.bottom-title{
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
+.layui-laydate{
+    top: 40px !important;
+}
+
+
+.right-item{
+    width: 150px;
+    text-align: center;
+    background: #28a745;
+}
+.right-item a{
+	color:#fff;
+}
+.new-scheme,.new-idea{
+    display: none;
+}
+
+.page-link{
+    color: gray;
+}
+.addplan-page .like{
+    color: #333 ;
+    text-decoration: none;
+}
+.addplan-page  td>a :hover{
+    color: #4ED78F !important;
+  }
+.addplan-page .layui-input{
+    width: 160px;
+    height: 30px;
+    border-color: #4ED78F !important;
+    border-radius: 5px;
+}
+
+
+
+.layui-btn{
+    border-radius: .25rem;
+}
+.layui-btn-primary{
+    color: #fff;
+    background-color: #6c757d;
+    border: none;
+    border-radius: .25rem;
+}
+.layui-btn-normal{
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.layui-nav-item li>a{
+    text-decoration: none;
+}
+.layui-nav-item .black,.right-item a:hover{
+color: #333 !important;
+text-decoration: none;
+width: 100%;
+}
+
+
+
+.dropdown-menu.show{
+    width: 92%;
+}
+
+/* detail */
+
+.nav{
+    height: 50px;
+    line-height: 50px;
+    margin: 0 30px;
+}
+
+.idea-detail-page #modal form{
+    margin-right: 20px;
+}
+.idea-detail-page #modal .col-sm-3{
+    text-align: right;
+}
+
+.idea-detail-page .btn-success.focus, .btn-success:focus{
+    box-shadow:0 0 0 0.1rem #fff;
+}
+
+.idea-detail-page .layui-form-label{
+    width: 100px !important;
+}
+
+#modal .modal-body{
+    padding-bottom: 0;
+}
+
+/*#modal .layui-btn{*/
+    /*background: #009688;*/
+/*}*/
+#modal .layui-btn:focus{
+   border: none;
+    outline: none;
+}
+
+
+
+

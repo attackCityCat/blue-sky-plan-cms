@@ -3,12 +3,20 @@ package org.bs.cms.cmsuserconsumer.Controller.login;
 import org.bs.cms.cmsuserconsumer.Service.login.LoginService;
 import org.bs.cms.pojo.User.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.security.auth.Subject;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
 import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 public class LoginController {
@@ -29,7 +37,7 @@ public class LoginController {
 
         if (userBean.getUseraccount() == null || "".equals(userBean.getUseraccount())) {
             map.put("code", 3);
-            map.put("msg", "用户名不能为空！");
+            map.put("message", "用户名不能为空！");
             return map;
         }
 
@@ -38,14 +46,14 @@ public class LoginController {
 
         if (user2 == null) {
             map.put("code", 4);
-            map.put("msg", "用户名不存在！");
+            map.put("message", "用户名不存在！");
             return map;
         }
 
         //验证密码是否为空
         if (userBean.getUserpassword() == null || "".equals(userBean.getUserpassword())) {
             map.put("code", 5);
-            map.put("msg", "密码不能为空！");
+            map.put("message", "密码不能为空！");
             return map;
         }
 
@@ -55,7 +63,7 @@ public class LoginController {
         String password2 = user2.getUserpassword();
         if (!password.equals(password2)) {
             map.put("code", 6);
-            map.put("msg", "密码错误！");
+            map.put("message", "密码错误！");
             return map;
         }
 
@@ -63,11 +71,16 @@ public class LoginController {
         session.setAttribute(session.getId(), user2);
 
         map.put("code", 0);
-        map.put("msg", "登陆成功！");
+        map.put("message", "登陆成功！");
 
 
         return map;
 
     }
+
+
+
+
+
 
 }

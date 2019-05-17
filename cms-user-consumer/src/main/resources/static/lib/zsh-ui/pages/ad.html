@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../js/layui/css/layui.css">
+        <link rel="stylesheet" href="../js/bootstrap-4.0.0-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/ad.css">  
+        
+    </head>
+    <body>
+        <div class="ad-page">
+            <!-- <div class="top"> -->
+            <div class="nav bg224 flex-between">
+                <ul  lay-filter="test" id="ad-nav" class="flex-between">
+                    <li class="layui-nav-item active">
+                        <a href="./ad/adPlan.html" class="black" target="iframe_ad">广告计划</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="./ad/adScheme.html" class="black" target="iframe_ad">广告方案</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="./ad/adIdea.html" class="black" target="iframe_ad">广告创意</a>
+                    </li>
+                </ul>
+                <ul >
+                    <li class="right-item new-plan" target="add.html">
+                        <a href="./layer/add.html" target="iframe_a">+新建文本计划</a>
+                    </li>
+                    <li class="right-item new-scheme">
+                        <a href="./layer/add-scheme.html" target="iframe_a">+新建广告方案</a>
+                    </li>
+                    <li class="right-item new-idea" target="add-idea.html">
+                        <a href="./layer/add-idea.html" target="iframe_a">+新建广告创意</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="ad-content">
+                <iframe src="./ad/adPlan.html" id="iframe_ad" name="iframe_ad" frameborder="0"></iframe>
+            </div>
+        </div>
+        <script src="../js/jQuery-1.11.3.min.js"></script>
+        <script src="../js/layui/layui.js"></script>
+        <script>
+            //导航右侧的切换
+            $('.layui-nav-item')
+                .click(function (e) {
+                    $('.layui-nav-item').removeClass('active');
+                    $(this).addClass('active');
+                    var txt = $(e.target).html();
+                    if (txt == '广告计划') {
+                        $('.right-item').css('display', 'none');
+                        $('.new-plan').css('display', 'block');
+                    } else if (txt == '广告方案') {
+                        $('.right-item').css('display', 'none');
+                        $('.new-scheme').css('display', 'block');
+
+                    } else {
+                        $('.right-item').css('display', 'none');
+                        $('.new-idea').css('display', 'block');
+                    }
+                })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link
+            rel="stylesheet"
+            href="../js/bootstrap-table/dist/bootstrap-table.min.css">
+        <link rel="stylesheet" href="../js/zTree/css/zTreeStyle.css">
+        <link rel="stylesheet" href="../js/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/user.css">
+        <title>角色管理</title>
+    </head>
+    <body>
+        <div class="role-page container-fluid">
+            <div class="user-center " style="margin-top: 0">
+                <nav class="user-nav navbar navbar-inverse">
+                    搜索条件
+                </nav>
+                <div class="form-inline">
+
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" name="role" placeholder="角色">
+                    </div>
+                    <div class="form-group">
+
+                        <select class="custom-select form-control" id="valid">
+                            <option value='' disabled selected style='display:none;'>是否有效</option>
+                            <option value='1'>是</option>
+                            <option value='0'>否</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-red">
+                        搜索</button>
+                </div>
+            </div>
+            <div class="user-bottom">
+                <div class="bottom-top flex-between">
+                    <span class="table-name">用户列表</span>
+                    <button
+                        class="btn  btn-red btn-sm"
+                        data-toggle="modal"
+                        data-target="#roleModal">新增角色</button>
+                </div>
+                <table id="table"></table>
+            </div>
+
+            <!-- 新增模态框 -->
+            <div class="modal fade" id="roleModal">
+                <div class="modal-dialog  modal-dialog-centered" role="document">
+                    <div class="modal-content">
+
+                        <!-- 模态框头部 -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">角色管理</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- 模态框主体 -->
+                        <div class="modal-body">
+                            <!-- 模态框内容.. -->
+
+                            <form>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label" for="creator">创建人:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class=" form-control" id="creator" placeholder="请输入公司名称"></div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class=" col-sm-3 col-form-label" for="modifer">修改人:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control " id="modifer" placeholder="请输入修改人"></div>
+
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <!-- 模态框底部 -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">保存</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--关联用户 Modal -->
+            <div
+                class="modal fade"
+                id="relateUserModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="relateUserModal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">关联用户</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid user-content">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p class="title">用户列表</p>
+                                        <table id="userTable"></table>
+                                    </div>
+                                    <div class="col-md-4 selected-user">
+                                        <p class="title">选择关联</p>
+                                        <!-- <div class="user-form d-flex  justify-content-around ">
+                                          <input type="text"> <div class="btn btn-primary btn-sm">删除</div>
+                                      </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--关联功能 Modal -->
+            <div
+                class="modal fade"
+                id="relateFuncModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="relateFuncModal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">关联功能</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body func-content">
+                            <div class="container">
+                                <ul id="tree" class="ztree"></ul>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="../js/jQuery-1.11.3.min.js"></script>
+            <script src="../js/propper.js"></script>
+            <script src="../js/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+            <script src="../js/zTree/js/jquery.ztree.core.js"></script>
+            <script src="../js/zTree/js/jquery.ztree.excheck.js"></script>
+            <script src="../js/zTree/js/jquery.ztree.exedit.js"></script>
+
+            <script src="../js/bootstrap-table/dist/bootstrap-table.min.js"></script>
+            <script src="../js/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+            <script type="text/javascript">
+                var data = [
+                    {
+                        "advertPlanId": 1,
+                        "title": "腾讯视频",
+                        "totalConsume": 769369.2,
+                        "creator": "tencent",
+                        "creatorId": "4",
+                        "createTime": 1479732232000,
+                        "modifer": "tencent",
+                        "modiferId": "4",
+                        "modifyTime": 1481575452000,
+                        "bidding": 0
+                    }, {
+                        "advertPlanId": 1,
+                        "title": "yo库视频",
+                        "totalConsume": 769369.2,
+                        "creator": "tencent",
+                        "creatorId": "4",
+                        "createTime": 1479732232000,
+                        "modifer": "tencent",
+                        "modiferId": "4",
+                        "modifyTime": 1481575452000,
+                        "bidding": 0
+                    }, {
+                        "advertPlanId": 1,
+                        "title": "土豆视频",
+                        "totalConsume": 769369.2,
+                        "creator": "tencent",
+                        "creatorId": "4",
+                        "createTime": 1479732232000,
+                        "modifer": "tencent",
+                        "modiferId": "4",
+                        "modifyTime": 1481575452000,
+                        "bidding": 0
+                    }
+                ];
+
+                $('#table').bootstrapTable({
+                    //url:'http://192.168.6.188:9010/plan/list',
+                    data: data,
+                    pagination: true,
+                    queryParams: function (params) { // 请求服务器数据时发送的参数，可以在这里添加额外的查询参数，返回false则终止请求
+                        return {
+                            limit: 1, // 每页要显示的数据条数
+                            offset: 1, // 每页显示数据的开始行号
+                        }
+                    }, //传递参数
+                    pageNumber: 1, //初始化加载第一页，默认第一页
+                    pageSize: 1, //每页的记录行数（*）
+                    pageList: [
+                        10, 25, 50, 100, 'all'
+                    ], //可供选择的每页的行数（*）
+
+                    showRefresh: false, //是否显示刷新按钮
+
+                    columns: [
+                        {
+                            field: 'advertPlanId',
+                            title: '角色'
+                        }, {
+                            field: 'plan',
+                            title: '是否有效'
+                        }, {
+                            field: 'status',
+                            title: '修改时间'
+                        }, {
+                            field: 'budget',
+                            title: '创建人'
+                        }, {
+                            field: 'display',
+                            title: '修改人'
+                        }, {
+                            field: 'loadsum',
+                            title: '操作',
+                            formatter: function (value, row, index) {
+
+                                return [
+                                    '<span class="like user"  data-toggle="modal" data-target="#relateUserModal">',
+                                    '关联用户',
+                                    '</span>  ',
+                                    '<span class="like func"  data-toggle="modal" data-target="#relateFuncModal">',
+                                    '关联功能',
+                                    '</span>  '
+                                ].join('');
+                            }
+                        }
+                    ]
+                });
+
+                $('#userTable').bootstrapTable({
+                    //url:'http://192.168.6.188:9010/plan/list',
+                    data: data,
+                    pagination: true,
+                    queryParams: function (params) { // 请求服务器数据时发送的参数，可以在这里添加额外的查询参数，返回false则终止请求
+                        return {
+                            limit: 3, // 每页要显示的数据条数
+                            offset: 1, // 每页显示数据的开始行号
+                        }
+                    }, //传递参数
+                    pageNumber: 1, //初始化加载第一页，默认第一页
+                    pageSize: 3, //每页的记录行数（*）
+                    pageList: [
+                        10, 25, 50, 100, 'all'
+                    ], //可供选择的每页的行数（*）
+
+                    showRefresh: false, //是否显示刷新按钮
+
+                    columns: [
+                        {
+                            field: 'state',
+                            checkbox: true,
+                            formatter: stateFormatter
+
+                        }, {
+                            field: 'title',
+                            title: '用户名'
+                        }, {
+                            field: 'status',
+                            title: '修改时间'
+                        }, {
+                            field: 'budget',
+                            title: '创建人'
+                        }, {
+                            field: 'display',
+                            title: '修改人'
+                        }
+
+                    ],
+                    onCheck: function (row) {
+                        // console.log(row)
+                        var title = row.title;
+                        var txt = ' <div class="user-form d-flex  justify-content-around "><input type="text" value' +
+                                '=' + title + '><div class="btn btn-primary btn-sm delete" onClick=handleClick(this)>删除</div></' +
+                                'div>';
+                        $('.selected-user').append(txt);
+                    },
+                    onCheckAll: function (rows) {
+                        // console.log(rows);
+                        var str = '';
+                        for (var i = 0; i < rows.length; i++) {
+                            var title = rows[i].title;
+                            str += '<div class="user-form d-flex  justify-content-around "><input type="text" value=' + title + '><div class="btn btn-primary btn-sm delete" onClick=handleClick(this)>删除</div></' +
+                                    'div>';
+                        }
+                        $('.selected-user').append(str);
+                    }
+
+                });
+
+                //删除选中项
+                var handleClick = function (e) {
+                    $(e)
+                        .parent()
+                        .remove();
+                    $('#userTable').bootstrapTable('uncheck', 0)
+                };
+
+                function stateFormatter(value, row, index) {
+                    // if (index % 2 == 0)
+                    //     return {
+                    //         disabled: true, //设置是否可用
+                    //     };
+                    return value;
+                }
+
+
+                // 树形图例子 数据
+                var zNodes = [
+                    {
+                        id: 1,
+                        pId: 0,
+                        name: "父节点1",
+                        title: "",
+                        open: true
+                    }, {
+                        id: 11,
+                        pId: 1,
+                        name: "父节点11",
+                        title: "",
+                    }, {
+                        id: 111,
+                        pId: 11,
+                        name: "叶子节点111",
+                        title: "",
+                    }, {
+                        id: 112,
+                        pId: 11,
+                        name: "叶子节点112",
+                        title: ""
+                    }, {
+                        id: 113,
+                        pId: 11,
+                        name: "叶子节点113",
+                        title: ""
+                    }, {
+                        id: 2,
+                        pId: 0,
+                        name: "父节点2",
+                        title: ""
+                    }, {
+                        id: 21,
+                        pId: 2,
+                        name: "父节点21",
+                        title: "",
+                    }, {
+                        id: 221,
+                        pId: 22,
+                        name: "叶子节点221",
+                        title: ""
+                    }
+                ];
+
+                var setting = {
+                    view: {
+                        selectedMulti: false,
+                    },
+                    check: {
+                        enable: true,
+                        chkboxType : {"Y": "s", "N": "ps"},
+                    },
+                    callback: {
+                        onCheck: onCheck
+                    },
+                    data: {
+                        key: {
+                            title: "title"
+                        },
+                        simpleData: {
+                            enable: true
+                        }
+                    }
+                };
+                $.fn.zTree.init($("#tree"), setting, zNodes);
+                var treeObj = $.fn.zTree.getZTreeObj("tree");
+                function onCheck(event, treeId, treeNode) {
+                   var parentNode=treeNode.getParentNode();
+                   var state=parentNode?parentNode.check_Child_State:null;
+                   if(state==2){
+                       // console.log(state,'---2');
+                       treeObj.checkNode(parentNode, true, true);
+                       onCheck(event, treeId, parentNode);
+
+                   }else  if(state==1){
+                       treeObj.checkNode(parentNode, false, false);
+                       onCheck(event, treeId, parentNode);
+                   }
+                   console.log(treeNode,parentNode,state);
+
+                }
+            </script>
+        </body>
+    </html>

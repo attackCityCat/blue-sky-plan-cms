@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 300px;
+        height: 330px;
+        background: red;
+    }
+</style>
+<body>
+<div class="box">
+  222
+</div>
+<div class="dog">
+444
+</div>
+
+<form  method="post" action="https://www.baidu.com">
+    <input type="text" value="123" name="name">
+    <input type="text" value="999" name="age">
+    <button type="submit">提交</button>
+</form>
+
+<script src="../jq.12.4.js"></script>
+<script>
+
+    var fn=function (name,age) {
+
+        this.name=name;
+        this.age=age;
+        return new fn;
+    }
+
+
+    var b=fn();
+
+
+
+
+</script>
+<script>
+    (function (global,factory) {
+if(typeof module==='object'&&typeof module.exports==='object'){
+    module.exports=global.document?factory(global,true):function (w) {
+        if(!w.document){
+            throw Error(
+                "jQuery requires a window with a document"
+            )
+            return factory(w);
+        }
+    }
+}else {
+    factory(global);
+}
+
+    }(typeof window!=='undefined'?window:this,function (window,noGlobal) {
+
+        var deletedIds = [];
+
+        var document = window.document;
+
+        var slice = deletedIds.slice;
+
+        var concat = deletedIds.concat;
+
+        var push = deletedIds.push;
+
+        var indexOf = deletedIds.indexOf;
+
+        var class2type = {};
+
+        var toString = class2type.toString;
+
+        var hasOwn = class2type.hasOwnProperty;
+
+        var support = {};
+
+
+        var version='1.12.4',
+            jQuery=function (selector,context) {
+                return new jQuery.fn.init(selector,context);
+            };
+
+            jQuery.fn=jQuery.prototype={
+                jquery:version,
+                constructor:jQuery,
+                selector:'',
+                length:0,
+                toArray:function () {
+                    return slice.call(this)
+                },
+
+                get:function (num) {
+                   return num!=null? (num<0?this[num+this.length]:this[num]):slice.call(this);
+                },
+                pushStack:function (elems) {
+                    var ret=jQuery.merge(this.constructor(),elems);
+                    ret.prevObject=this;
+                    ret.context=this.context;
+                    return ret;
+                },
+
+                each:function (callback) {
+                    return jQuery.each(this,callback)
+                },
+
+                map:function (callback) {
+                    return this.pushStack(jQuery.map(this,function (elem,i) {
+                        return callback.call(elem,i,elem);
+                    }))
+                },
+
+                slice:function () {
+                  return this.pushStack(slice.apply(this,arguments));
+                },
+                first:function () {
+                    return this.eq(0);
+                },
+                last:function () {
+                    return this.eq(-1);
+                },
+                eq:function (i) {
+                    let  len=this.length,
+                        j=+i+(i<0?len:0);
+
+                    return this.pushStack(j>=0&&j<len?[this[j]]:[]);
+                },
+                end:function () {
+                    return this.prevObject||this.constructor();
+                },
+                push:push,
+                sort:deletedIds.sort,
+                splice:deletedIds.splice
+
+            };
+            jQuery.extend=jQuery.fn.extend=function () {
+                var src, copyIsArray, copy, name, options, clone,
+                    target = arguments[ 0 ] || {},
+                    i=1,length=arguments.length,
+                    deep=false;
+
+                if(typeof target==='boolean'){
+                    deep=target;
+
+                    target=arguments[i]||{};
+                    i++;
+                }
+            }
+
+    }));
+
+
+
+</script>
+</body>
+</html>

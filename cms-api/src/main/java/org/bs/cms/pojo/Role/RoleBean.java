@@ -1,7 +1,10 @@
 package org.bs.cms.pojo.Role;
 
-public class RoleBean {
+import java.io.Serializable;
 
+public class RoleBean implements Serializable {
+
+    private static final long serialVersionUID = -8140660931389397428L;
     private Integer roleid;
 
     private String rolename;

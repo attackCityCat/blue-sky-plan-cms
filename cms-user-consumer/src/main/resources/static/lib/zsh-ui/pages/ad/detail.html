@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../../js/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="../../js/bootstrap-table/dist/bootstrap-table.min.css">
+        <link rel="stylesheet" href="../../css/ad.css">
+        <link rel="stylesheet" href="../../css/common.css">
+    
+</head>
+<body>
+    <div class="container-fluid detail-page">
+        <div id="toolbar">
+
+                <!-- <a class="btn btn-default" href="#" role="button">Link</a> -->
+                <button class="btn btn-success return" 
+                type="submit" onclick="javascript:window.history.back(-1);">返回</button>
+        </div>
+        <table data-toggle="table" id='detail'></table>
+
+                     <!-- 模态框 -->
+                     <div class="modal fade" id="modal">
+                        <div class="modal-dialog  modal-dialog-centered" role="document">
+                            <div class="modal-content">
+            
+                                <!-- 模态框头部 -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">调量</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+            
+                                <!-- 模态框主体 -->
+                                <div class="modal-body">
+                                    <!-- 模态框内容.. -->
+            
+                                    <form>
+            
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label" for="disnum">展现次数:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class=" form-control" id="disnum" placeholder="请输入展现次数"></div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class=" col-sm-3 col-form-label" for="loadnum">下载次数:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control " id="loadnum" placeholder="请输入下载次数"></div>
+            
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class=" col-sm-3 col-form-label" for="price">当前出价:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control " id="price" placeholder="请输入当前出价"></div>
+                                        </div>
+            
+                                    </form>
+                                <!-- 模态框底部 -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                                    <button type="button" class="btn btn-primary">保存</button>
+            
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+    </div>
+    <script src="../../js/jQuery-1.11.3.min.js"></script>
+    <script src="../../js/propper.js"></script>
+    <script src="../../js/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap-table/dist/bootstrap-table.min.js"></script>
+   <script src="../../js/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+        <script>
+             var data = [
+                {
+                    "advertPlanId": 1,
+                    "title": "腾讯视频",
+                    "beginTime": 1479657600000,
+                    "endTime": 1609344000000,
+                    "budget": "0",
+                    "status": "1",
+                    "dissum": 30688989,
+                    "clisum": 0,
+                    "loadsum": 1282282,
+                    "loadrate": 4.18,
+                    "clirate": 0,
+                    "totalConsume": 769369.2,
+                    "creator": "tencent",
+                    "creatorId": "4",
+                    "createTime": 1479732232000,
+                    "modifer": "tencent",
+                    "modiferId": "4",
+                    "modifyTime": 1481575452000,
+                    "bidding": 0
+                }, {
+                    "advertPlanId": 2,
+                    "title": "腾讯新闻",
+                    "beginTime": 1479657600000,
+                    "endTime": 1609344000000,
+                    "budget": "0",
+                    "status": "0",
+                    "dissum": 1135153536,
+                    "clisum": 0,
+                    "loadsum": 45450700,
+                    "loadrate": 4,
+                    "clirate": 0,
+                    "totalConsume": 31751219.4,
+                    "creator": "tencent",
+                    "creatorId": "4",
+                    "createTime": 1479732806000,
+                    "modifyTime": 1481574473000,
+                    "bidding": 0
+                }, {
+                    "advertPlanId": 3,
+                    "title": "腾讯快报",
+                    "beginTime": 1479657600000,
+                    "endTime": 1609344000000,
+                    "budget": "0",
+                    "status": "1",
+                    "dissum": 353381399,
+                    "clisum": 0,
+                    "loadsum": 13891103,
+                    "loadrate": 3.93,
+                    "clirate": 0,
+                    "totalConsume": 12453637.8,
+                    "creator": "tencent",
+                    "creatorId": "4",
+                    "createTime": 1479732867000,
+                    "modifyTime": 1481574480000,
+                    "bidding": 0
+                }, {
+                    "advertPlanId": 5,
+                    "title": "天天快报推广",
+                    "beginTime": 1498838400000,
+                    "endTime": 1546185600000,
+                    "status": "0",
+                    "dissum": 163291256,
+                    "clisum": 0,
+                    "loadsum": 6664576,
+                    "loadrate": 4.08,
+                    "clirate": 0,
+                    "totalConsume": 5998118.4,
+                    "creator": "kuaibao",
+                    "creatorId": "5",
+                    "createTime": 1500768505000,
+                    "bidding": 0
+                }, {
+                    "advertPlanId": 6,
+                    "title": "腾讯wifi管家",
+                    "beginTime": 1506787200000,
+                    "endTime": 1546185600000,
+                    "status": "0",
+                    "dissum": 99256669,
+                    "clisum": 0,
+                    "loadsum": 3995060,
+                    "loadrate": 4.02,
+                    "clirate": 0,
+                    "totalConsume": 3651198.3,
+                    "creator": "kuaibao",
+                    "creatorId": "5",
+                    "createTime": 1510488424000,
+                    "bidding": 0
+                }];
+           $('#detail').bootstrapTable({
+                //url:'http://192.168.6.188:9010/plan/list',
+                data: data,
+                pagination: true,
+                queryParams: function (params) { // 请求服务器数据时发送的参数，可以在这里添加额外的查询参数，返回false则终止请求
+                    return {
+                        limit: 5, // 每页要显示的数据条数
+                        offset: 1, // 每页显示数据的开始行号
+                    }
+                }, //传递参数
+                pageNumber: 1, //初始化加载第一页，默认第一页
+                pageSize: 3, //每页的记录行数（*）
+                pageList: [
+                    10, 25, 50, 100, 'all'
+                ], //可供选择的每页的行数（*）
+                // showColumns: true, //是否显示所有的列
+                showRefresh: false, //是否显示刷新按钮
+                toolbar:'#toolbar',
+
+                columns: [
+                    {
+                        checkbox:true
+                    },
+                    {
+                        field: 'beginTime',
+                        title: '日期'
+                    }, {
+                        field: 'dissum',
+                        title: '展现次数'
+                    }, {
+                        field: 'loadsum',
+                        title: '下载次数'
+                    }, {
+                        field: 'loadrate',
+                        title: '转化率',
+                       
+                    }, {
+                        field: 'creator',
+                        title: '用户',
+                      
+                    }, 
+                   
+                    {
+                        field: 'totalConsume',
+                        title: '平均出价',
+                       
+                    },
+                    {
+                        field: 'totalConsume',
+                        title: '花费',
+                       
+                    },
+                ]
+            });
+        </script>
+</body>
+</html>
