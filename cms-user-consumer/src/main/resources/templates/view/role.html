@@ -1,0 +1,445 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"  xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+
+<head>
+	<title>高铁广告平台</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/lib/linearicons/style.css">
+	<link rel="stylesheet" href="/lib/chartist/css/chartist-custom.css">
+	<link rel="stylesheet" href="/css/bootstrap-table.min.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="/css/commom.css">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/img/lantian.png">
+	<!-- Javascript -->
+	<script src="/lib/jquery/jquery.min.js"></script>
+	<script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/lib/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="/lib/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="/lib/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+	<script src="/lib/chartist/js/chartist.min.js"></script>
+	<script src="/js/klorofil-common.js"></script>
+	<script src="/js/role/role.js"></script>
+	<!-- <script src="../static/lib/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> -->
+	<script  src="/lib/zsh-ui/js/bootstrap-4.0.0-dist/js/bootstrap-table.min.js"></script>
+	<script src ="/lib/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<div id="abc"></div>
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="brand">
+				<a href="index.html"><img src="/img/logo-dark.png" alt="Klorofil Logo"
+										  class="img-responsive logo"></a>
+			</div>
+			<div class="container-fluid">
+				<div class="navbar-btn">
+					<button type="button" class="btn-toggle-fullwidth"><i
+							class="lnr lnr-arrow-left-circle"></i></button>
+				</div>
+				<div id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right" >
+						<li>
+							<div style="line-height:52px;">
+								<i class="lnr lnr-calendar-full m-r-5"></i>2019年4月18号
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="logout()"><img src="/img/_20190418180241.png"
+																											   class="img-circle" alt="Avatar"> <span>退出</span><!-- <span th:text="${session.CUR_USER.username}"></span> --></a>
+							<!-- <ul class="dropdown-menu" onclick="logout()">
+								<li><a href="#"><i class="lnr lnr-exit"></i> <span>退出</span></a></li>
+							</ul> -->
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END NAVBAR -->
+		<!-- LEFT SIDEBAR -->
+		<div id="sidebar-nav" class="sidebar">
+			<div class="sidebar-scroll">
+				<nav>
+					<ul class="nav" id="menuTree">
+						<li><a href="toAdv"><i class="lnr lnr-home"></i> <span>首页</span></a></li>
+						<li><a href="reportList.html"><i class="lnr lnr-file-empty"></i> <span>效果报告</span></a>
+						</li>
+						<li>
+							<a href="#subPages" data-toggle="collapse" class="active" aria-expanded="true"><i class=" lnr
+								lnr-lock"></i>
+								<span>权限管理</span>
+								<i class="icon-submenu lnr lnr-chevron-left"></i></a>
+							<div id="subPages" class="active" aria-expanded="true">
+								<ul class="nav">
+									<li><a href="toUser" class="">用户管理</a></li>
+									<li><a href="toRole" class="active">角色管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#subPages" data-toggle="collapse" class="active" aria-expanded="true"><i class=" lnr
+								lnr-lock"></i>
+							<span>店铺管理</span>
+							<i class="icon-submenu lnr lnr-chevron-left"></i></a>
+							<div id="subPages2" class="active" aria-expanded="true">
+								<ul class="nav">
+									<li><a href="toShopping" class="">商品管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="data-maintain.html" class=""><i class="lnr lnr-screen"></i> <span>数据维护</span></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- END LEFT SIDEBAR -->
+		<!-- MAIN -->
+		<div class="main">
+			<!-- MAIN CONTENT -->
+			<div class="main-content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- 搜索条件 -->
+							<div class="panel panel-headline">
+								<!-- <div class="panel-heading">
+									<h3 class="panel-title m-0"> <i class="fa fa-search"></i>搜索条件</h3>
+								</div> -->
+								<div class="panel-body">
+									<form class="form-inline">
+										<div class="m-r-15 flex ft m-t-b-10">
+											<span class="m-r-5">
+												角色：</span>
+											<div class="form-group">
+												<input type="email" class="form-control" name="role" id="exampleInputEmail3"
+													placeholder="请输入用户名">
+											</div>
+										</div>
+										<div class="m-r-15 flex ft m-t-b-10">
+											<span class="m-r-5">
+												是否有效：</span>
+											<select class="form-control" name="status">
+												<option value='' disabled selected style='display:none;'>是否有效</option>
+												<option value="1">是</option>
+												<option value="0">否</option>
+											</select>
+										</div>
+										<button class="btn btn-primary ft m-t-b-10" type="button" onclick="checkRole()">查询</button>
+									</form>
+								</div>
+							</div>
+							<!-- END 搜索条件-->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<!-- 广告计划表 -->
+							<div class="panel panel-headline">
+								<div class="panel-heading">
+										<span class="ft fa fa-table ft-22"></span>
+										<h3 class="panel-title">角色列表</h3>
+
+									<div class="right">
+										<button class="btn btn-xs btn-primary ft  m-0" type="button" data-toggle="modal"
+											data-target="#roleModal">新增角色</button>
+										<button type="button" class="btn-toggle-collapse"><i
+												class="lnr lnr-chevron-up"></i></button>
+										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+									</div>
+								</div>
+								<div class="panel-body">
+									<table class="table table-hover" id="table">
+										<!-- <thead>
+											<tr>
+												<th>广告计划</th>
+												<th>日期</th>
+												<th>状态</th>
+												<th>展示</th>
+												<th>下载</th>
+												<th>转化率</th>
+												<th>消费(元)</th>
+												<th>操作</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>腾讯视频</td>
+												<td>2016-11-21 20:43:52</td>
+												<td>暂停</td>
+												<td>30688989</td>
+												<td>1282282</td>
+												<td>4.18</td>
+												<td>769369.2</td>
+												<td><a class="detail" href="/home/detaillist?flg=p&amp;id=1">每日明细</a> |
+													<a href="/report/reportList?planId=1">效果报告</a> <a
+														href="javascript:updatePlanStatus(1,1)"><i
+															class="iconfont icon-bofang"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<td>腾讯视频</td>
+												<td>2016-11-21 20:43:52</td>
+												<td>暂停</td>
+												<td>30688989</td>
+												<td>1282282</td>
+												<td>4.18</td>
+												<td>769369.2</td>
+												<td><a class="detail" href="/home/detaillist?flg=p&amp;id=1">每日明细</a> |
+													<a href="/report/reportList?planId=1">效果报告</a> <a
+														href="javascript:updatePlanStatus(1,1)"><i
+															class="iconfont icon-bofang"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<td>腾讯视频</td>
+												<td>2016-11-21 20:43:52</td>
+												<td>暂停</td>
+												<td>30688989</td>
+												<td>1282282</td>
+												<td>4.18</td>
+												<td>769369.2</td>
+												<td><a class="detail" href="/home/detaillist?flg=p&amp;id=1">每日明细</a> |
+													<a href="/report/reportList?planId=1">效果报告</a> <a
+														href="javascript:updatePlanStatus(1,1)"><i
+															class="iconfont icon-bofang"></i></a>
+												</td>
+											</tr>
+										</tbody> -->
+									</table>
+									<div>
+										<!-- 分页
+										<div class="ft">
+											<div>
+												显示第 1 到第 5 条记录，总共 17 条记录每页显示
+												<div class="btn-group dropup">
+													<button type="button" class="btn btn-default">5</button>
+													<button type="button" class="btn btn-default dropdown-toggle"
+														data-toggle="dropdown" aria-haspopup="true"
+														aria-expanded="false">
+														<span class="caret"></span>
+														<span class="sr-only">Toggle Dropdown</span>
+													</button>
+													<ul class="dropdown-menu">
+														<li><a href="#">1</a></li>
+														<li><a href="#">2</a></li>
+														<li><a href="#">3</a></li>
+														<li><a href="#">4</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="rt">
+											<ul class="pagination m-0">
+												<li><a href="#">&laquo;</a></li>
+												<li><a href="#" class="active">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#">4</a></li>
+												<li><a href="#">5</a></li>
+												<li><a href="#">&raquo;</a></li>
+											</ul>
+										</div>
+										 end 分页 -->
+									</div>
+
+								</div>
+							</div>
+							<!-- END 广告计划表 -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END MAIN CONTENT -->
+
+			<!-- Modal -->
+			<div class="modal fade bs-example-modal-sm" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog modal-sm" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+									aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">角色管理</h4>
+						</div>
+						<div class="modal-body cl _modal">
+							<div class="col-md-12 m-b-20px form-inline">
+								<span>名称：</span>
+								<input type="text" class="form-control" id="exampleInputEmail3" placeholder="请输入用户名">
+							</div>
+							<div class="col-md-12 m-b-20px form-inline">
+								<span>编码：</span>
+								<input type="text" class="form-control" id="exampleInputEmail3" placeholder="请输入用户名">
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="btn btn-primary">保存</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END MAIN -->
+		<div class="clearfix"></div>
+		<footer>
+			<input type="hidden" id="footerCompany" th:value="${session.CUR_USER.company}">
+			<div class="container-fluid">
+				<p id="footer" class="copyright"></p>
+			</div>
+		</footer>
+	</div>
+	<!--关联用户 Modal -->
+		<div class="modal fade" id="relateUserModal" tabindex="-1"
+			role="dialog" aria-labelledby="relateUserModal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg"
+				role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">关联用户</h5>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid user-content">
+							<div class="row">
+								<div class="col-md-8">
+									<p class="title">用户列表</p>
+									<table id="userTable"></table>
+								</div>
+								<div class="col-md-4 selected-user">
+									<p class="title">选择关联</p>
+									<!-- <div class="user-form d-flex  justify-content-around ">
+                                          <input type="text"> <div class="btn btn-primary btn-sm">删除</div>
+                                      </div> -->
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary"
+							data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary" onclick="selectUser()">保存</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--关联功能 Modal -->
+            <div
+                class="modal fade"
+                id="relateFuncModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="relateFuncModal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered " role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">关联功能</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body func-content">
+                            <div class="container">
+                                <ul id="tree" class="ztree"></ul>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary" onclick="saveResource()">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 新增模态框 -->
+		<div class="modal fade" id="roleModal">
+			<div class="modal-dialog  modal-dialog-centered"
+				role="document">
+				<div class="modal-content">
+
+					<!-- 模态框头部 -->
+					<div class="modal-header">
+						<h4 class="modal-title">角色管理</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- 模态框主体 -->
+					<div class="modal-body">
+						<!-- 模态框内容.. -->
+
+						<form >
+                                <!-- <div class="form-group row">
+                                    <label class="col-md-2 col-form-label" for="role">角色:</label>
+                                    <div class="col-md-4">
+                                        <select type="text" class="form-control " id="role" placeholder="请选择用户角色">
+                                            <option value="">管理员</option>
+                                            <option value="">市场部</option>
+                                            <option value="">运营部</option>
+                                            <option value="">开发部</option>
+                                            <option value="">外联部</option>
+                                        </select>
+                                    </div>
+                                    <label class="col-md-2 col-form-label" for="valid">是否有效:</label>
+                                    <div class="col-md-4">
+
+                                        <select type="" class="form-control " id="valid" placeholder="选择是否有效">
+                                            <option value="有效">有效</option>
+                                            <option value="无效">
+                                                无效</option>
+                                        </select>
+
+                                    </div>
+                                </div> -->
+
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label" for="role">名称:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class=" form-control" id="role" placeholder="请输入角色名称"></div>
+                                </div>
+                                <div class="form-group row" id="code">
+                                    <label class=" col-sm-3 col-form-label" for="code">编码:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control " id="code" placeholder="请输入角色编码"></div>
+
+                                </div>
+
+                            </form>
+					</div>
+
+					<!-- 模态框底部 -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary"
+							data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary" onclick="saveRole()">保存</button>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+            
+	<!-- END WRAPPER -->
+
+</body>
+
+</html>

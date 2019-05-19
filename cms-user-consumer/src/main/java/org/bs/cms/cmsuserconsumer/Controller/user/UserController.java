@@ -33,6 +33,7 @@ public class UserController {
     //系统管理员查看所有管理员列表
     @GetMapping(value = "/query")
     public List<UserBean> sayHellow(){
+
         return userService.findAll();
     }
 
