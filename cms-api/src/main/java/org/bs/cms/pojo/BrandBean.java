@@ -9,6 +9,16 @@ public class BrandBean implements Serializable {
 
     private String brand_name;
 
+    private String brandLogo;
+
+    public String getBrandLogo() {
+        return brandLogo;
+    }
+
+    public void setBrandLogo(String brandLogo) {
+        this.brandLogo = brandLogo;
+    }
+
     public Integer getId() {
         return id;
     }

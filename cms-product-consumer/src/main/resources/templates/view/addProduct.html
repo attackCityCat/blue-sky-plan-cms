@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>新增商品</title>
+</head>
+<body>
+<div class="container-fluid">
+    <form id="productForm"  class="form-horizontal">
+        <div class="form-group">
+            <div class="col-xs-6">
+                <label for="inputName" class="col-sm-4 control-label">商品标题</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="inputName" name="productTitle">
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <label for="inputBrandId" class="col-sm-4 control-label">品牌</label>
+                <div class="col-sm-8">
+                    <select class="form-control" id="inputBrandId" name="brandId">
+                        <option>请选择</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-6">
+                <label for="inputPrice" class="col-sm-4 control-label">价格</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="inputPrice" name="productPrice">
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <label for="inputColorId" class="col-sm-4 control-label">颜色</label>
+                <div class="col-sm-8">
+                    <select class="form-control" id="inputColorId" name="colorId">
+                        <option>请选择</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-6">
+                <label for="inputProductStock" class="col-sm-4 control-label">库存</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="inputProductStock" name="productStock">
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <label for="inputSize" class="col-sm-4 control-label">尺寸</label>
+                <div class="col-sm-8">
+                    <select class="form-control" id="inputSize" name="sizeId">
+                        <option>请选择</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-6">
+                <label for="inputType" class="col-sm-4 control-label">类型</label>
+                <div class="col-sm-8">
+                    <div class="input-group" id="inputType">
+                        <select class="form-control" id="typeSelect" onchange="getLinkage('typeSelect2',this.value,'/product/findType');" name="btypeName">
+                            <option>请选择</option>
+                        </select>
+                        <div class="input-group-addon">
+                            <i class="glyphicon glyphicon-transfer"></i>
+                        </div>
+                        <select class="form-control" id="typeSelect2" name="typeId">
+                            <option>请选择</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row myrow">
+            <div class="col-md-2">
+                <label for="headImg">商品图片</label>
+            </div>
+            <div class="col-md-10" >
+                <input type="text" id="testimg" name="url" />
+                <input type="file"  class="projectfile"  name="imgg" id="headImg">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+<script type="text/javascript">
+
+
+</script>
+</html>
