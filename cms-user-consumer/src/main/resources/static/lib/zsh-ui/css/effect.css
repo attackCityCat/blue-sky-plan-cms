@@ -1,0 +1,86 @@
+.flex-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.layui-nav {
+    background: rgb(224,224,224);
+    color: rgba(16, 16, 16, 1);
+    height: 50px;
+}
+.effect-top {
+    margin-top: 10px;
+
+}
+.flex-even {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconfont {
+    margin-right: 5px;
+}
+
+#main {
+    margin-top: 10px;
+}
+
+.form-control {
+    outline: none;
+    border: 1px solid #4ED78F;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/*label i {*/
+   /*color:#4ED78F;*/
+/*}*/
+
+.static-table tr > th {
+    font-size: 14px;
+    vertical-align: bottom;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.static-table td {
+    font-size: 20px;
+    color: #ee7511;
+    background: #f9f9f9;
+    text-align: center;
+}
+.fixed-table-loading {
+    display: none;
+}
+.flex-even .form-control.date{
+    width: 120px;
+}
+.download {
+    border: 1px solid #4ED78F;
+}
+.download a{
+    text-decoration: none;
+}
+.tool {
+    text-align: right;
+}
+.table thead > tr > th {
+    background: #F7F7F7;
+}
+#table {
+    margin-top: 10px;
+}
+
+.chart-select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+}

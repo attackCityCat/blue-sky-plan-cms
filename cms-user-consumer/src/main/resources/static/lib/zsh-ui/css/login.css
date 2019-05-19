@@ -1,0 +1,70 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background: url('../images/bg.png')   no-repeat ;
+    background-size: cover;
+}
+
+/*.title{*/
+    /*margin: 30% auto;*/
+/*}*/
+.login {  
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 440px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.login-content {
+    width: 400px;
+    border: 1px solid #fff;
+    background-color:#fff ;
+}
+.img-container {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    overflow: hidden;
+    line-height: 130px;
+    text-align: center;
+}
+.img-container img{
+    width: 100%;
+    height: auto;
+}
+.login-title {
+    margin-top: 10px;
+    height: 73px;
+    line-height: 73px;
+    color: rgba(77, 77, 77, 1);
+    font-size: 30px;
+    text-align: center;
+    font-family: SourceHanSansSC-regular;
+}
+.layui-form{
+    margin: 0 50px;
+}
+.layui-form-item {
+    width: 300px;
+}
+
+.layui-input-block {
+    margin-left: 0;
+
+}
+.layui-input,
+.layui-textarea {
+    height: 40px;
+    border-radius: 8px;
+}
+.layui-btn {
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

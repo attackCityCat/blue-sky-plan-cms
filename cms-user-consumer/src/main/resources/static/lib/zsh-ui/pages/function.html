@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/font.css">
+        <link
+            rel="stylesheet"
+            href="../js/bootstrap-table/dist/bootstrap-table.min.css">
+        <link rel="stylesheet" href="../js/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../js/zTree/css/zTreeStyle.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/user.css">
+
+    </head>
+    <body>
+        <div class="action-page container-fluid">
+            <div class="user-center " style="margin-top: 0">
+                <nav class="user-nav navbar navbar-inverse">
+                    搜索条件
+                </nav>
+                <div class="form-inline">
+
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" name="function" placeholder="功能">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="valid" placeholder="是否有效">
+                    </div>
+
+                    <button class="btn btn-red">
+                        搜索</button>
+                </div>
+            </div>
+            <div class="user-bottom">
+                <div class="bottom-top flex-between">
+                    <span class="table-name">用户列表</span>
+                    <button class="btn  btn-red btn-sm" data-toggle="modal" data-target="#funModal">新增功能</button>
+                </div>
+                <table id="table"></table>
+            </div>
+
+            <!-- 模态框 -->
+            <div class="modal fade" id="funModal">
+                <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+
+                        <!-- 模态框头部 -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">账户管理</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- 模态框主体 -->
+                        <div class="modal-body row">
+                            <!-- 模态框内容.. -->
+                            <div class="col-md-5">
+                                <ul id="tree" class="ztree role-tree"></ul>
+                            </div>
+
+                            <div class="col-md-7">
+                                <form>
+                                    <div class="form-group row">
+                                        <label class="col-sm-4 col-form-label" for="name">节点名称:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class=" form-control" id="name" placeholder="请输入节点名称"></div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-4 col-form-label" for="id">节点id:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class=" form-control" id="id" placeholder="请输入节点id"></div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-4 col-form-label" for="creator">创建人:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class=" form-control" id="creator" placeholder="请输入创建人"></div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class=" col-sm-4 col-form-label" for="modifer">修改人:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control " id="modifer" placeholder="请输入修改人"></div>
+
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <!-- 模态框底部 -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">保存</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <script src="../js/jQuery-1.11.3.min.js"></script>
+            <script src="../js/propper.js"></script>
+            <script src="../js/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+            <script src="../js/bootstrap-table/dist/bootstrap-table.min.js"></script>
+            <script src="../js/zTree/js/jquery.ztree.core.js"></script>
+            <script src="../js/zTree/js/jquery.ztree.excheck.js"></script>
+            <script src="../js/zTree/js/jquery.ztree.exedit.js"></script>
+            <script src="../js/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+            <script type="text/javascript">
+                // iframe内部 页面跳转 导航页随之切换 var parent = $(parent.window.document); parent
+                // .find('dd')     .removeClass('layui-this');
+                //
+                // parent     .find('.func')     .addClass('layui-this');
+
+                var data = [
+                    {
+                        "advertPlanId": 1,
+                        "title": "腾讯视频",
+                        "beginTime": 1479657600000,
+                        "endTime": 1609344000000,
+                        "budget": "0",
+                        "status": "1",
+                        "dissum": 30688989,
+                        "clisum": 0,
+                        "loadsum": 1282282,
+                        "loadrate": 4.18,
+                        "clirate": 0,
+                        "totalConsume": 769369.2,
+                        "creator": "tencent",
+                        "creatorId": "4",
+                        "createTime": 1479732232000,
+                        "modifer": "tencent",
+                        "modiferId": "4",
+                        "modifyTime": 1481575452000,
+                        "bidding": 0
+                    }, {
+                        "advertPlanId": 2,
+                        "title": "腾讯新闻",
+                        "beginTime": 1479657600000,
+                        "endTime": 1609344000000,
+                        "budget": "0",
+                        "status": "0",
+                        "dissum": 1135153536,
+                        "clisum": 0,
+                        "loadsum": 45450700,
+                        "loadrate": 4,
+                        "clirate": 0,
+                        "totalConsume": 31751219.4,
+                        "creator": "tencent",
+                        "creatorId": "4",
+                        "createTime": 1479732806000,
+                        "modifyTime": 1481574473000,
+                        "bidding": 0
+                    }, {
+                        "advertPlanId": 3,
+                        "title": "腾讯快报",
+                        "beginTime": 1479657600000,
+                        "endTime": 1609344000000,
+                        "budget": "0",
+                        "status": "1",
+                        "dissum": 353381399,
+                        "clisum": 0,
+                        "loadsum": 13891103,
+                        "loadrate": 3.93,
+                        "clirate": 0,
+                        "totalConsume": 12453637.8,
+                        "creator": "tencent",
+                        "creatorId": "4",
+                        "createTime": 1479732867000,
+                        "modifyTime": 1481574480000,
+                        "bidding": 0
+                    }
+                ];
+                $('#table').bootstrapTable({
+                    //url:'http://192.168.6.188:9010/plan/list',
+                    data: data,
+                    pagination: true,
+                    queryParams: function (params) { // 请求服务器数据时发送的参数，可以在这里添加额外的查询参数，返回false则终止请求
+                        return {
+                            limit: 1, // 每页要显示的数据条数
+                            offset: 1, // 每页显示数据的开始行号
+                        }
+                    }, //传递参数
+                    pageNumber: 1, //初始化加载第一页，默认第一页
+                    pageSize: 1, //每页的记录行数（*）
+                    pageList: [
+                        10, 25, 50, 100, 'all'
+                    ], //可供选择的每页的行数（*）
+
+                    showRefresh: false, //是否显示刷新按钮
+
+                    columns: [
+                        {
+                            field: 'advertPlanId',
+                            title: '菜单名称'
+                        }, {
+                            field: 'plan',
+                            title: '是否有效'
+                        }, {
+                            field: 'status',
+                            title: '修改时间'
+                        }, {
+                            field: 'url',
+                            title: 'url'
+                        }, {
+                            field: 'budget',
+                            title: '创建人'
+                        }, {
+                            field: 'display',
+                            title: '修改人'
+                        }, {
+                            field: 'loadsum',
+                            title: '操作',
+                            formatter: function (value, row, index) {
+
+                                return [
+                                    '<span class="like display">',
+                                    '显示',
+                                    '</span>  ',
+                                    '<span class="like hide" >',
+                                    '隐藏',
+                                    '</span>  '
+                                ].join('');
+                            }
+                        }
+                    ]
+                });
+
+                // 树形图例子 数据
+                var zNodes = [
+                    {
+                        id: 1,
+                        pId: 0,
+                        name: "父节点1",
+                        title: "",
+                        // checked: true, open: true
+                    }, {
+                        id: 11,
+                        pId: 1,
+                        name: "父节点11",
+                        title: ""
+                    }, {
+                        id: 111,
+                        pId: 11,
+                        name: "叶子节点111",
+                        title: "",
+                        isHidden: true
+                    }, {
+                        id: 112,
+                        pId: 11,
+                        name: "叶子节点112",
+                        title: ""
+                    }, {
+                        id: 113,
+                        pId: 11,
+                        name: "叶子节点113",
+                        title: ""
+                    }, {
+                        id: 12,
+                        pId: 1,
+                        name: "父节点12",
+                        title: "",
+                        isHidden: true
+                    }, {
+                        id: 2,
+                        pId: 0,
+                        name: "父节点2",
+                        title: ""
+                    }, {
+                        id: 21,
+                        pId: 2,
+                        name: "父节点21",
+                        title: "",
+                        isHidden: true
+                    }, {
+                        id: 221,
+                        pId: 22,
+                        name: "叶子节点221",
+                        title: "",
+                        chkDisabled: true
+                    }
+                ];
+
+                var setting = {
+
+                    data: {
+                        key: {
+                            title: "title"
+                        },
+                        simpleData: {
+                            enable: true
+                        }
+                    },
+                    edit: {
+                        enable: true,
+                        showRemoveBtn: false,
+                        showRenameBtn: false,
+                        drag: {
+                            autoExpandTrigger: true,
+                            isCopy: false,
+                            isMove: true
+                        }
+                    },
+                    callback: {
+                        beforeClick: beforeClick
+                    }
+                };
+
+                //点击的回掉函数
+                function beforeClick(treeId, treeNode, clickFlag) {
+
+                    var zTree = $
+                        .fn
+                        .zTree
+                        .getZTreeObj("tree");
+
+                    if(treeNode.tId!=='tree_3') return false;
+
+                }
+
+                $
+                    .fn
+                    .zTree
+                    .init($("#tree"), setting, zNodes);
+
+                var treeObj = $
+                    .fn
+                    .zTree
+                    .getZTreeObj("tree");
+                treeObj.expandAll(true);
+             
+                $('#tree_3_a').addClass('curSelectedNode');
+              
+            </script>
+        </body>
+    </html>

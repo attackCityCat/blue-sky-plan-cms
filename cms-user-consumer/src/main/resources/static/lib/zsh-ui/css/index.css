@@ -1,0 +1,129 @@
+
+
+.layui-layout-body{
+    min-width: 1024px;
+}
+.container-fluid{
+   padding: 0;
+}
+
+.layui-layout-admin  .layui-header{
+    background: linear-gradient(to right ,#041f32, #1b4460);
+}
+.header-title{
+    line-height: 60px;
+}
+.header-title .system{
+margin-left:5px;	
+color:#fff ;
+font-size: 18px;
+font-family: SourceHanSansSC-regular;
+}
+.header-title img{
+    width: 30px;
+    height: auto;
+    margin: 0
+}
+.user-name{
+line-height: 60px;
+color: rgba(16, 16, 16, 1);
+font-size: 16px;
+text-align: center;
+font-family: SourceHanSansSC-regular;
+}
+
+.layui-nav .layui-nav-item .exit{
+line-height: 60px;
+color: rgba(255, 87, 34, 1);
+font-size: 16px;
+}
+layui-side .layui-nav{
+    background-color: rgba(247, 247, 247, 1);
+    width:130px;
+}
+
+.exit i{
+    font-weight: 600;
+}
+.layui-nav .layui-this:after, .layui-nav-bar{
+    width: 0;
+}
+.side-bar .layui-this a{
+color:#fff !important;
+}
+.layui-nav .layui-nav-item .exit:hover{
+    color: rgba(255, 87, 34, 1);
+}
+.layui-nav .layui-nav-item a:hover{
+    color: rgba(16, 16, 16, 1) ;
+}
+.side-bar{
+width:130px;	
+background-color: #0a293d;
+padding-top: 20px;
+box-sizing: border-box;
+/* text-align: center; */
+}
+
+.side-bar .layui-nav-item>a{
+    font-size: 14px;
+    color: #fff;
+}
+.layui-nav-item{
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+}
+.layui-this>a{
+    background: rgba(245, 93, 84, 1);
+}
+.layui-nav-itemed .layui-nav-child dd{
+   /* padding-left: 30px; */
+   text-align: center;
+}
+.layui-nav-item .iconfont{
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.content{
+left:130px;	
+box-sizing: border-box;
+}
+
+.footer{
+left:130px!important;	
+ min-width: 900px;
+font-size: 16px;
+text-align: center;
+}
+
+.layui-table-view{
+    margin-top: 0 !important;
+}
+
+#iframe{
+    width:100%;
+    min-width: 900px;
+    height: calc(100% - 5px);
+}
+.layui-layout-admin .layui-side{
+	width:130px;
+}
+.layui-nav .layui-nav-item a:hover{
+	color:#678598
+} 
+.header-title li{
+	display: flex;
+    align-items: center;
+}
+.layui-nav-img {
+    width: 20px;
+    height: 20px;
+}
+.layui-nav-itemed > .layui-nav-child{
+	background-color: rgb(6, 24, 37)!important
+}
+.layui-nav-tree .layui-nav-child a {
+     color: rgb(70, 95, 113);
+}

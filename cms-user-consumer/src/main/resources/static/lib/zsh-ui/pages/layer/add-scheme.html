@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../../js/zTree/css/zTreeStyle.css">
+        <link rel="stylesheet" href="../../js/layui/css/layui.css">
+        <link rel="stylesheet" href="../../css/home.css">
+
+    </head>
+    <body>
+        <div class="add-page scheme-page ">
+            <div class="title">广告方案</div>
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">计划名称</label>
+                    <div class="layui-input-block">
+                        <select name="plan-id" id="plan-id" class="adCreativity">
+                            <option value="">请选择</option>
+                            <option value="2">腾讯新闻</option>
+                            <option value="5">天天快报推广</option>
+                            <option value="6">腾讯wifi管家</option>
+                            <option value="8">火山小视频投放</option>
+                            <option value="9">西瓜视频投放</option>
+                            <option value="10">今日头条投放</option>
+                            <option value="13">yy直播</option>
+                            <option value="14">易车投放</option>
+                            <option value="15">钠镁股票</option>
+                            <option value="16">腾讯手机管家推广</option>
+                            <option value="17">微视推广</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item inline">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">方案名称</label>
+                        <div class="layui-input-block">
+                            <input
+                                type="text"
+                                name="ad"
+                                required
+                                lay-verify="required"
+                                placeholder=""
+                                autocomplete="off"
+                                value="admin"
+                                class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label">每天预算</label>
+                        <div class="layui-input-block">
+                            <input
+                                type="text"
+                                name="title"
+                                required
+                                lay-verify="required"
+                                placeholder="输入0为不限   （元）"
+                                autocomplete="off"
+                                class="layui-input">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-form-item inline">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">开始日期</label>
+                        <div class="layui-input-block">
+                            <input
+                                type="text"
+                                name="startDate"
+                                id="startDate"
+                                placeholder="请选择日期"
+                                required
+                                lay-verify="required"
+                                autocomplete="off"
+                                class="layui-input date">
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label">结束日期</label>
+                        <div class="layui-input-block">
+                            <input
+                                type="text"
+                                name="endDate"
+                                id="endDate"
+                                placeholder="请选择日期"
+                                required
+                                lay-verify="required"
+                                autocomplete="off"
+                                class="layui-input date">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-form-item inline">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">竞价</label>
+                        <div class="layui-input-block">
+                            <input
+                                type="number"
+                                name="bid"
+                                required
+                                lay-verify="required"
+                                placeholder="(元）"
+                                autocomplete="off"
+                                class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label">计费类型</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="radio1" value="CPM" title="CPM">
+                            <input type="radio" name="radio1" value="CPD" title="CPD" checked>
+                            <input type="radio" name="radio1" value="CPC" title="CPC">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-form-item inline">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">状态</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="radio2" value="正常" title="正常">
+                            <input type="radio" name="radio2" value="停止" title="停止" checked>
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label">是否备用</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="radio3" value="是" title="是">
+                            <input type="radio" name="radio3" value="否" title="否" checked>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-form-item inline">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">竞价类型</label>
+                        <div class="layui-input-block">
+                            <input
+                                type="radio"
+                                name="radio4"
+                                value="竞价交易
+                                    "
+                                title="竞价交易
+                                    ">
+                            <input type="radio" name="radio4" value="首选交易" title="首选交易" checked>
+                        </div>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label">终端类型</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="terminal" value="仅APP" title="仅APP">
+                            <input type="radio" name="terminal" value="仅PC网页" title="仅PC网页">
+                            <input type="radio" name="terminal" value="仅移动网页" title="仅移动网页" checked>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" layui-tab layui-tab-card" lay-filter="tab">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">推广时段</li>
+                        <li>推广地域</li>
+                        <li>域名定向</li>
+                        <li>IP设置</li>
+                        <li>操作系统</li>
+                        <li>投放频次</li>
+                        <li>APP定向</li>
+                        <li>浏览器定向</li>
+                    </ul>
+                    <div class="layui-tab-content">
+
+                        <div class="layui-tab-item  layui-show">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">设置推广时段</label>
+                                <div class="layui-input-block">
+                                    <input
+                                        checked
+                                        type="radio"
+                                        name="times"
+                                        value="不限 "
+                                        title="不限
+                                                ">
+                                    <input type="radio" name="times" value="选择推广时段" title="选择推广时段">
+                                </div>
+                            </div>
+                            <div class="bottom layui-hide">
+                                <p>共选择<span class="total">168</span>小时</p>
+                                <table class="layui-table " id="tab-table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                全部</th>
+                                            <th>0</th>
+                                            <th>1</th>
+                                            <th>2</th>
+                                            <th>3</th>
+                                            <th>4</th>
+                                            <th>5</th>
+                                            <th>6</th>
+                                            <th>7</th>
+                                            <th>8</th>
+                                            <th>9</th>
+                                            <th>10</th>
+                                            <th>11</th>
+                                            <th>12</th>
+                                            <th>13</th>
+                                            <th>14</th>
+                                            <th>15</th>
+                                            <th>16</th>
+
+                                            <th>17</th>
+                                            <th>18</th>
+                                            <th>19</th>
+                                            <th>20</th>
+                                            <th>21</th>
+                                            <th>22</th>
+                                            <th>23</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="week">周一</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <t >
+                                            <td class="week">周二</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="week">周三</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="week">周四</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="week">周五</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="week">周六</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="week">周天</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="layui-tab-item">
+                            <div class="layui-tab-item  layui-show">
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">设置推广地域</label>
+                                    <div class="layui-input-block">
+                                        <input
+                                            checked
+                                            type="radio"
+                                            name="area"
+                                            value="不限 "
+                                            title="不限
+                                                            ">
+                                        <input type="radio" name="area" value="选择推广地域" title="选择推广地域">
+                                    </div>
+                                </div>
+                                <div class="bottom layui-hide">
+                                    <label>中国</label>
+                                    <ul id="tree" class="ztree"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-tab-item">
+                            <div class="layui-tab layui-tab-card">
+                                <ul class="layui-tab-title">
+                                    <li class="layui-this">黑名单</li>
+                                    <li>白名单</li>
+
+                                </ul>
+                                <div class="layui-tab-content" style="height: 100px;">
+                                    <div class="layui-tab-item layui-show">
+                                        <textarea name="desc" placeholder="如有多个白名单向请按回车键" class="layui-textarea"></textarea>
+                                    </div>
+                                    <div class="layui-tab-item">
+                                        <textarea name="desc" placeholder="如有多个黑名单向请按回车键" class="layui-textarea"></textarea>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-tab-item">
+                            <div class="layui-tab layui-tab-card">
+                                <ul class="layui-tab-title">
+                                    <li class="layui-this">黑名单</li>
+                                    <li>白名单</li>
+
+                                </ul>
+                                <div class="layui-tab-content" style="height: 100px;">
+                                    <div class="layui-tab-item layui-show">
+                                        <textarea name="desc" placeholder="如有多个黑名单向请按回车键" class="layui-textarea"></textarea>
+                                    </div>
+                                    <div class="layui-tab-item">
+                                        <textarea name="desc" placeholder="如有多个白名单向请按回车键" class="layui-textarea"></textarea>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-tab-item">
+
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">设置操作系统</label>
+                                <div class="layui-input-block">
+                                    <input checked type="radio" name="system" value="不限 " title="不限">
+                                    <input type="radio" name="system" value="选择操作系统" title="选择操作系统">
+                                </div>
+                            </div>
+                            <div class="bottom layui-hide">
+                                <div class="inline flex-between">
+
+                                    <input type="checkbox" name="ios" title="ios" lay-skin="primary">
+
+                                    <input
+                                        type="checkbox"
+                                        name="windows-phone"
+                                        title="Windows Phone"
+                                        lay-skin="primary">
+
+                                    <input type="checkbox" name="android" title="Android" lay-skin="primary">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="layui-tab-item">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">设置投放频次</label>
+                                <div class="layui-input-block">
+                                    <input
+                                        checked
+                                        type="radio"
+                                        name="rate"
+                                        value="不限 "
+                                        title="不限
+                                                                ">
+                                    <input type="radio" name="rate" value="选择投放频次" title="选择投放频次">
+                                </div>
+                            </div>
+                            <div class="bottom layui-hide">
+                                <div class="layui-form-item inline">
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">每天展示总量</label>
+                                        <div class="layui-input-block">
+                                            <input
+                                                type="text"
+                                                name="disnumd"
+                                                required
+                                                lay-verify="required"
+                                                placeholder=""
+                                                autocomplete="off"
+                                                value="0"
+                                                class="layui-input">
+                                        </div>
+                                    </div>
+
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">每天展示量(单IP)</label>
+                                        <div class="layui-input-block">
+                                            <input
+                                                type="text"
+                                                name="disnumdip"
+                                                required
+                                                lay-verify="required"
+                                                placeholder="0"
+                                                autocomplete="off"
+                                                class="layui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item inline">
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">每天展示量(单用户)</label>
+                                        <div class="layui-input-block">
+                                            <input
+                                                type="text"
+                                                name="disnumdu"
+                                                required
+                                                lay-verify="required"
+                                                placeholder=""
+                                                autocomplete="off"
+                                                value="0"
+                                                class="layui-input">
+                                        </div>
+                                    </div>
+
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">单IP展示总量</label>
+                                        <div class="layui-input-block">
+                                            <input
+                                                type="text"
+                                                name="discountip"
+                                                required
+                                                lay-verify="required"
+                                                placeholder="0"
+                                                autocomplete="off"
+                                                class="layui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item inline">
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">每天点击总量</label>
+                                        <div class="layui-input-block">
+                                            <input
+                                                type="text"
+                                                name="clicountd"
+                                                required
+                                                lay-verify="required"
+                                                placeholder=""
+                                                autocomplete="off"
+                                                value="0"
+                                                class="layui-input">
+                                        </div>
+                                    </div>
+
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">单IP点击总量</label>
+                                        <div class="layui-input-block">
+                                            <input
+                                                type="text"
+                                                name="clicountip"
+                                                required
+                                                lay-verify="required"
+                                                placeholder="0"
+                                                autocomplete="off"
+                                                class="layui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-tab-item">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">设置APP定向</label>
+                            </div>
+                            <div class="">
+                                <textarea
+                                    class="layui-textarea"
+                                    id="appInfo_5"
+                                    name="app"
+                                    placeholder="如有多个APP定向请按回车键"></textarea>
+                            </div>
+                        </div>
+                        <div class="layui-tab-item">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">设置浏览器定向</label>
+                                <div class="layui-input-block">
+                                    <input
+                                        checked
+                                        type="radio"
+                                        name="browser"
+                                        value="不限 "
+                                        title="不限
+                                                                    ">
+                                    <input type="radio" name="browser" value="选择浏览器定向" title="选择浏览器定向">
+                                </div>
+                            </div>
+                            <div class="bottom layui-hide">
+                                <div class="inline flex-between">
+                                    <input type="checkbox" name="" title="Chrome" lay-skin="primary">
+                                    <input type="checkbox" name="" title="Firefox" lay-skin="primary">
+                                    <input type="checkbox" name="" title="IE" lay-skin="primary">
+                                    <input type="checkbox" name="" title="Safari" lay-skin="primary">
+                                    <input type="checkbox" name="" title="Maxthon" lay-skin="primary">
+                                </div>
+                                <div class="inline flex-between">
+                                    <input type="checkbox" name="" title="2345" lay-skin="primary">
+                                    <input type="checkbox" name="" title="360" lay-skin="primary">
+                                    <input type="checkbox" name="" title="ShouGou" lay-skin="primary">
+                                    <input type="checkbox" name="" title="LieBao" lay-skin="primary">
+                                    <input type="checkbox" name="" title="QQ" lay-skin="primary">
+                                </div>
+                                <div class="inline flex-between">
+                                    <input type="checkbox" name="" title="JC" lay-skin="primary">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="submit">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo">保存</button>
+                        <button type="reset" class="layui-btn layui-btn-primary cancel">取消</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="../../js/jQuery-1.11.3.min.js"></script>
+        <script src="../../js/zTree/js/jquery.ztree.core.js"></script>
+        <script src="../../js/zTree/js/jquery.ztree.excheck.js"></script>
+        <script src="../../js/layui/layui.js"></script>
+        <script >
+            layui
+                .use('form', function () {
+                    var form = layui.form;
+
+                    //监听提交
+                    form.on('submit(formDemo)', function (data) {
+                        layer.msg(JSON.stringify(data.field));
+                        return false;
+                    });
+
+                    form.on('radio', function () {
+                        var val = this
+                            .value
+                            .trim();
+                        if (val == '不限') {
+                            $('.bottom').addClass('layui-hide')
+                        } else if (val.indexOf('选择') > -1) {
+                            //bottom类隐藏
+                            $(this)
+                                .parents('.layui-form-item')
+                                .next()
+                                .removeClass('layui-hide')
+                        }
+                    });
+
+                });
+            //日期插件
+            layui.use('laydate', function () {
+                var laydate = layui.laydate;
+
+                //执行一个laydate实例
+                lay('.date').each(function () {
+                    laydate.render({elem: this, trigger: 'click'});
+                });
+            });
+            //选项卡插件
+            layui.use('element', function () {
+                var element = layui.element;
+            });
+
+            //表格小时计数
+            $('td:not(.week)').click(function () {
+                $(this).toggleClass('selected');
+                var len = $('.selected').length;
+                var total = $('td').length - 7 - len;
+                $('.total').html(total);
+            })
+
+            // 树形图例子 数据
+            var zNodes = [
+                {
+                    id: 1,
+                    pId: 0,
+                    name: "父节点1",
+                    title: "",
+                    checked: true,
+                    open: true
+                }, {
+                    id: 11,
+                    pId: 1,
+                    name: "父节点11",
+                    title: "",
+                    checked: true
+                }, {
+                    id: 111,
+                    pId: 11,
+                    name: "叶子节点111",
+                    title: "",
+                    checked: true,
+                    isHidden: true
+                }, {
+                    id: 112,
+                    pId: 11,
+                    name: "叶子节点112",
+                    title: ""
+                }, {
+                    id: 113,
+                    pId: 11,
+                    name: "叶子节点113",
+                    title: ""
+                }, {
+                    id: 12,
+                    pId: 1,
+                    name: "父节点12",
+                    title: "",
+                    isHidden: true
+                }, {
+                    id: 2,
+                    pId: 0,
+                    name: "父节点2",
+                    title: ""
+                }, {
+                    id: 21,
+                    pId: 2,
+                    name: "父节点21",
+                    title: "",
+                    isHidden: true
+                }
+            ];
+
+            var setting = {
+                view: {
+                    selectedMulti: false,
+                    showIcon: false,
+                    fontCss: {
+                        "font-size": "16px",
+                        'font-family': '微软雅黑'
+                    }
+
+                },
+                check: {
+                    enable: true
+                },
+                data: {
+                    key: {
+                        title: "title"
+                    },
+                    simpleData: {
+                        enable: true
+                    }
+                },
+                // callback: {     onCheck: onCheck }
+            };
+
+            function hideNodes() {
+                var zTree = $
+                        .fn
+                        .zTree
+                        .getZTreeObj("treeDemo"),
+                    nodes = zTree.getSelectedNodes();
+                if (nodes.length == 0) {
+                    alert("请至少选择一个节点");
+                    return;
+                }
+                zTree.hideNodes(nodes);
+            }
+
+            function showNodes() {
+                var zTree = $
+                        .fn
+                        .zTree
+                        .getZTreeObj("treeDemo"),
+                    nodes = zTree.getNodesByParam("isHidden", true);
+                zTree.showNodes(nodes);
+            }
+            $
+                .fn
+                .zTree
+                .init($("#tree"), setting, zNodes);
+            $("#hideNodesBtn").bind("click", {
+                type: "rename"
+            }, hideNodes);
+            $("#showNodesBtn").bind("click", {
+                type: "icon"
+            }, showNodes);
+        </script>
+    </body>
+</html>
