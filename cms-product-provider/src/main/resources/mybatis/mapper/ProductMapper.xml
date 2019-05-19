@@ -1,5 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="org.bs.cms.mapper.product.ProductMapper" >
-
+    <!--新增商品列表-->
+    <insert id="saveProduct" parameterType="org.bs.cms.pojo.ProductBean">
+        <selectKey keyProperty="id" order="AFTER" resultType="int">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into
+            cms_product(
+            product_title,
+            product_price,
+            product_stock,
+            product_time,
+            product_sales,
+            product_comments,
+            product_concern,
+            brand_id,
+            type_id,
+            size_id,
+            product_state,
+            color_id,
+            store_id,
+            Shelf_time,
+            product_audit,
+            product_selling)
+            values (
+            #{productTitle},
+            #{productPrice},
+            #{productStock},
+            sysdate(),
+            0,
+            0,
+            0,
+            #{brandId},
+            #{typeId},
+            #{sizeId},
+            1,
+            #{colorId},
+            1,
+            sysdate(),
+            1,
+            1
+            )
+    </insert>
 </mapper>

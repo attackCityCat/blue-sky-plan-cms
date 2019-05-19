@@ -6,7 +6,7 @@ import java.util.Date;
 public class ProductBean implements Serializable {
     private static final long serialVersionUID = -3983918599268670964L;
 
-    private Integer product_id;  // 主键ID
+    private Integer id;  // 主键ID
 
     private String productTitle; // 商品标题
 
@@ -14,7 +14,9 @@ public class ProductBean implements Serializable {
 
     private  Integer productStock; // 商品库存
 
-    private String productTime;  // 上架时间
+    private String productTime;  // 添加商品时间
+
+    private String ShelfTime;  // 商品上架时间
 
     private Integer productState;  // 是否上下架  0 为上架  1为下架  默认为0
 
@@ -24,30 +26,98 @@ public class ProductBean implements Serializable {
 
     private Integer productConcern;  // 累计关注
 
-    private Integer brand_id;   // 品牌ID  外键
+    private Integer brandId;   // 品牌ID  外键
 
     private String brandName; // 品牌名称
 
-    private Integer type_id;  // 类型外键  ID
+    private String brandLogo;  // 品牌Logo  临时字段
+
+    private String url; // 商品图片  临时字段
+
+    private Integer typeId;  // 类型外键  ID
 
     private String typeName;  // 类型名称
 
-    private Integer size_id;  // 尺寸大小ID
+    private String stypeName; // 类型小类
+
+    private String btypeName; // 类型大类
+
+    private Integer productAudit; // 审核状态  0 为审核 1为未审核  默认为1
+
+    private Integer productSelling;  //热卖设置   0为热卖  1为未热卖 默认为1
+
+    public String getBrandLogo() {
+        return brandLogo;
+    }
+
+    public void setBrandLogo(String brandLogo) {
+        this.brandLogo = brandLogo;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public Integer getProductSelling() {
+        return productSelling;
+    }
+
+    public void setProductSelling(Integer productSelling) {
+        this.productSelling = productSelling;
+    }
+
+    public Integer getProductAudit() {
+        return productAudit;
+    }
+
+    public void setProductAudit(Integer productAudit) {
+        this.productAudit = productAudit;
+    }
+
+    public String getShelfTime() {
+        return ShelfTime;
+    }
+
+    public void setShelfTime(String shelfTime) {
+        ShelfTime = shelfTime;
+    }
+
+    public String getStypeName() {
+        return stypeName;
+    }
+
+    public void setStypeName(String stypeName) {
+        this.stypeName = stypeName;
+    }
+
+    public String getBtypeName() {
+        return btypeName;
+    }
+
+    public void setBtypeName(String btypeName) {
+        this.btypeName = btypeName;
+    }
+
+    private Integer sizeId;  // 尺寸大小ID
 
     private String sizeName;  // 尺寸名称
 
-    private Integer color_id; // 商品外键ID
+    private Integer colorId; // 商品外键ID
 
     private String colorName; // 商品颜色
 
     private String headImg;  // 商品logo
 
-    public Integer getProduct_id() {
-        return product_id;
+    public Integer getId() {
+        return id;
     }
 
-    public void setProduct_id(Integer product_id) {
-        this.product_id = product_id;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getProductTitle() {
@@ -114,12 +184,12 @@ public class ProductBean implements Serializable {
         this.productConcern = productConcern;
     }
 
-    public Integer getBrand_id() {
-        return brand_id;
+    public Integer getBrandId() {
+        return brandId;
     }
 
-    public void setBrand_id(Integer brand_id) {
-        this.brand_id = brand_id;
+    public void setBrandId(Integer brandId) {
+        this.brandId = brandId;
     }
 
     public String getBrandName() {
@@ -130,12 +200,12 @@ public class ProductBean implements Serializable {
         this.brandName = brandName;
     }
 
-    public Integer getType_id() {
-        return type_id;
+    public Integer getTypeId() {
+        return typeId;
     }
 
-    public void setType_id(Integer type_id) {
-        this.type_id = type_id;
+    public void setTypeId(Integer typeId) {
+        this.typeId = typeId;
     }
 
     public String getTypeName() {
@@ -146,12 +216,12 @@ public class ProductBean implements Serializable {
         this.typeName = typeName;
     }
 
-    public Integer getSize_id() {
-        return size_id;
+    public Integer getSizeId() {
+        return sizeId;
     }
 
-    public void setSize_id(Integer size_id) {
-        this.size_id = size_id;
+    public void setSizeId(Integer sizeId) {
+        this.sizeId = sizeId;
     }
 
     public String getSizeName() {
@@ -162,12 +232,12 @@ public class ProductBean implements Serializable {
         this.sizeName = sizeName;
     }
 
-    public Integer getColor_id() {
-        return color_id;
+    public Integer getColorId() {
+        return colorId;
     }
 
-    public void setColor_id(Integer color_id) {
-        this.color_id = color_id;
+    public void setColorId(Integer colorId) {
+        this.colorId = colorId;
     }
 
     public String getColorName() {
