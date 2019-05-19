@@ -38,7 +38,7 @@ function loadMenu() {
 	var html = "";
 	$
 			.ajax({
-				url : '/resource/menuTree',
+				url : '/findTree',
 				data : {},
 				async : false,
 				success : function(data) {
