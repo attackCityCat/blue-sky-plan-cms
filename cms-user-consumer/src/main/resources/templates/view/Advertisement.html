@@ -94,7 +94,7 @@
                         <i class="icon-submenu lnr lnr-chevron-left"></i></a>
                         <div id="subPages2" class="" aria-expanded="true">
                             <ul class="nav">
-                                <li><a href="toShopping" class="">商品管理</a></li>
+                                <li><a href="http://127.0.0.1:8184/page/toMain2" class="">商品管理</a></li>
                             </ul>
                         </div>
                     </li>
@@ -220,4 +220,41 @@
 </div>
 
 </body>
+
+<script type="text/javascript">
+    // 初始化加载
+    $(function(){
+        initMyTable();
+    })
+
+    // 页面加载表格
+    function initMyTable(){
+        $('#myTable').bootstrapTable({
+            url:'/product/findProductList',
+            toolbar:'#toolbar',
+            columns:[
+                {checkbox:true},
+                {field:'productTitle',title:'标题',width:200},
+                {field:'productPrice',title:'价格',width:200},
+                {field:'productStock',title:'库存',width:200},
+                {field:'productTime',title:'上架时间',width:200},
+                {field:'productSales',title:'销量',width:200},
+                {field:'productComments',title:'累计评论',width:200},
+                {field:'productConcern',title:'关注量',width:200},
+                {field:'productState',title:'状态',formatter:function(value,row,index){
+                        return value == 1 ? "未上架" : "上架";
+                    },width:200}
+            ]
+        })
+    }
+    /*// 时间插件
+    $('.date').datetimepicker({
+        language: 'zh-CN',//显示中文
+        format: 'yyyy-mm-dd hh:ii:ss',//显示格式
+        minView: "month",//设置只显示到月份
+        initialDate: new Date(),//初始化当前日期
+        autoclose: true,//选中自动关闭
+        todayBtn: true//显示今日按钮
+    });*/
+</script>
 </html>
