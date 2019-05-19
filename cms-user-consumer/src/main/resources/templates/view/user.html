@@ -21,7 +21,20 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<!-- ICONS -->
 	<link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/img/lantian.png">
+	<!-- Javascript -->
+	<script src="/lib/jquery/jquery.min.js"></script>
+	<script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/lib/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="/lib/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="/lib/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+	<script src="/lib/chartist/js/chartist.min.js"></script>
+	<script src="/js/klorofil-common.js"></script>
+	<script src="/js/user/user.js"></script>
+	<!-- <script src="../static/lib/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> -->
+	<script  src="/lib/zsh-ui/js/bootstrap-4.0.0-dist/js/bootstrap-table.min.js"></script>
+	<script src ="/lib/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+
 </head>
 
 <body>
@@ -63,7 +76,7 @@
 			<div class="sidebar-scroll">
 				<nav>
 					<ul class="nav" id="menuTree">
-						<li><a href="view/index.html"><i class="lnr lnr-home"></i> <span>首页</span></a></li>
+						<li><a href="toAdv"><i class="lnr lnr-home"></i> <span>首页</span></a></li>
 						<li><a href="reportList.html"><i class="lnr lnr-file-empty"></i> <span>效果报告</span></a>
 						</li>
 						<li>
@@ -73,14 +86,21 @@
 								<i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="subPages" class="active" aria-expanded="true">
 								<ul class="nav">
-									<li><a href="userList.html" class="active">用户管理</a></li>
-									<li><a href="role.html" class="">角色管理</a></li>
-									<li><a href="function-manage.html" class="">功能管理</a></li>
-									<li><a href="company.html" class="">公司管理</a></li>
+									<li><a href="toUser" class="active">用户管理</a></li>
+									<li><a href="toRole" class="">角色管理</a></li>
 								</ul>
 							</div>
 						</li>
-						<li><a href="about-me.html" class=""><i class="lnr lnr-users"></i> <span>关于我们</span></a></li>
+						<li><a href="#subPages" data-toggle="collapse" class="active" aria-expanded="true"><i class=" lnr
+								lnr-lock"></i>
+							<span>店铺管理</span>
+							<i class="icon-submenu lnr lnr-chevron-left"></i></a>
+							<div id="subPages2" class="active" aria-expanded="true">
+								<ul class="nav">
+									<li><a href="toShopping" class="">商品管理</a></li>
+								</ul>
+							</div>
+						</li>
 						<li><a href="data-maintain.html" class=""><i class="lnr lnr-screen"></i> <span>数据维护</span></a>
 						</li>
 					</ul>
@@ -165,7 +185,7 @@
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
 									aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">添加数据</h4>
+							<h4 class="modal-title" id="myModalLabel">添加用户</h4>
 						</div>
 						<div class="modal-body cl">
 							<!-- <div class="col-md-12 form-inline m-b-20px">
@@ -210,24 +230,16 @@
 								<input type="text" class="form-control" id="username" placeholder="请输入用户名">
 							</div>
 							<div class="col-md-6 form-inline m-b-20px">
-								<span>昵称：</span>
-								<input type="text" class="form-control" id="nickrname" placeholder="请输入昵称">
+								<span>账号：</span>
+								<input type="text" class="form-control" id="useraccount" placeholder="请输入账号">
 							</div>
 							<div class="col-md-6 form-inline m-b-20px">
 								<span>密码：</span>
-								<input type="text" class="form-control" id="password" placeholder="请输入密码">
+								<input type="text" class="form-control" id="userpassword" placeholder="请输入密码">
 							</div>
 							<div class="col-md-6 form-inline m-b-20px">
 								<span>手机号码：</span>
 								<input type="text" class="form-control" id="telephonenum" placeholder="请输入手机号码">
-							</div>
-							<div class="col-md-6 form-inline m-b-20px">
-								<span>邮箱：</span>
-								<input type="text" class="form-control" id="email" placeholder="请输入邮箱">
-							</div>
-							<div class="col-md-6 form-inline m-b-20px">
-								<span>余额：</span>
-								<input type="text" class="form-control" id="balance" placeholder="请输入余额">
 							</div>
 							<div class="col-md-6 form-inline m-b-20px">
 								<span>账户角色：</span>
@@ -263,18 +275,11 @@
 		</footer>
 	</div>
 	<!-- END WRAPPER -->
-	<!-- Javascript -->
-	<script src="/lib/jquery/jquery.min.js"></script>
-	<script src="/lib/bootstrap/js/bootstrap.min.js"></script>
-	<script src="/lib/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-	<script src="/lib/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-	<script src="/lib/chartist/js/chartist.min.js"></script>
-	<script src="/js/klorofil-common.js"></script>
-	<script src="/js/user/user.js"></script>
-	<!-- <script src="../static/lib/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> -->
-		<script  src="/lib/zsh-ui/js/bootstrap-4.0.0-dist/js/bootstrap-table.min.js"></script>
-	<script src ="/lib/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
-	<script src="/js/index/index.js"></script>
+
 </body>
+<script type="text/javascript">
+
+
+</script>
 
 </html>

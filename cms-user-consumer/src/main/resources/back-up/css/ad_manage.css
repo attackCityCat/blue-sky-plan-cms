@@ -1,0 +1,68 @@
+.bottom .layui-form-label {
+    background: #5FB878;
+    width: 130px;
+    /* margin-right: 110px; */
+}
+.bottom .layui-input-block {
+    margin-left: 130px;
+}
+.layui-tab-content .bottom .layui-inline {
+    width: 47%;
+}
+
+.add-page .submit {
+    text-align: center;
+    margin-right: 40px;
+}
+
+.scheme-page .inline {
+    border: none;
+}
+
+.scheme-page .layui-inline {
+    border: 2px solid #5FB878;
+    border-radius: 4px;
+    overflow: hidden;
+    /* width: 278px; */
+    width: 48.5%;
+}
+.layui-form-radio {
+    margin: 6px 0 0;
+    padding: 0;
+    /* margin-left: 5px; */
+}
+
+.layui-tab {
+    border-radius: 4px;
+}
+.scheme-page .layui-form-item .layui-inline:nth-last-child(1) {
+    margin-right: 0;
+}
+
+#tab-table td {
+    width: 25px;
+    height: 30px;
+    background: #ebc951;
+    border: 2px solid #fff;
+}
+
+.selected {
+    background: #dedede !important;
+}
+#tab-table .week {
+    background: #fff;
+}
+.layui-table td,
+.layui-table th {
+    padding: 5px 0;
+}
+
+.layui-input-block .layui-input {
+    width: 100%;
+}
+table{
+	width:100%
+}
+.week{
+	font-size:12px
+}

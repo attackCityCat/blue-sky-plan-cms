@@ -19,6 +19,18 @@ public class UserBean implements Serializable {
 
     private String rolename;
 
+    private String telephonenum;
+
+    private String companyid;
+
+    private String companyname;
+
+    private String modifer;
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
     public Integer getUserid() {
         return userid;
     }
@@ -75,6 +87,38 @@ public class UserBean implements Serializable {
         this.rolename = rolename;
     }
 
+    public String getTelephonenum() {
+        return telephonenum;
+    }
+
+    public void setTelephonenum(String telephonenum) {
+        this.telephonenum = telephonenum;
+    }
+
+    public String getCompanyid() {
+        return companyid;
+    }
+
+    public void setCompanyid(String companyid) {
+        this.companyid = companyid;
+    }
+
+    public String getCompanyname() {
+        return companyname;
+    }
+
+    public void setCompanyname(String companyname) {
+        this.companyname = companyname;
+    }
+
+    public String getModifer() {
+        return modifer;
+    }
+
+    public void setModifer(String modifer) {
+        this.modifer = modifer;
+    }
+
     @Override
     public String toString() {
         return "UserBean{" +
@@ -85,6 +129,10 @@ public class UserBean implements Serializable {
                 ", status=" + status +
                 ", roleid=" + roleid +
                 ", rolename='" + rolename + '\'' +
+                ", telephonenum='" + telephonenum + '\'' +
+                ", companyid='" + companyid + '\'' +
+                ", companyname='" + companyname + '\'' +
+                ", modifer='" + modifer + '\'' +
                 '}';
     }
 }

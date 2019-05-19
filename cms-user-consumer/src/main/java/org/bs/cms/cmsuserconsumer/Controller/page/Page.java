@@ -27,4 +27,24 @@ public class Page {
         return "view/user";
     }
 
+    @RequestMapping("toRole")
+    public  String toRole(){
+        return "view/role";
+    }
+
+    @RequestMapping("toAdv")
+    public String toAdv(){
+        return "view/Advertisement";
+    }
+
+    @RequestMapping("toAddUser")
+    public String toAddUser(){
+        return "view/AddUser";
+    }
+
+    @RequestMapping("toShopping")
+    public String toShopping(){
+        return "view/shopping";
+    }
+
 }
