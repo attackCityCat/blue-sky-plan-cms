@@ -21,7 +21,7 @@
             product_state,
             color_id,
             store_id,
-            Shelf_time,
+            shelf_time,
             product_audit,
             product_selling)
             values (
