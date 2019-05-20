@@ -39,123 +39,16 @@
 
 <body>
 	<!-- WRAPPER -->
-	<div id="wrapper">
-		<div id="abc"></div>
-		<!-- NAVBAR -->
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="brand">
-				<a href="toAdv"><img src="/img/logo-dark3.png" alt="Klorofil Logo"
-						class="img-responsive logo"></a>
-			</div>
-			<div class="container-fluid">
-				<div class="navbar-btn">
-					<button type="button" class="btn-toggle-fullwidth"><i
-							class="lnr lnr-arrow-left-circle"></i></button>
-				</div>
-				<div id="navbar-menu">
-					<ul class="nav navbar-nav navbar-right" >
-						<li>
-							<div style="line-height:52px;">
-								<i class="lnr lnr-calendar-full m-r-5"></i>2019年4月18号
-							</div>
-						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="logout()"><img src="/img/_20190418180241.png"
-									class="img-circle" alt="Avatar"> <span>退出</span><!-- <span th:text="${session.CUR_USER.username}"></span> --></a>
-							<!-- <ul class="dropdown-menu" onclick="logout()">
-								<li><a href="#"><i class="lnr lnr-exit"></i> <span>退出</span></a></li>
-							</ul> -->
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- END NAVBAR -->
-		<!-- LEFT SIDEBAR -->
-		<div id="sidebar-nav" class="sidebar">
-			<div class="sidebar-scroll">
-				<nav>
-					<ul class="nav" id="menuTree">
-						<li><a href="toAdv"><i class="lnr lnr-home"></i> <span>首页</span></a></li>
-						<li><a href="reportList.html"><i class="lnr lnr-file-empty"></i> <span>效果报告</span></a>
-						</li>
-						<li>
-							<a href="#subPages" data-toggle="collapse" class="active" aria-expanded="true"><i class=" lnr
-								lnr-lock"></i>
-								<span>权限管理</span>
-								<i class="icon-submenu lnr lnr-chevron-left"></i></a>
-							<div id="subPages" class="active" aria-expanded="true">
-								<ul class="nav">
-									<li><a href="toUser" class="active">用户管理</a></li>
-									<li><a href="toRole" class="">角色管理</a></li>
-								</ul>
-							</div>
-						</li>
-						<li><a href="#subPages" data-toggle="collapse" class="" aria-expanded="true"><i class=" lnr
-								lnr-lock"></i>
-							<span>店铺管理</span>
-							<i class="icon-submenu lnr lnr-chevron-left"></i></a>
-							<div id="subPages2" class="" aria-expanded="true">
-								<ul class="nav">
-									<li><a href="toShopping" class="">商品管理</a></li>
-								</ul>
-							</div>
-						</li>
-						<li><a href="data-maintain.html" class=""><i class="lnr lnr-screen"></i> <span>数据维护</span></a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<!-- END LEFT SIDEBAR -->
-		<!-- MAIN -->
-		<div class="main">
-			<!-- MAIN CONTENT -->
-			<div class="main-content">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-12">
-							<!-- 搜索条件 -->
-							<div class="panel panel-headline">
-								<!-- <div class="panel-heading">
-									<h3 class="panel-title m-0"> <i class="fa fa-search"></i>搜索条件</h3>
-								</div> -->
-								<div class="panel-body">
-									<form class="form-inline">
-										<div class="m-r-15 flex ft m-t-b-10">
-											<span class="m-r-5">
-												用户名：</span>
-											<div class="form-group">
-												<input type="text" class="form-control" name="username" id="exampleInputEmail3" placeholder="请输入用户名">
-											</div>
-										</div>
-										<div class="m-r-15 flex ft m-t-b-10">
-											<span class="m-r-5">
-												是否有效：</span>
-											<select class="form-control" name="status">
-<!-- 												<option value='' disabled selected style='display:none;'>是否有效</option>
- -->												<option value="1">是</option>
-												<option value="0">否</option>
-											</select>
-										</div>
-										<button class="btn btn-primary ft m-t-b-10" type="button" onclick="checkUser()">查询</button>
-									</form>
-								</div>
-							</div>
-							<!-- END 搜索条件-->
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
+
 							<!-- 广告计划表 -->
 							<div class="panel panel-headline">
 								<div class="panel-heading">
 										<span class="ft fa fa-table ft-22"></span>
-										<h3 class="panel-title">用户列表</h3>
+										<h3 class="panel-title">管理员列表</h3>
 								
 									<div class="right">
 										<button class="btn btn-xs btn-primary ft  m-0" type="button"  data-toggle="modal"
-											data-target="#modalAddUser">新增用户</button>
+											data-target="#modalAddUser">新增管理员</button>
 										<button type="button" class="btn-toggle-collapse"><i
 												class="lnr lnr-chevron-up"></i></button>
 										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
@@ -170,50 +63,10 @@
 								</div>
 							</div>
 							<!-- END 广告计划表 -->
-						</div>
-					</div>
-				</div>
-			</div>
+
 			<!-- END MAIN CONTENT -->
 
 			<!-- Modal -->
-			<!-- 充值 -->
-			<div class="modal fade bs-example-modal-sm" tabindex="-1" id="rechargeModal" role="dialog"
-				aria-labelledby="mySmallModalLabel">
-				<div class="modal-dialog modal-sm" role="document">
-					<div class="modal-content cl">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-									aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="myModalLabel">添加用户</h4>
-						</div>
-						<div class="modal-body cl">
-							<!-- <div class="col-md-12 form-inline m-b-20px">
-								<span>充值用户：</span>
-								<input type="text" class="form-control" id="exampleInputEmail3" placeholder="请输入公司名称">
-							</div>
-							<div class="col-md-12 form-inline m-b-20px">
-								<span>充值日期：</span>
-								<input type="text" class="form-control" id="exampleInputEmail3" placeholder="请输入公司电话">
-							</div>
-							<div class="col-md-12 form-inline m-b-20px">
-								<span>充值方式：</span>
-								<input type="text" class="form-control" id="exampleInputEmail3" placeholder="请输入公司邮箱">
-							</div> -->
-							<div class="col-md-12 form-inline m-b-20px">
-								<span>充值金额：</span>
-								<input type="text" class="form-control" id="rcBalance" placeholder="请输入金额">
-							</div>
-						</div>
-
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-							<button type="button" class="btn btn-primary" onclick="saveUser()">保存</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- 充值 END -->
 			
 			
 			<div class="modal fade" id="modalAddUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -251,8 +104,7 @@
 							<div class="col-md-6 form-inline m-b-20px">
 								<span>公司名称：</span>
 								<select class="form-control" id="company2" name="selecetCompany">
-									<!-- <option value="cheese">百度</option>
-									<option value="tomatoes">阿里巴巴</option> -->
+
 								</select>
 							</div>
 						</div>
@@ -267,18 +119,18 @@
 		</div>
 		<!-- END MAIN -->
 		<div class="clearfix"></div>
-		<footer>
-			<input type="hidden" id="footerCompany" th:value="${session.CUR_USER.company}">
-			<div class="container-fluid">
-				<p id="footer" class="copyright"></p>
-			</div>
-		</footer>
-	</div>
+
 	<!-- END WRAPPER -->
 
 </body>
 <script type="text/javascript">
+	createIframe = function(url){
+		$("#tabs").html("<iframe src='"+url+"' style='width:99%; height:99%'></iframe>");
+	}
 
+	logout = function(){
+		location.href="/logout";
+	}
 
 </script>
 

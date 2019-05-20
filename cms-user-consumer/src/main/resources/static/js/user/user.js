@@ -235,7 +235,7 @@ function updateUser(row) {
 		return $(this).text() == "" + row.rolename + "";
 	}).prop("selected", true);
 	$('#myModal').modal('toggle');
-	$('#useraccount').attr("readonly", "readonly");
+
 	window.userId = row.userid;
 	window.sou = 0;
 }

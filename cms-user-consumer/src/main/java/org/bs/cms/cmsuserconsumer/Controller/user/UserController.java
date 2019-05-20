@@ -1,5 +1,6 @@
 package org.bs.cms.cmsuserconsumer.Controller.user;
 
+import org.apache.shiro.crypto.hash.SimpleHash;
 import org.bs.cms.cmsuserconsumer.Service.user.UserService;
 import org.bs.cms.pojo.User.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,13 +40,13 @@ public class UserController {
 
     @PostMapping(value = "/save")
     public Boolean save(UserBean userBean){
-        try {
-            userService.save(userBean);
-            return true;
-        }catch (Exception e){
-            e.printStackTrace();
-            return false;
-        }
+
+            String userpassword = userBean.getUserpassword();
+            SimpleHash sh = new SimpleHash("md5", userpassword, userBean.getUseraccount(), 1);
+            userBean.setUserpassword(sh.toHex());
+            return userService.save(userBean);
+
+
     }
 
     //系统管理员修改普通管理员，回显

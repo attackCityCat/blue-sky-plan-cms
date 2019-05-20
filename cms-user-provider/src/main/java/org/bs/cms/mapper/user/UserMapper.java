@@ -15,7 +15,7 @@ public interface UserMapper {
     @Select("select user_id as userid,useraccount,username,userpassword,telephonenum,status from cms_user where user_id = #{value}")
     UserBean queryById(Integer userid);
 
-    @Update("update cms_user set userpassword = #{userpassword},status=#{status},username = #{username},telephonenum=#{telephonenum}")
+    @Update("update cms_user set status=#{status},username = #{username},telephonenum=#{telephonenum}")
     void edit(UserBean userBean);
 
     @Select("select u.user_id as userid,u.username,u.userpassword,u.useraccount,u.status,u.roleid,r.rolename,u.companyid,m.companyname,u.telephonenum,u.modifer from cms_user u left join cms_role r on u.roleid = r.roleid left join cms_company m on u.companyid = m.companyid")

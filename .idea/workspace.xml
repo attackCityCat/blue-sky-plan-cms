@@ -1,7 +1,720 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f62ff864-775c-43f6-8084-807a641afc00" name="Default Changelist" comment="" />
+    <list default="true" id="f62ff864-775c-43f6-8084-807a641afc00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootStrap_util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootStrap-addTabs/bootstrap.addtabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootStrap-addTabs/bootstrap.addtabs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-bootbox/bootbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/css/fileinput.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/css/fileinput.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/img/loading-sm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/js/fileinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/js/fileinput.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/js/locales/zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/js/locales/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/themes/explorer/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/themes/explorer/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/themes/fa/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/themes/gly/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/bootstrap-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/bootstrap-select.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-am_ET.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-ar_AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-bg_BG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-cs_CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-da_DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-de_DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-en_US.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-es_CL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-es_ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-et_EE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-fa_IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-fi_FI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-fr_FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-hr_HR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-hu_HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-id_ID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-it_IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-ja_JP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-kh_KM.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-ko_KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-lt_LT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-lv_LV.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-nb_NO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-nl_NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-pl_PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-pt_PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-ro_RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-ru_RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-sk_SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-sl_SI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-sv_SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-tr_TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-ua_UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-vi_VN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-zh_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/umd-intro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/umd-outro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-switch-master/css/bootstrap3/bootstrap-switch.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-switch-master/css/bootstrap3/bootstrap-switch.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-switch-master/js/bootstrap-switch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-switch-master/js/bootstrap-switch.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/bootstrap-table-locale-all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/bootstrap-table-locale-all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/bootstrap-table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/bootstrap-table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/bootstrap-table.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/bootstrap-table.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/accent-neutralise/bootstrap-table-accent-neutralise.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/angular/bootstrap-table-angular.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/angular/bootstrap-table-angular.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/cookie/bootstrap-table-cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/cookie/bootstrap-table-cookie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/copy-rows/bootstrap-table-copy-rows.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/copy-rows/bootstrap-table-copy-rows.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/editable/bootstrap-table-editable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/editable/bootstrap-table-editable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/export/bootstrap-table-export.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/export/bootstrap-table-export.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/filter/bootstrap-table-filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/filter/bootstrap-table-filter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/flat-json/bootstrap-table-flat-json.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/flat-json/bootstrap-table-flat-json.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/group-by/bootstrap-table-group-by.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/group-by/bootstrap-table-group-by.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/group-by/bootstrap-table-group-by.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/i18n-enhance/bootstrap-table-i18n-enhance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/i18n-enhance/bootstrap-table-i18n-enhance.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/key-events/bootstrap-table-key-events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/key-events/bootstrap-table-key-events.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/mobile/bootstrap-table-mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/mobile/bootstrap-table-mobile.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multi-column-toggle/bootstrap-table-multi-toggle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multi-column-toggle/bootstrap-table-multi-toggle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multiple-search/bootstrap-table-multiple-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multiple-search/bootstrap-table-multiple-search.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/natural-sorting/bootstrap-table-natural-sorting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/natural-sorting/bootstrap-table-natural-sorting.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/print/bootstrap-table-print.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/print/bootstrap-table-print.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder-columns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder-columns.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/resizable/bootstrap-table-resizable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/resizable/bootstrap-table-resizable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/select2-filter/bootstrap-table-select2-filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/select2-filter/bootstrap-table-select2-filter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-af-ZA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-af-ZA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ar-SA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ar-SA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ca-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ca-ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-cs-CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-cs-CZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-da-DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-da-DK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-de-DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-de-DE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-el-GR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-el-GR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-en-US.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-en-US.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-AR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-CL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-CL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-CR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-CR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-MX.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-MX.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-NI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-NI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-SP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-SP.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-et-EE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-et-EE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-fa-IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-fa-IR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-fr-BE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-fr-BE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-fr-FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-fr-FR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-he-IL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-he-IL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-hr-HR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-hr-HR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-hu-HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-hu-HU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-id-ID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-id-ID.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-it-IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-it-IT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ja-JP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ja-JP.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ka-GE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ka-GE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ko-KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ko-KR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ms-MY.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ms-MY.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-nb-NO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-nb-NO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-nl-NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-nl-NL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-pl-PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-pl-PL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-pt-BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-pt-PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-pt-PT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ro-RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ro-RO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ru-RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ru-RU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-sk-SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-sk-SK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-sv-SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-sv-SE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-th-TH.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-th-TH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-tr-TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-tr-TR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-uk-UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-uk-UA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ur-PK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ur-PK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-uz-Latn-UZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-uz-Latn-UZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-vi-VN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-vi-VN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-zh-TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-treeview/bootstrap-treeview.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-treeview/bootstrap-treeview.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/jquery-1.9.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/easyloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/jquery.easyui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-am.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-cz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-jp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-sv_SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-zh_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.combo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.combobox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.combogrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.combotree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.combotreegrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.datagrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.datalist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.datebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.datetimebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.datetimespinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.draggable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.droppable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.filebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.linkbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.menubutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.messager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.numberbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.numberspinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.panel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.passwordbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.progressbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.propertygrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.resizable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.searchbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.spinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.splitbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.switchbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.tagbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.textbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.timespinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.treegrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.validatebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/plugins/jquery.window.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/black/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/bootstrap/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/color.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/default/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/gray/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/cut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/edit_add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/edit_remove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/filesave.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/filter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/large_chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/large_clipart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/large_picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/large_shapes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/large_smartart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/mini_add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/mini_edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/mini_refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/more.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/ok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/pencil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/redo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/reload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/sum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/icons/undo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/material/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/tagbox_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/tagbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/metro/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/themes/mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/echarts.common.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/echarts.simple.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/echartsone.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-product-consumer/src/main/resources/static/js/shop/shop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/ShopManagement/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/ShopManagement/ShopManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/ShopManagement/ShopManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/ShopManagement/ShopManagementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/back-up/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/back-up/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/shop/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/shop/shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/user/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/BootStrapMain.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/role.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/role.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/ShopManagement/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/ShopManagement/ShopManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/ShopManagement/ShopManagementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/ShopManagement/ShopManagementMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/cms-api/target/" />
@@ -21,7 +734,116 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="204" selection-start-line="204" selection-end-line="204" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-378">
+              <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/CredentialsMatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="19" column="64" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/user/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-159">
+              <caret line="46" selection-start-line="46" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/user/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/user/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-456">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-210">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1047">
+              <caret line="106" selection-start-line="106" selection-end-line="106" />
+              <folding>
+                <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/user/user.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="237" selection-start-line="237" selection-end-line="237" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,6 +852,19 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>审核</find>
+      <find>delBtn</find>
+      <find>div class=&quot;panel-body&quot;</find>
+      <find>panel-body</find>
+      <find>退出</find>
+      <find>logo</find>
+      <find>main-content</find>
+      <find>panel-headline</find>
+      <find>panel</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,8 +886,6 @@
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/CmsUserConsumerApplication.java" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/cms-product-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/cms-product-provider/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/cms-user-provider/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/CmsProductProviderApplication.java" />
         <option value="$PROJECT_DIR$/cms-product-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/cms-product-consumer/src/main/resources/application.yml" />
@@ -62,16 +895,30 @@
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/CredentialsMatcher.java" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/user/UserService.java" />
         <option value="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/user/UserController.java" />
-        <option value="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/login.html" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java" />
         <option value="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/login/LoginMapper.java" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/login/LoginService.java" />
         <option value="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/login/LoginController.java" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/ShopManagement/ShopManagementService.java" />
+        <option value="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/ShopManagement/ShopManagementController.java" />
+        <option value="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/ShopManagement/ShopManagementMapper.java" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/shop/shop.js" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/ShopManagement/ShopManagementController.java" />
+        <option value="$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/css/main.css" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/role.html" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java" />
+        <option value="$PROJECT_DIR$/cms-product-provider/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/cms-user-provider/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/back-up/css/main.css" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/user/UserController.java" />
+        <option value="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/user/user.js" />
       </list>
     </option>
   </component>
@@ -88,8 +935,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="270" />
-    <option name="y" value="15" />
+    <option name="x" value="260" />
+    <option name="y" value="243" />
     <option name="width" value="1400" />
     <option name="height" value="990" />
   </component>
@@ -99,6 +946,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,49 +1019,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -230,6 +1036,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -251,7 +1066,18 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="easyui1.5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
@@ -326,17 +1152,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cms" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -345,61 +1160,12 @@
               <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-zuul" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,7 +1177,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -423,6 +1189,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\web3\blue-sky-plan-cms\cms-user-consumer\src\main\resources\static\js" />
       <recent name="E:\web3\blue-sky-plan-cms\cms-user-consumer\src\main\java\org\bs\cms\cmsuserconsumer\config" />
     </key>
   </component>
@@ -438,7 +1205,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CmsZuulApplication">
+  <component name="RunManager" selected="Spring Boot.CmsUserConsumerApplication">
     <configuration name="CmsEurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cms-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.bs.cms.cmseureka.CmsEurekaApplication" />
@@ -497,6 +1264,10 @@
       <workItem from="1558082083241" duration="255000" />
       <workItem from="1558091178873" duration="1624000" />
       <workItem from="1558323111737" duration="2304000" />
+      <workItem from="1558325604922" duration="16407000" />
+      <workItem from="1558344792457" duration="723000" />
+      <workItem from="1558345544640" duration="518000" />
+      <workItem from="1558346094549" duration="2377000" />
     </task>
     <task id="LOCAL-00001" summary="蓝天计划电商平台CMS端 V1.1.0">
       <created>1557923307839</created>
@@ -558,12 +1329,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16186000" />
+    <option name="totallyTimeSpent" value="36211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1843" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26584408" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2596747" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -573,8 +1345,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49971956" weight="0.32942432" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8266966" visible="true" weight="0.23880596" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49971956" visible="true" weight="0.32942432" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8266966" weight="0.42857143" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -617,87 +1389,10 @@
     <SUITE FILE_PATH="coverage/blue_sky_plan_cms$CmsEurekaApplication.ic" NAME="CmsEurekaApplication Coverage Results" MODIFIED="1558319423543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cms-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/CmsUserConsumerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-product-provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/CmsUserProviderApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-product-provider/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java" />
-    <entry file="file://$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/mapper/product/ProductMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-product-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="21" column="29" lean-forward="true" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/CmsProductConsumerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -725,36 +1420,7 @@
     <entry file="file://$PROJECT_DIR$/cms-eureka/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1782" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/intercepter/LoginInterceptor.java" />
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/CredentialsMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/user/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1161">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="711">
@@ -762,41 +1428,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/pojo/User/UserBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/user/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/user/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
-          <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -831,27 +1466,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/ShopManagement/ShopManagementController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
+        <state relative-caret-position="150">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/ShopManagement/ShopManagementService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="162">
+          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/ShopManagement/ShopManagementMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/shop/shop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="138" column="14" selection-start-line="138" selection-start-column="14" selection-end-line="138" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="739">
+          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/AddUser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1378" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/css/commom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1958">
+          <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="912" column="1" lean-forward="true" selection-start-line="912" selection-start-column="1" selection-end-line="912" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/role.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="89" column="50" selection-start-line="89" selection-start-column="50" selection-end-line="89" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/company/CompanyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/controller/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="46" column="31" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="31" />
+        <state relative-caret-position="378">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="26" />
           <folding>
             <element signature="e#722#723#0" expanded="true" />
             <element signature="e#756#757#0" expanded="true" />
@@ -859,31 +1581,185 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/ShopManagement/ShopManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/UserRole/UserRoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+          <folding>
+            <element signature="e#2335#2336#0" expanded="true" />
+            <element signature="e#2359#2360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-provider/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/pojo/ProductImgBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/pojo/ProductBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-product-provider/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/back-up/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="1660" column="10" selection-start-line="1660" selection-start-column="10" selection-end-line="1660" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/mapper/product/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="149" column="36" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/echarts.common.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/easyui1.5/locale/easyui-lang-af.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="96" column="55" selection-start-line="96" selection-start-column="55" selection-end-line="96" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-zuul/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/shop/shop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="113" column="15" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="15" />
+        <state relative-caret-position="378">
+          <caret line="204" selection-start-line="204" selection-end-line="204" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5160">
-          <caret line="439" column="7" lean-forward="true" selection-start-line="439" selection-start-column="7" selection-end-line="439" selection-end-column="7" />
+        <state relative-caret-position="-210">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/user/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/CredentialsMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="64" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159">
+          <caret line="46" selection-start-line="46" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-456">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1047">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/user/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="237" selection-start-line="237" selection-end-line="237" />
         </state>
       </provider>
     </entry>
