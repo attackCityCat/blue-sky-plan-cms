@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cms-zuul" />
         <module name="cms-eureka" />
         <module name="cms-product-provider" />
         <module name="cms-user-provider" />
@@ -22,6 +23,7 @@
       <module name="cms-product-provider" options="-parameters" />
       <module name="cms-user-consumer" options="-parameters" />
       <module name="cms-user-provider" options="-parameters" />
+      <module name="cms-zuul" options="-parameters" />
     </option>
   </component>
 </project>
