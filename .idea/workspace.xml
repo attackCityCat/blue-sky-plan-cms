@@ -5,17 +5,266 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f62ff864-775c-43f6-8084-807a641afc00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cms-product-consumer/src/main/resources/static/js/shop/shop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/img/logo-dark2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/img/logo-dark3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootStrap_util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootStrap-addTabs/bootstrap.addtabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootStrap-addTabs/bootstrap.addtabs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-bootbox/bootbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/css/fileinput.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/css/fileinput.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/img/loading-sm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/js/fileinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/js/fileinput.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/js/locales/zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/js/locales/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/themes/explorer/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/themes/explorer/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/themes/fa/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-fileinput/themes/gly/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/bootstrap-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/bootstrap-select.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-am_ET.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-ar_AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-bg_BG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-cs_CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-da_DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-de_DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-en_US.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-es_CL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-es_ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-et_EE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-fa_IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-fi_FI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-fr_FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-hr_HR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-hu_HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-id_ID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-it_IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-ja_JP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-kh_KM.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-ko_KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-lt_LT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-lv_LV.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-nb_NO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-nl_NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-pl_PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-pt_PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-ro_RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-ru_RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-sk_SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-sl_SI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-sv_SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-tr_TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-ua_UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-vi_VN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-zh_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/i18n/defaults-zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/umd-intro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-select/umd-outro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-switch-master/css/bootstrap3/bootstrap-switch.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-switch-master/css/bootstrap3/bootstrap-switch.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-switch-master/js/bootstrap-switch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-switch-master/js/bootstrap-switch.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/bootstrap-table-locale-all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/bootstrap-table-locale-all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/bootstrap-table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/bootstrap-table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/bootstrap-table.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/bootstrap-table.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/accent-neutralise/bootstrap-table-accent-neutralise.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/angular/bootstrap-table-angular.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/angular/bootstrap-table-angular.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/click-edit-row/bootstrap-table-click-edit-row.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/cookie/bootstrap-table-cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/cookie/bootstrap-table-cookie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/copy-rows/bootstrap-table-copy-rows.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/copy-rows/bootstrap-table-copy-rows.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/editable/bootstrap-table-editable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/editable/bootstrap-table-editable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/export/bootstrap-table-export.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/export/bootstrap-table-export.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/filter/bootstrap-table-filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/filter/bootstrap-table-filter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/flat-json/bootstrap-table-flat-json.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/flat-json/bootstrap-table-flat-json.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/group-by/bootstrap-table-group-by.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/group-by/bootstrap-table-group-by.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/group-by/bootstrap-table-group-by.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/i18n-enhance/bootstrap-table-i18n-enhance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/i18n-enhance/bootstrap-table-i18n-enhance.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/key-events/bootstrap-table-key-events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/key-events/bootstrap-table-key-events.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/mobile/bootstrap-table-mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/mobile/bootstrap-table-mobile.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multi-column-toggle/bootstrap-table-multi-toggle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multi-column-toggle/bootstrap-table-multi-toggle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multiple-search/bootstrap-table-multiple-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multiple-search/bootstrap-table-multiple-search.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/natural-sorting/bootstrap-table-natural-sorting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/natural-sorting/bootstrap-table-natural-sorting.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/print/bootstrap-table-print.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/print/bootstrap-table-print.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder-columns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder-columns.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/resizable/bootstrap-table-resizable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/resizable/bootstrap-table-resizable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/select2-filter/bootstrap-table-select2-filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/select2-filter/bootstrap-table-select2-filter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/extensions/tree-column/bootstrap-table-tree-column.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-af-ZA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-af-ZA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ar-SA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ar-SA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ca-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ca-ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-cs-CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-cs-CZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-da-DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-da-DK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-de-DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-de-DE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-el-GR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-el-GR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-en-US.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-en-US.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-AR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-CL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-CL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-CR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-CR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-MX.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-MX.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-NI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-NI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-SP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-es-SP.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-et-EE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-et-EE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-fa-IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-fa-IR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-fr-BE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-fr-BE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-fr-FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-fr-FR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-he-IL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-he-IL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-hr-HR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-hr-HR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-hu-HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-hu-HU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-id-ID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-id-ID.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-it-IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-it-IT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ja-JP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ja-JP.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ka-GE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ka-GE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ko-KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ko-KR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ms-MY.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ms-MY.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-nb-NO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-nb-NO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-nl-NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-nl-NL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-pl-PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-pl-PL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-pt-BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-pt-PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-pt-PT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ro-RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ro-RO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ru-RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ru-RU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-sk-SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-sk-SK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-sv-SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-sv-SE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-th-TH.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-th-TH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-tr-TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-tr-TR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-uk-UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-uk-UA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ur-PK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-ur-PK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-uz-Latn-UZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-uz-Latn-UZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-vi-VN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-vi-VN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-table/locale/bootstrap-table-zh-TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-treeview/bootstrap-treeview.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap-treeview/bootstrap-treeview.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootstrap/bootstrap3/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/jquery-1.9.1.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-api/target/classes/META-INF/cms-api.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-product-consumer/src/main/resources/static/js/shop/shop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/ShopManagement/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/ShopManagement/ShopManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/ShopManagement/ShopManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/ShopManagement/ShopManagementService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/shop/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/shop/shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/role.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/role.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/BootStrapMain.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/ShopManagement/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/ShopManagement/ShopManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/ShopManagement/ShopManagementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/ShopManagement/ShopManagementMapper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,88 +285,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36700">
-              <caret line="1468" column="15" selection-start-line="1468" selection-start-column="11" selection-end-line="1468" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/img/logo-dark.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
-              <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootStrap_util.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/shop/shop.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-              <folding>
-                <element signature="e#1108#1109#0" expanded="true" />
-                <element signature="e#1146#1147#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2000">
+              <caret line="80" column="26" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="700">
+              <caret line="28" column="101" selection-start-line="5" selection-start-column="4" selection-end-line="28" selection-end-column="101" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/static/js/shop/shop.js">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/ShopManagement/ShopManagementController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="650">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html">
+        <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/ShopManagement/ShopManagementMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+            <state relative-caret-position="900">
+              <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/img/logo-dark2.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/role.html">
+        <entry file="file://$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/mapper/product/ProductMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            <state relative-caret-position="1150">
+              <caret line="51" column="25" selection-start-line="46" selection-start-column="4" selection-end-line="51" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html">
+        <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/ShopManagement/ShopManagementController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="650">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/ShopManagement/ShopManagementService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/service/ProductService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -135,10 +384,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>20190415145221.jpg</find>
-      <find>dataadmin</find>
-      <find>login</find>
-      <find>findUserInfoByName</find>
       <find>subPages</find>
       <find>static</find>
       <find>main</find>
@@ -165,6 +410,10 @@
       <find>/img/logo</find>
       <find>img-responsive</find>
       <find>logo</find>
+      <find>shenghe</find>
+      <find>editProduct</find>
+      <find>delBtn</find>
+      <find>delProduct</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,8 +430,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/cms-api/pom.xml" />
         <option value="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/CmsUserProviderApplication.java" />
         <option value="$PROJECT_DIR$/cms-eureka/src/main/java/org/bs/cms/cmseureka/CmsEurekaApplication.java" />
         <option value="$PROJECT_DIR$/cms-eureka/src/main/resources/application.yml" />
@@ -194,7 +441,6 @@
         <option value="$PROJECT_DIR$/cms-product-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/cms-product-consumer/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/CmsProductConsumerApplication.java" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/ShopManagement/ShopManagementService.java" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/base/shiro/ShiroRealm.java" />
         <option value="$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/pojo/Tree/TreeBean.java" />
         <option value="$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/pojo/Role/RoleBean.java" />
@@ -225,12 +471,16 @@
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/role/role.js" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/login.html" />
         <option value="$PROJECT_DIR$/cms-product-provider/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/shop/shop.js" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/role.html" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/shop/shop.js" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/ShopManagement/ShopManagementService.java" />
+        <option value="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/ShopManagement/ShopManagementMapper.java" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/ShopManagement/ShopManagementController.java" />
+        <option value="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/ShopManagement/ShopManagementController.java" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html" />
       </list>
     </option>
   </component>
@@ -258,6 +508,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -265,6 +516,32 @@
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
               <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
@@ -298,6 +575,35 @@
               <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -326,28 +632,62 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
               <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-provider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
@@ -411,6 +751,49 @@
               <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="ShopManagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+              <item name="ShopManagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -451,11 +834,98 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="ShopManagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="ShopManagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -468,7 +938,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cms-product-consumer/src/main/resources/static/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -479,16 +949,16 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\blue-sky-plan-cms\cms-user-consumer\src\main\resources\templates\view" />
-      <recent name="F:\blue-sky-plan-cms\cms-user-consumer\src\main\resources\static\static\img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\blue-sky-plan-cms\cms-user-consumer\src\main\resources\static\js\dong" />
       <recent name="F:\blue-sky-plan-cms\cms-product-consumer\src\main\resources\static\js" />
       <recent name="F:\blue-sky-plan-cms\cms-user-consumer\src\main\resources\static\img" />
       <recent name="F:\blue-sky-plan-cms\cms-user-consumer\src\main\resources\static\js\shop" />
       <recent name="F:\blue-sky-plan-cms\cms-user-consumer\src\main\resources\static\js" />
-      <recent name="F:\blue-sky-plan-cms\cms-user-consumer\src\main\resources\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\blue-sky-plan-cms\cms-user-consumer\src\main\resources\templates\view" />
+      <recent name="F:\blue-sky-plan-cms\cms-user-consumer\src\main\resources\static\static\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -578,9 +1048,9 @@
       <list>
         <item itemvalue="Spring Boot.CmsUserConsumerApplication" />
         <item itemvalue="Spring Boot.CmsUserProviderApplication" />
-        <item itemvalue="Spring Boot.CmsProductConsumerApplication" />
-        <item itemvalue="Spring Boot.CmsProductProviderApplication" />
         <item itemvalue="Spring Boot.CmsEurekaApplication" />
+        <item itemvalue="Spring Boot.CmsProductProviderApplication" />
+        <item itemvalue="Spring Boot.CmsProductConsumerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -618,7 +1088,10 @@
       <workItem from="1558314747372" duration="188000" />
       <workItem from="1558314955836" duration="263000" />
       <workItem from="1558315238492" duration="1838000" />
-      <workItem from="1558317203336" duration="1017000" />
+      <workItem from="1558317203336" duration="4449000" />
+      <workItem from="1558321678718" duration="3011000" />
+      <workItem from="1558324888178" duration="202000" />
+      <workItem from="1558325109785" duration="120000" />
     </task>
     <task id="LOCAL-00001" summary="蓝天计划电商平台CMS端 V1.1.0&#10;段毓霖第二次提交代码&#10;管理员模展示页面">
       <created>1558064935775</created>
@@ -641,17 +1114,24 @@
       <option name="project" value="LOCAL" />
       <updated>1558263026848</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Merge branch 'dyl' of https://github.com/attackCityCat/blue-sky-plan-cms&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;dyl第五次提交的代码">
+      <created>1558318261426</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558318261426</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70631000" />
+    <option name="totallyTimeSpent" value="77396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1843" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3280987" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33987662" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -674,7 +1154,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4991587" weight="0.32952183" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.4991587" visible="true" weight="0.32848233" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.4991587" visible="true" weight="0.32848233" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -684,7 +1164,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32978126" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -698,7 +1178,8 @@
     <MESSAGE value="蓝天计划电商平台CMS端 V1.1.0&#10;段毓霖第三次提交代码&#10;管理员模展示页面" />
     <MESSAGE value="Merge branch 'dyl' of https://github.com/attackCityCat/blue-sky-plan-cms&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;dyl第三次提交代码" />
     <MESSAGE value="Merge branch 'dyl' of https://github.com/attackCityCat/blue-sky-plan-cms&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;dyl第四次提交的代码&#10;dyl第四次提交的代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'dyl' of https://github.com/attackCityCat/blue-sky-plan-cms&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;dyl第四次提交的代码&#10;dyl第四次提交的代码" />
+    <MESSAGE value="Merge branch 'dyl' of https://github.com/attackCityCat/blue-sky-plan-cms&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;dyl第五次提交的代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'dyl' of https://github.com/attackCityCat/blue-sky-plan-cms&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;dyl第五次提交的代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -715,123 +1196,24 @@
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/ShopManagement/ShopManagementController.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/ShopManagement/ShopManagementController.java</url>
+          <line>17</line>
+          <properties class="org.bs.cms.controller.ShopManagement.ShopManagementController" method="editAdmShop">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/user/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/AddUser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="102" column="42" selection-start-line="102" selection-start-column="42" selection-end-line="102" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/UserRole/UserRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="72" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/pojo/Company/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/pojo/User/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="133" column="36" selection-start-line="133" selection-start-column="36" selection-end-line="133" selection-end-column="36" />
-          <folding>
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1207#1208#0" expanded="true" />
-            <element signature="e#1255#1256#0" expanded="true" />
-            <element signature="e#1289#1290#0" expanded="true" />
-            <element signature="e#1318#1319#0" expanded="true" />
-            <element signature="e#1363#1364#0" expanded="true" />
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1462#1463#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-            <element signature="e#1543#1544#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#1697#1698#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1771#1772#0" expanded="true" />
-            <element signature="e#1827#1828#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1911#1912#0" expanded="true" />
-            <element signature="e#1943#1944#0" expanded="true" />
-            <element signature="e#1993#1994#0" expanded="true" />
-            <element signature="e#2035#2036#0" expanded="true" />
-            <element signature="e#2073#2074#0" expanded="true" />
-            <element signature="e#2107#2108#0" expanded="true" />
-            <element signature="e#2161#2162#0" expanded="true" />
-            <element signature="e#2207#2208#0" expanded="true" />
-            <element signature="e#2241#2242#0" expanded="true" />
-            <element signature="e#2271#2272#0" expanded="true" />
-            <element signature="e#2317#2318#0" expanded="true" />
-            <element signature="e#2355#2356#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/company/CompanyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/UserRole/UserRoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/Company/CompanyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/Company/CompanyMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -876,20 +1258,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/user/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="21" column="170" selection-start-line="21" selection-start-column="170" selection-end-line="21" selection-end-column="170" />
         </state>
       </provider>
     </entry>
@@ -958,24 +1326,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/ShopManagement/ShopManagementController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/controller/PageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hs_err_pid10644.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/BootStrapMain.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-eureka/src/main/resources/application.yml">
@@ -1041,20 +1392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/shop/shop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2875">
-          <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="75" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36700">
@@ -1065,13 +1402,7 @@
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/img/logo-dark.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/static/js/shop/shop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/static/js/shop/shop.js" />
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/img/logo-dark2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1079,13 +1410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1099,25 +1423,127 @@
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/BootStrapMain.html" />
+    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="550">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/controller/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
           <folding>
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="69" column="5" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="69" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/dong/bootStrap_util.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/shop/shop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2000">
+          <caret line="80" column="26" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="101" selection-start-line="5" selection-start-column="4" selection-end-line="28" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/ShopManagement/ShopManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/ShopManagement/ShopManagementMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/mapper/product/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="51" column="25" selection-start-line="46" selection-start-column="4" selection-end-line="51" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/ShopManagement/ShopManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/ShopManagement/ShopManagementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

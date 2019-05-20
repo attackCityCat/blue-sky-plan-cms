@@ -122,37 +122,32 @@ function initMyTable(){
 			{field:'productPrice',title:'价格',width:100},
 			{field:'colorName',title:'颜色',width:150},
 			{field:'sizeName',title:'尺寸',width:100},
-			{field:'productStock',title:'库存',width:100},
 			{field:'productTime',title:'上架时间',width:200},
 			{field:'productSales',title:'销量',width:100},
-			{field:'productComments',title:'累计评论',width:100},
-			{field:'productConcern',title:'关注量',width:100},
-			{field:'productState',title:'上\下架',formatter:function(value,row,index){
-					return value == 1 ? "未上架" : "已上架";
-				},width:100},
 			{field:'productAudit',title:'审核状态',formatter:function(value,row,index){
 					return value == 1 ? "待审核" : "审核通过";
-				},width:100},
-			{field:'productSelling',title:'热卖状态',formatter:function(value,row,index){
-					return value == 1 ? "非热卖" : "热卖";
-				},width:100},
-			{field:'123',title:'操作栏',formatter:function(value,row,index){
-					var btn = "<a href='javascript:editProduct("+row.id+");'>增加库存</a>  ";
-					if (row.productState == 1) {
-						btn += "<a href='javascript:editState("+row.id+","+row.productState+","+row.productAudit+");'>上架</a>  ";
-
-					}if (row.productState == 0) {
-						btn += "<a href='javascript:editState("+row.id+","+row.productState+");'>下架</a>  ";
-						if (row.productSelling == 1) {
-							btn += "<a href='javascript:editSelling("+row.id+","+row.productSelling+");'>热卖</a>  ";
-						}else{
-							btn += "<a href='javascript:editSelling("+row.id+","+row.productSelling+");'>取消热卖</a>  ";
-						}
-
-					}
-					return  btn;
-				},width:200}
+				},width:100}
 		]
+	})
+}
+
+//审核
+function shengHetrue(id){
+	$.ajax({
+		url:'/editShop',
+		type:'post',
+		data:{
+			id:id
+		},
+		dataType:'json',
+		success:function(data){
+			if (data){
+				searchProduct();
+			} else{
+				alert("删除失败");
+			}
+
+		}
 	})
 }
 // 新增弹框
@@ -284,6 +279,9 @@ function editProduct(id){
 		}
 	})
 }
+
+
+
 /**
  *修改库存数量
  * @param id
