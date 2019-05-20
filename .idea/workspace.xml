@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f62ff864-775c-43f6-8084-807a641afc00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/CredentialsMatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/login/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/login/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/login/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/login/LoginMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/login/LoginMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java" afterDir="false" />
-    </list>
+    <list default="true" id="f62ff864-775c-43f6-8084-807a641afc00" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/cms-api/target/" />
@@ -37,57 +21,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="96" column="55" selection-start-line="96" selection-start-column="55" selection-end-line="96" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="441" column="18" selection-start-line="441" selection-start-column="18" selection-end-line="441" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/shop/shop.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="113" column="15" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="46" column="31" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="31" />
-              <folding>
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#756#757#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-zuul/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -171,72 +105,6 @@
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
               <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
@@ -628,7 +496,7 @@
       <workItem from="1557989634985" duration="153000" />
       <workItem from="1558082083241" duration="255000" />
       <workItem from="1558091178873" duration="1624000" />
-      <workItem from="1558323111737" duration="2031000" />
+      <workItem from="1558323111737" duration="2304000" />
     </task>
     <task id="LOCAL-00001" summary="蓝天计划电商平台CMS端 V1.1.0">
       <created>1557923307839</created>
@@ -679,17 +547,23 @@
       <option name="project" value="LOCAL" />
       <updated>1558319310104</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 辛">
+      <created>1558325407768</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1558325407768</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15913000" />
+    <option name="totallyTimeSpent" value="16186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1843" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26584408" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26584408" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -700,7 +574,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49971956" weight="0.32942432" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.8266966" visible="true" weight="0.031982943" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8266966" visible="true" weight="0.23880596" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -736,7 +610,8 @@
     <MESSAGE value="Merge branch 'dev' of https://github.com/attackCityCat/blue-sky-plan-cms into dev&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="Merge branch 'hyd' of https://github.com/attackCityCat/blue-sky-plan-cms into dev&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="5.20  10:24   加入网关路由模块  辛旭" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.20  10:24   加入网关路由模块  辛旭" />
+    <MESSAGE value="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 辛" />
+    <option name="LAST_COMMIT_MESSAGE" value="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 辛" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/blue_sky_plan_cms$CmsEurekaApplication.ic" NAME="CmsEurekaApplication Coverage Results" MODIFIED="1558319423543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -1007,8 +882,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="441" column="18" selection-start-line="441" selection-start-column="18" selection-end-line="441" selection-end-column="18" />
+        <state relative-caret-position="5160">
+          <caret line="439" column="7" lean-forward="true" selection-start-line="439" selection-start-column="7" selection-end-line="439" selection-end-column="7" />
         </state>
       </provider>
     </entry>
