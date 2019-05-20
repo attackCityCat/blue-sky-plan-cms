@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>商品管理</title>
+    <title>蓝天计划商品管理</title>
 
     <!-- VENDOR CSS -->
     <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
@@ -27,7 +27,7 @@
     <script src="/lib/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
     <script src="/lib/chartist/js/chartist.min.js"></script>
     <script src="/js/klorofil-common.js"></script>
-    <script src="/js/shop/shop.js"></script>
+    <script src="../toShopHelp"></script>
     <!-- <script src="../static/lib/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> -->
     <script  src="/lib/zsh-ui/js/bootstrap-4.0.0-dist/js/bootstrap-table.min.js"></script>
     <script src ="/lib/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
@@ -151,8 +151,6 @@
                                 <h3 class="panel-title">商品列表</h3>
 
                                 <div class="right">
-                                    <button class="btn btn-xs btn-primary ft  m-0" type="button" data-toggle="modal"
-                                            data-target="#roleModal">新增角色</button>
                                     <button type="button" class="btn-toggle-collapse"><i
                                             class="lnr lnr-chevron-up"></i></button>
                                     <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
@@ -161,7 +159,6 @@
                             <div class="panel-body">
                                 <div id="toolbar">
                                     <button id="addBtn" type="button" class="btn btn-info glyphicon glyphicon-plus">新增</button>
-                                    <button id="updateBtn" type="button" class="btn btn-warning glyphicon glyphicon-pencil">修改</button>
                                     <button id="delBtn" type="button" class="btn btn-danger glyphicon glyphicon-remove">删除</button>
                                 </div>
                                 <div class="table" id="myTable"></div>
@@ -221,7 +218,6 @@
                                             </td>
                                         </tr>
                                     </tbody> -->
-                                </table>
                                 <div>
                                     <!-- 分页
                                     <div class="ft">
@@ -256,8 +252,8 @@
                                         </ul>
                                     </div>
                                      end 分页 -->
-                                </div>
 
+                            </div>
                             </div>
                         </div>
                         <!-- END 广告计划表 -->
