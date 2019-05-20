@@ -16,7 +16,7 @@ public class ProductBean implements Serializable {
 
     private String productTime;  // 添加商品时间
 
-    private String ShelfTime;  // 商品上架时间
+    private String shelfTime;  // 商品上架时间
 
     private Integer productState;  // 是否上下架  0 为上架  1为下架  默认为0
 
@@ -79,11 +79,11 @@ public class ProductBean implements Serializable {
     }
 
     public String getShelfTime() {
-        return ShelfTime;
+        return shelfTime;
     }
 
     public void setShelfTime(String shelfTime) {
-        ShelfTime = shelfTime;
+        this.shelfTime = shelfTime;
     }
 
     public String getStypeName() {

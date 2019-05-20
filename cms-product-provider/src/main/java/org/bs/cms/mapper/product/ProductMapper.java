@@ -21,6 +21,7 @@ public interface ProductMapper {
             "tpt.product_state as productstate , " +
             "tpt.product_audit as productAudit, " +
             "tpt.product_selling as productSelling, " +
+            "tpt.shelf_time as shelfTime, " +
             "tbt.brand_name as brandName, " +
             "tst.size_name as sizeName, " +
             "tc.color_name as colorName, " +

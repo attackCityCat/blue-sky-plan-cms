@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="/js/bootstrap/bootStrap-addTabs/bootstrap.addtabs.css">
     <script type="text/javascript" src="/js/bootstrap/bootStrap-addTabs/bootstrap.addtabs.min.js"></script>
 
-
     <link rel="stylesheet" href="/js/bootstrap/bootstrap-table/bootstrap-table.css">
     <script src="/js/bootstrap/bootstrap-table/bootstrap-table.js"></script>
     <script src="/js/bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
@@ -42,41 +41,6 @@
     $(function(){
         initMyTable();
     })
-    // 上传logo
-    function uploadImgLogo(){
-        $('#logoImg').fileinput({
-            language: 'zh', //设置语言
-            uploadUrl: '/product/updaloadImgLogo', //上传的地址
-            allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
-            showUpload: true, //是否显示上传按钮
-            showCaption: false,//是否显示标题
-            browseClass: "btn btn-primary", //按钮样式
-            dropZoneEnabled: false,//是否显示拖拽区域
-            //minImageWidth: 50, //图片的最小宽度
-            //minImageHeight: 50,//图片的最小高度
-            //maxImageWidth: 1000,//图片的最大宽度
-            //maxImageHeight: 1000,//图片的最大高度
-            //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
-            //minFileCount: 0,
-            maxFileCount: 7, //表示允许同时上传的最大文件个数
-            enctype: 'multipart/form-data',
-            validateInitialCount:true,
-            previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
-            msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
-
-        }).on('fileuploaded', function(event, data, previewId, index) {
-
-            var imgval = $('#imgLogo').val();
-
-            if(imgval == null || imgval == "" || imgval == undefined){
-                imgval = data.response.img;
-
-            }else{
-			imgval += ","+data.response.img;/*","+"http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/"+data.response;*/
-		}
-            $('#imgLogo').val(imgval);
-        });
-    }
     // 上传图片
     function uploadImg(){
         $('#headImg').fileinput({
@@ -154,19 +118,39 @@
         $('#myTable').bootstrapTable({
             url:'/product/findProductList',
             toolbar:'#toolbar',
+            pagination:true, //是否展示分页
+            pageList:[1,2,3,5, 10, 20, 50],//分页组件
+            pageNumber:1,
+            pageSize:5,	//默认每页条数
+            sidePagination:'server',//分页方式：client客户端分页，server服务端分页（*
+            striped:true,
+            clickToSelect: true, //是否启用点击选中行
+            queryParams:function(){
+                return  {
+                    page:this.pageNumber,
+                    rows:this.pageSize
+                }
+            },
             columns:[
                 {checkbox:true},
-                {field:'productTitle',title:'标题',width:300},
+                {field:'productTitle',title:'标题',formatter:function(value,row,index){
+                        if (row.productSelling == 0){
+                           return   "<font color='red'>"+value+"</font>";
+                        }else {
+                            return   value;
+                        }
+                    },width:300},
                 {field:'brandName',title:'品牌',width:100},
                 {field:'typeName',title:'类型',width:150},
                 {field:'productPrice',title:'价格',width:100},
                 {field:'colorName',title:'颜色',width:150},
                 {field:'sizeName',title:'尺寸',width:100},
                 {field:'productStock',title:'库存',width:100},
-                {field:'productTime',title:'上架时间',width:200},
+                {field:'productTime',title:'商品添加时间',width:200},
                 {field:'productSales',title:'销量',width:100},
                 {field:'productComments',title:'累计评论',width:100},
                 {field:'productConcern',title:'关注量',width:100},
+                {field:'shelfTime',title:'上架时间',width:200},
                 {field:'productState',title:'上\下架',formatter:function(value,row,index){
                         return value == 1 ? "未上架" : "已上架";
                  },width:100},
@@ -174,7 +158,7 @@
                         return value == 1 ? "待审核" : "审核通过";
                  },width:100},
                 {field:'productSelling',title:'热卖状态',formatter:function(value,row,index){
-                        return value == 1 ? "非热卖" : "热卖";
+                        return value == 1 ? "非热卖" : "<font color='red'>热卖</font>";
                     },width:100},
                 {field:'123',title:'操作栏',formatter:function(value,row,index){
                         var btn = "<a href='javascript:editProduct("+row.id+");'>增加库存</a>  ";
@@ -213,7 +197,6 @@
             }
         })
         uploadImg();
-        uploadImgLogo();
         initBrandSelect();
         initColorSelect();
         initSizeSelect();

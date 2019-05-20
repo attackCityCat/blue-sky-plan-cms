@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f62ff864-775c-43f6-8084-807a641afc00" name="Default Changelist" comment="" />
+    <list default="true" id="f62ff864-775c-43f6-8084-807a641afc00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/pojo/ProductBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/pojo/ProductBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-api/target/classes/org/bs/cms/pojo/ProductBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/cms-api/target/classes/org/bs/cms/pojo/ProductBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/mapper/product/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/mapper/product/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-product-provider/src/main/resources/mybatis/mapper/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cms-product-provider/src/main/resources/mybatis/mapper/ProductMapper.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/cms-api/target/" />
@@ -10,6 +17,7 @@
     <ignored path="$PROJECT_DIR$/cms-user-consumer/target/" />
     <ignored path="$PROJECT_DIR$/cms-product-provider/target/" />
     <ignored path="$PROJECT_DIR$/cms-product-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/cms-zuul/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +28,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cms-product-provider/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,6 +91,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -96,11 +99,15 @@
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
               <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-zuul" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -113,7 +120,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cms-zuul" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -171,6 +178,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CmsZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cms-zuul" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.bs.cms.CmsZuulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -222,16 +236,23 @@
       <option name="project" value="LOCAL" />
       <updated>1558254906184</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="5.20  10:24   加入网关路由模块  辛旭">
+      <created>1558319083944</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1558319083944</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10077000" />
+    <option name="totallyTimeSpent" value="10113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1843" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26360068" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26640493" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -253,7 +274,7 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32942432" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49971956" visible="true" weight="0.3283582" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4991587" visible="true" weight="0.3283582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -276,7 +297,8 @@
     <MESSAGE value="蓝天计划电商平台CMS端 V1.1.1" />
     <MESSAGE value="Merge branch 'dev' of https://github.com/attackCityCat/blue-sky-plan-cms into dev&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="Merge branch 'hyd' of https://github.com/attackCityCat/blue-sky-plan-cms into dev&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'hyd' of https://github.com/attackCityCat/blue-sky-plan-cms into dev&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="5.20  10:24   加入网关路由模块  辛旭" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.20  10:24   加入网关路由模块  辛旭" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/cms-api/pom.xml">
