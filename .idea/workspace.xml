@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f62ff864-775c-43f6-8084-807a641afc00" name="Default Changelist" comment="" />
+    <list default="true" id="f62ff864-775c-43f6-8084-807a641afc00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/hs_err_pid10644.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/cms-api/target/" />
@@ -83,8 +88,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -96,6 +99,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,16 +221,23 @@
       <option name="project" value="LOCAL" />
       <updated>1558254906184</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge branch 'hyd' of https://github.com/attackCityCat/blue-sky-plan-cms into dev&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1558268300012</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1558268300012</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9432000" />
+    <option name="totallyTimeSpent" value="10766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1843" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2607964" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26360068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -326,11 +338,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-product-provider/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java" />
     <entry file="file://$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/mapper/product/ProductMapper.java">
