@@ -5,6 +5,7 @@ import org.bs.cms.pojo.User.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashSet;
 import java.util.List;
 
 @RestController
@@ -63,6 +64,17 @@ public class UserController {
         }
 
     }
+
+
+    @RequestMapping(value = "findRoleSet",method = RequestMethod.GET)
+    HashSet<String> findRoleSet(@RequestParam(value = "userId") Integer userId){
+        return userMapper.findRoleSet(userId);
+    };
+
+    @GetMapping("selectByAccount")
+    UserBean selectByAccount(@RequestParam(value = "username") String username){
+        return userMapper.selectByAccount(username);
+    };
 
 
 }

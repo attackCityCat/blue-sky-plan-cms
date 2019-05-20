@@ -5,9 +5,11 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.bs.cms.pojo.User.UserBean;
+import org.springframework.stereotype.Component;
 
+import java.util.HashSet;
 import java.util.List;
-
+@Component
 public interface UserMapper {
 
     @Select("select user_id as userid,useraccount,username,userpassword,telephonenum,status from cms_user where user_id = #{value}")
@@ -24,4 +26,12 @@ public interface UserMapper {
 
     @Delete("delete from cms_user where user_id = #{value}")
     void delete(Integer cid);
+
+    @Select("select * from cms_user where useraccount = #{value}")
+    UserBean selectByAccount(String username);
+
+    @Select("select cr.rolename from  cms_user cu " +
+            "left join cms_role cr on cu.roleid = cr.roleid " +
+            "where cu.user_id = #{value}")
+    HashSet<String> findRoleSet(Integer userId);
 }

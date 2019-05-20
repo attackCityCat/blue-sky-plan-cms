@@ -34,7 +34,7 @@
 					<input type="text" class="form-control" id="signin-email" placeholder="请输入账号" value="" name="username">
 				</div>
 				<div class="form-group m-b-40">
-					<label for="signin-password" class="control-label sr-only">请输入密码</label>
+					<label for="userpassword" class="control-label sr-only">请输入密码</label>
 					<input type="password" name="password" class="form-control"   placeholder="请输入密码" id="userpassword">
 				</div>
 				<button type="button" class="btn btn-primary btn-lg btn-block ft-14" id="loginBtn">登录</button>
@@ -50,7 +50,7 @@
 <script type="text/javascript">
 	$('#loginBtn').click(function(){
 		$.ajax({
-			url:'login',
+			url:'/login/login',
 			type:'post',
 			data:{
 				useraccount:$('#signin-email').val(),
