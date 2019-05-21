@@ -8,5 +8,6 @@
     <file url="file://$PROJECT_DIR$/cms-product-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cms-user-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cms-user-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cms-zuul" charset="UTF-8" />
   </component>
 </project>

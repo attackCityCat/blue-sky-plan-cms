@@ -48,28 +48,10 @@ function getData() {
 						showColumns : false,
 						uniqueId : "roleId",
 						queryParamsType : '',
-						queryParams : function(params) {
-							return {
-								role : $("[name='role']").val(),
-								status : $("[name='status']").val(),
-								pageSize : params.pageSize,
-								pageNumber : params.pageNumber
-							}
-						},
-						responseHandler : function(res) {
-							var rows = res.data.rows;
-							if (rows == null) {
-								rows = [];
-							}
-							return {
-								"total" : res.data.total,
-								"rows" : rows
-							};
-						},
 						columns : [
 								{
 									align:'center',
-									field : 'role',
+									field : 'rolename',
 									title : '角色'
 								},
 								{
@@ -87,11 +69,7 @@ function getData() {
 									}
 								},
 
-								{
-									align:'center',
-									field : 'code',
-									title : '编码'
-								},
+
 								{
 									align:'center',
 									field : 'modifyTime',
@@ -104,11 +82,6 @@ function getData() {
 													crtTime);
 										}
 									}
-								},
-								{
-									align:'center',
-									field : 'modifer',
-									title : '修改人'
 								},
 								{
 									field : 'loadsum',

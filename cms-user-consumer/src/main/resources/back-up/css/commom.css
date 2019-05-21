@@ -1,0 +1,154 @@
+body{
+	min-width: 1000px;
+}
+
+.w-100{
+  width: 100%;
+}
+/* 濞撳懘娅巔adding */
+.pd-0{
+  padding: 0;
+}
+.p-l-0{
+	padding-left:0;
+}
+/* 濞撳懘娅庨幎鏇炲 */
+.b-s{
+  box-shadow: none;
+}
+/* 閸氭垵涔忓ù顔煎З */
+.ft{
+  float: left;
+}
+/* 閸氭垵褰稿ù顔煎З */
+.rt{
+  float: right;
+}
+/* 濞撳懘娅庡ù顔煎З */
+.cl{
+  overflow: hidden;
+}
+/* 濞撳懘娅庡ù顔煎З */
+.no-float{
+  clear: both;
+}
+/* 閺傚洦婀扮仦鍛厬鐎靛綊缍� */
+.t-a-c{
+  text-align: center;
+}
+/* 閺冪姾绔熷锟� */
+.border{
+	border: 1px solid #ddd
+}
+.no-border{
+  border: none;
+}
+.no-border-top{
+  border: #ddd solid 1px;
+  border-top: transparent;
+}
+/* 濮樻潙閽╃�靛綊缍� */
+.inline-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+/* 鐞涘苯鍞撮崸锟� */
+.inline-block{
+  display: inline-block;
+}
+/* flex */
+.flex{
+  display: flex;
+  align-items: center;
+}
+.flex-1{
+  flex: 1;
+}
+/* 鏉堢绐� */
+.m-t-b-10{
+  margin: 10px 0; 
+}
+.m-r-5{
+  margin-right: 5px;
+}
+.m-r-15{
+  margin-right: 15px;
+}
+.m-b-20px{
+  margin-bottom: 20px;
+}
+.m-t-40 {
+  margin-top: 40px;
+}
+.m-b-10{
+  margin-bottom: 10px;
+}
+.m-b-40{
+  margin-bottom: 40px;
+}
+.m-t-20{
+  margin-top: 20px;
+}
+.p-10{
+  padding: 10px;
+}
+
+/* 濞撳懘娅庢径鏍珶鐠猴拷 */
+.m-0 {
+  margin: 0!important;
+}
+/* 鐏炲懍鑵戠�靛綊缍� */
+.t-c{
+  text-align: center;
+}
+
+
+/* 
+ * 鐠佸墽鐤嗙�涙ぞ缍嬫径褍鐨� 
+*/
+/* 瀵缚鐨� */
+.ft-30 {
+  font-size: 30px;
+}
+.ft-26{
+  font-size: 26px;
+}
+.ft-22{
+  font-size: 22px;
+}
+/* 閺嶅洭顣界�涙ぞ缍嬫径褍鐨� */
+.ft-18{
+  font-size: 18px;
+}
+/*  閺嶅洤鍣�涙ぞ缍嬫径褍鐨� */
+.ft-16{
+  font-size: 16px;
+}
+/* 閹诲繗鍫幀褎鏋冪�涙鐡ф担鎾炽亣鐏忥拷 */
+.ft-14{
+  font-size: 14px;
+}
+/* 鏉堝懎濮幀褍鐡ф担鎾炽亣鐏忥拷 */
+.ft-12{
+  font-size: 12px;
+}
+
+/*
+ * 閼冲本娅�
+*/
+.bg-default{
+  background: #f3f3f3;
+}
+.no-bg{
+	background: none;
+}
+.l-h-34{
+	line-height: 34px;
+}
+iframe{
+	width: 100%;
+	height: 550px;
+	border: none;
+	
+}

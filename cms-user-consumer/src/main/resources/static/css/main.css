@@ -626,9 +626,9 @@ ul.list-justify>li span {
  * INPUTS
  ********************/
 .form-control {
- /*  -moz-box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.1); */
+  /*  -moz-box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.1);
+   -webkit-box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.1);
+   box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.1); */
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -783,9 +783,9 @@ ul.list-justify>li span {
 /********************
  * BUTTONS
  ********************/
- button{
- 	padding: 6px 22px;
-	}
+button{
+  padding: 6px 22px;
+}
 .btn {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -802,7 +802,7 @@ ul.list-justify>li span {
 
 .btn-group-sm>.btn,
 .btn-sm {
- /*  padding: 5px 18px; */
+  /*  padding: 5px 18px; */
 }
 
 .btn-group-xs>.btn,
@@ -891,14 +891,14 @@ fieldset[disabled] .btn {
 }
 
 .panel .panel-heading .btn-toggle-collapse, .panel .panel-heading .btn-remove {
-  padding: 0; 
+  padding: 0;
   margin-left: 5px;
   background-color: transparent;
   border: none;
   outline: none;
 }
 .panel .panel-heading .fa{
-	margin-top: 4px;
+  margin-top: 4px;
 }
 
 .date {
@@ -913,22 +913,22 @@ fieldset[disabled] .btn {
 }
 
 .panel .panel-body .bar:nth-child(1) div , .panel .panel-body .bar:nth-child(2) div{
-		font-size: 36px;
-		font-weight: bold;
+  font-size: 36px;
+  font-weight: bold;
 }
 .panel .panel-body .bar:nth-child(1) div span , .panel .panel-body .bar:nth-child(2) div span{
-	font-size: 14px;
-	font-weight: normal;
-	position: relative;
-    top: -5px;
-    left: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  position: relative;
+  top: -5px;
+  left: 5px;
 }
 .panel .panel-body .bar:nth-child(2) {
-	background: #00aaff
+  background: #00aaff
 }
 
 .panel .panel-body .bar:nth-child(3){
-	background: #f3f3f3;
+  background: #f3f3f3;
 }
 
 .panel .panel-body .bar:hover {
@@ -1055,11 +1055,11 @@ fieldset[disabled] .btn {
   display: block;
   font-size: 28px;
   font-weight: 300;
-  color: #00aaff;	
+  color: #00aaff;
   font-weight: bold;
 }
 .metric .number  > span{
-	font-size: 18px;
+  font-size: 18px;
 }
 
 .metric .title {
@@ -1461,7 +1461,7 @@ ul.activity-list>li .timestamp {
   width: 58%;
   height: 100%;
   position: relative;
-  background-image: url("/img/20190415145221.jpg");
+  background-image: url("../../static/img/20190415145221.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1707,7 +1707,7 @@ ul.activity-list>li .timestamp {
 .profile-header .profile-main {
   position: relative;
   padding: 20px;
-  background-image: url("../../assets/img/profile-bg.png");
+  background-image: url("/img/profile-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2682,52 +2682,53 @@ ul.activity-timeline>li:last-child:after {
 }
 /*# sourceMappingURL=main.css.map */
 .creat-ad-type-btn {
-	height: 43px;
-	position: relative;
+  height: 43px;
+  position: relative;
 }
 .creat-ad-type-btn .btn{
-	height: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index:1;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index:1;
 }
 .creat-ad-type-btn [data-target="#editAdPlan1"]{
-	z-index:10;
+  z-index:10;
 }
 input[checked="checked"] :before{
-	content: "\a0"; 
-	width: 10px;
-	height: 10px;
-	background: red;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 18px;
-    margin-right: .4em;
-    border-radius: 50%;
-    border: 1px solid #01cd78;
-    text-indent: .15em;
-    line-height: 1;
+  content: "\a0";
+  width: 10px;
+  height: 10px;
+  background: red;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  margin-right: .4em;
+  border-radius: 50%;
+  border: 1px solid #01cd78;
+  text-indent: .15em;
+  line-height: 1;
 }
 .login-bg{
-	background: url("../../static/img/20190415145221.jpg") center;
-	background-size: cover;
+  background: url("../../static/img/20190415145221.jpg") center;
+  background-size: cover;
 }
 .login-form{
-	min-width: 400px;
-	background: #fff;
-	padding: 20px 40px 40px;
-	margin-top: 80px;
-	border-radius: 4px;
+  min-width: 400px;
+  background: #fff;
+  padding: 20px 40px 40px;
+  margin-top: 80px;
+  border-radius: 4px;
 }
 
 .ct-label.ct-vertical.ct-start{
-	position: relative;
-	right: 10px;
-	top: 5px;
+  position: relative;
+  right: 10px;
+  top: 5px;
 }
 
-@media (min-width: 768px){
-	.form-inline .form-control {
-    width: 120px ;
+@media (min-width: 768px) {
+  .form-inline .form-control {
+    width: 120px;
+  }
 }

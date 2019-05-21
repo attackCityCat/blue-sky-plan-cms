@@ -15,7 +15,7 @@ layui.use('form', function() {
 		$.ajax({
 	        type: 'post',
 	        url: '/login',
-	        data: {'useraccount':data.field.username,'userpassword':data.field.password},
+	        data: {'username':data.field.username,'password':data.field.password},
 	        cache: false,
 	        async : false,
 	        dataType: 'json',
@@ -47,25 +47,25 @@ function login(){
 	$.ajax({
         type: 'post',
         url: '/login',
-        data: {'useraccount':username,'userpassword':password},
+        data: {'username':username,'password':password},
         cache: false,
         async : false,
         dataType: 'json',
         success: function (data ,textStatus, jqXHR)
         {
         	if(data.status == '0'){
-//        		window.location.href='/index?company='+data.company+'&username='+data.username;
-        		window.location.href=data.locationUrl;
+//        		window.location.href='/index?company='+data.company+'&username='+data.username; 
+        		window.location.href=data.locationUrl; 
         	}else{
         		layer.open({
         			content: data.message
-        		});
+        		});  
         	}
         },
-        error:function (XMLHttpRequest, textStatus, errorThrown) {
+        error:function (XMLHttpRequest, textStatus, errorThrown) {      
             layer.open({
             	content: '请求失败'
-            });
+            }); 
         }
      });
 }
@@ -77,25 +77,25 @@ function datalogin(){
 	$.ajax({
         type: 'post',
         url: '/login',
-        data: {'useraccount':username,'userpassword':password},
+        data: {'username':username,'password':password},
         cache: false,
         async : false,
         dataType: 'json',
         success: function (data ,textStatus, jqXHR)
         {
         	if(data.status == '0'){
-        		window.location.href='/async/asynclist';
-//        		window.location.href=data.locationUrl;
+        		window.location.href='/async/asynclist'; 
+//        		window.location.href=data.locationUrl; 
         	}else{
         		layer.open({
         			content: data.message
-        		});
+        		});  
         	}
         },
-        error:function (XMLHttpRequest, textStatus, errorThrown) {
+        error:function (XMLHttpRequest, textStatus, errorThrown) {      
             layer.open({
             	content: '请求失败'
-            });
+            }); 
         }
      });
 }

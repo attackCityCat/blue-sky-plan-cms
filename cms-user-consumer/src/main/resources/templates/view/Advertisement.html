@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>蓝天计划首页平台</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lib/linearicons/style.css">
+    <link rel="stylesheet" href="/lib/chartist/css/chartist-custom.css">
+    <link rel="stylesheet" href="/css/bootstrap-table.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="/css/commom.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/lantian.png">
+    <!-- Javascript -->
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/lib/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/lib/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/lib/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="/lib/chartist/js/chartist.min.js"></script>
+    <script src="/js/klorofil-common.js"></script>
+    <!-- <script src="../static/lib/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> -->
+    <script  src="/lib/zsh-ui/js/bootstrap-4.0.0-dist/js/bootstrap-table.min.js"></script>
+    <script src ="/lib/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+
+
+    <script>
+        $(function(){
+            $('#tt1').tabs('resize',{
+                plain : false,
+                boder : false,
+                width:$(window).width()-18,
+                height: $(window).height()-18,
+            });
+        });
+    </script>
+    <!--Echart 报表-->
+    <script type="text/javascript" src="/js/echarts.min.js"></script>
+    <script type="text/javascript" src="/js/echartsone.min.js"></script>
+    <script type="text/javascript" src="/js/echarts.common.min.js"></script>
+    <script type="text/javascript" src="/js/echarts.simple.min.js"></script>
+
+
+    <link rel="stylesheet" href="/js/bootStrap-addTabs/bootstrap.addtabs.css">
+    <script type="text/javascript" src="/js/bootStrap-addTabs/bootstrap.addtabs.min.js"></script>
+
+    <script type="text/javascript" src="/js/easyui1.5/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="/js/easyui1.5/locale/easyui-lang-zh_CN.js"></script>
+    <link rel="stylesheet" href="/js/easyui1.5/themes/default/easyui.css" type="text/css">
+    <link rel="stylesheet" href="/js/easyui1.5/themes/icon.css" type="text/css">
+
+</head>
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+    <div id="abc"></div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="brand">
+            <!-- 网站 Logo -->
+            <a href="#"><img src="/img/logo-dark3.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+        </div>
+        <div class="container-fluid">
+            <div class="navbar-btn">
+                <button type="button" class="btn-toggle-fullwidth">
+                    <i class="lnr lnr-arrow-left-circle"></i>
+                </button>
+            </div>
+            <div id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right" >
+                    <li>
+                        <div style="line-height:52px;">
+                            <i class="lnr lnr-calendar-full m-r-5">2019年5月20号</i>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="logout()">
+                            <img src="../../static/img/_20190418180241.png" class="img-circle" alt="Avatar">
+                            <span>退出</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <div style="height: 40px"></div>
+    <div id="sidebar-nav" class="sidebar">
+        <div class="sidebar-scroll">
+            <nav>
+                <ul class="nav" id="menuTree">
+                    <li>
+                        <a href="toAdv">
+                            <i class="lnr lnr-home"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <i class="lnr lnr-file-empty"></i>
+                            <span>效果报告</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#subPages" data-toggle="collapse" class="collapsed">
+                            <i class="lnr lnr-lock"></i>
+                            <span>权限管理</span>
+                            <i class="icon-submenu lnr lnr-chevron-left"></i>
+                        </a>
+                        <div id="subPages" class="collapse ">
+                            <ul class="nav">
+                                <li><a href="JavaScript:createIframe('/toUser')" class="">管理员管理</a></li>
+                                <li><a href="JavaScript:alert('功能尚在开发中');" class="">角色管理</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--  aria-expanded="true" -->
+                    <li>
+                        <a href="#subPages2" data-toggle="collapse" class="collapsed">
+                            <i class=" lnr lnr-lock"></i>
+                            <span>商品系统</span>
+                            <i class="icon-submenu lnr lnr-chevron-left"></i>
+                        </a>
+                        <div id="subPages2" class="collapse" >
+                            <ul class="nav">
+                                <li><a href="JavaScript:createIframe('/toShopping')" class="">商品审核</a></li>
+                                <li><a href="JavaScript:createIframe('http://localhost:8184/page/toMain2')" class="">商品管理</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="data-maintain.html" class=""><i class="lnr lnr-screen"></i> <span>数据维护</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="panel panel-headline">
+                            <div class="panel-heading">
+                                <div class="ft">
+                                    <h3 class="panel-title m-0"> <i class="fa fa-medal"></i>授权</h3>
+                                </div>
+                                <div class="rt">
+                                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="flex">
+                                    <img src="/img/auth.png" class="">
+                                    <span class="flex-1 t-a-c text-primary" data-toggle="modal" data-target="#modal">
+											<i class=" fa fa-eye"></i>
+											查看证书
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-headline">
+                            <div class="panel-heading">
+                                <div class="ft">
+                                    <h3 class="panel-title m-0"> <i class="fa fa-medal"></i>公司简介</h3>
+                                </div>
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <p>北京蓝天计划有限公司是国内领先的新锐移动互联网传播公司。</p>
+                                <p>
+                                    公司致力于中国互联网广告资源的开发，是互联网广告资源独家运营商。公司创始人员均是国内媒体、移动互联网行业资深人员，
+                                    业务范围遍及深圳、北京、上海、广州、重庆、天津、武汉、长沙、南昌、成都等全国二十几个大中城市。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <div class="ft">
+                                    <h3 class="panel-title m-0"> <i class="fa fa-medal"></i></h3>
+                                </div>
+                                <div class="right">
+
+                                </div>
+                            </div>
+                            <div id="tabs" style="height: 1000px">
+                                <center>
+                                    <font color="#00008b" size="6">品牌销量报表</font>
+                                </center>
+                                <div id="main" style="width: 100%;height:350px;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">查看证书</h4>
+                    </div>
+                    <div class="modal-body cl _modal">
+                        <img src="/img/authorization.png" class="w-100">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN -->
+    <div class="clearfix"></div>
+    <footer>
+        <input type="hidden" id="footerCompany">
+        <div class="container-fluid">
+            <p id="footer" class="copyright">
+                啦啦啦
+            </p>
+        </div>
+    </footer>
+</div>
+
+</body>
+
+<script type="text/javascript">
+    // 初始化加载
+    $(function(){
+        initMyTable();
+        init();
+    })
+
+    // 页面加载表格
+    function initMyTable(){
+        $('#myTable').bootstrapTable({
+            url:'/product/findProductList',
+            toolbar:'#toolbar',
+            columns:[
+                {checkbox:true},
+                {field:'productTitle',title:'标题',width:200},
+                {field:'productPrice',title:'价格',width:200},
+                {field:'productStock',title:'库存',width:200},
+                {field:'productTime',title:'上架时间',width:200},
+                {field:'productSales',title:'销量',width:200},
+                {field:'productComments',title:'累计评论',width:200},
+                {field:'productConcern',title:'关注量',width:200},
+                {field:'productState',title:'状态',formatter:function(value,row,index){
+                        return value == 1 ? "未上架" : "上架";
+                    },width:200}
+            ]
+        })
+    }
+
+    createIframe = function(url){
+        $("#tabs").html("<iframe src='"+url+"' style='width:99%; height:99%'></iframe>");
+    }
+
+    logout = function(){
+        location.href="/logout";
+    }
+
+
+    function getData(dataAxis,data){
+        $.ajax({
+            async: false,
+            url:"http://192.168.1.140:8184/product/getColumnChart",
+            type:"get",
+            dataType:"json",
+            success:function(list){
+                for(var i =0;i < list.length;i++){
+                    dataAxis.push(list[i].brandName);
+                    data.push(list[i].productSales);
+                }
+            }
+        })
+    }
+
+    function init() {
+        //将echart初始化到div中
+        var myChart=echarts.init(document.getElementById("main"));
+        var dataAxis = [];
+        var data = [];
+        getData(dataAxis,data);
+        var yMax = 500;//y轴最大值
+        var dataShadow = [];
+
+        for (var i = 0; i < data.length; i++) {
+            dataShadow.push(yMax);
+        }
+
+        var option = {
+            title: {
+                text: '特性示例：渐变色 阴影 点击缩放',
+                subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
+            },
+            xAxis: {
+                data: dataAxis,
+                axisLabel: {
+                    inside: true,
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLine: {
+                    show: false
+                },
+                z: 10
+            },
+            yAxis: {
+                axisLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#999'
+                    }
+                }
+            },
+            dataZoom: [
+                {
+                    type: 'inside'
+                }
+            ],
+            series: [
+                { // For shadow
+                    type: 'bar',
+                    itemStyle: {
+                        normal: {color: 'rgba(0,0,0,0.05)'}
+                    },
+                    barGap:'-100%',
+                    barCategoryGap:'40%',
+                    data: dataShadow,
+                    animation: false
+                },
+                {
+                    type: 'bar',
+                    data: data
+                }
+            ]
+        };
+
+        var zoomSize = 6;
+        myChart.on('click', function (params) {
+            console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+            myChart.dispatchAction({
+                type: 'dataZoom',
+                startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+                endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
+            });
+        });
+
+        myChart.setOption(option)  ;
+    }
+    
+    
+    /*// 时间插件
+    $('.date').datetimepicker({
+        language: 'zh-CN',//显示中文
+        format: 'yyyy-mm-dd hh:ii:ss',//显示格式
+        minView: "month",//设置只显示到月份
+        initialDate: new Date(),//初始化当前日期
+        autoclose: true,//选中自动关闭
+        todayBtn: true//显示今日按钮
+    });*/
+</script>
+</html>
