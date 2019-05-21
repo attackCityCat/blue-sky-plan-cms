@@ -19,5 +19,4 @@ public class PageController {
     public String toUpdate(){
         return "view/updateProduct";
     }
-
 }

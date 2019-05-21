@@ -3,8 +3,25 @@
 <html>
 <head>
     <title>bootstrap</title>
+    <!--<style type="text/css">
+        body{
+            background: url(https://dongge520.oss-cn-beijing.aliyuncs.com/dongge520/1558250306687.jpg) no-repeat;
+            background-size:100% 100%;
+            background-attachment:fixed;
+        }
+    </style>-->
+
     <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="/js/bootStrap_util.js"></script>
+
+    <script type="text/javascript" src="/js/easyui_util.js"></script>
+    <script type="text/javascript" src="/js/kindeditor-4.1.10/kindeditor-all.js"></script>
+    <link rel="styleSheet" href="/js/kindeditor-4.1.10/themes/default/default.css" type="text/css">
+
+    <script type="text/javascript" src="/js/easyui1.5/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="/js/easyui1.5/locale/easyui-lang-zh_CN.js"></script>
+    <link rel="stylesheet" href="/js/easyui1.5/themes/default/easyui.css" type="text/css">
+    <link rel="stylesheet" href="/js/easyui1.5/themes/icon.css" type="text/css">
 
     <script type="text/javascript" src="/js/bootstrap/bootstrap3/js/bootstrap.js"></script>
     <link rel="stylesheet" href="/js/bootstrap/bootstrap3/css/bootstrap.css"/>
@@ -27,19 +44,45 @@
     <script type="text/javascript" src="/js/bootstrap/bootstrap-fileinput/js/fileinput.js"></script>
     <script type="text/javascript" src="/js/bootstrap/bootstrap-fileinput/js/locales/zh.js"></script>
 
+    <script>
+        $(function(){
+            $('#tt1').tabs('resize',{
+                plain : false,
+                boder : false,
+                width:$(window).width()-18,
+                height: $(window).height()-18,
+            });
+        });
+    </script>
+    <!--Echart 报表-->
+    <script type="text/javascript" src="/js/echarts.min.js"></script>
+    <script type="text/javascript" src="/js/echartsone.min.js"></script>
+    <script type="text/javascript" src="/js/echarts.common.min.js"></script>
+    <script type="text/javascript" src="/js/echarts.simple.min.js"></script>
+
+
 </head>
-<body>
+<body style="background: #CFEBEE">
 <div id="toolbar">
     <button id="addBtn" type="button" class="btn btn-info glyphicon glyphicon-plus">新增</button>
     <button id="delBtn" type="button" class="btn btn-danger glyphicon glyphicon-remove">删除</button>
 </div>
 
 <div class="table" id="myTable"></div>
+
+        <center>
+            <font color="#00008b" size="6">品牌销量报表</font>
+        </center>
+        <div id="main" style="width: 100%;height:350px;">
+
+        </div>
+
 </body>
 <script type="text/javascript">
     // 初始化加载
     $(function(){
         initMyTable();
+        init();
     })
     // 上传图片
     function uploadImg(){
@@ -112,25 +155,16 @@
         }
         del(ids,url,fn);
     }
-
     // 页面加载表格
     function initMyTable(){
         $('#myTable').bootstrapTable({
             url:'/product/findProductList',
             toolbar:'#toolbar',
-            pagination:true, //是否展示分页
+            fit:true,
+            pagination:true,
             pageList:[1,2,3,5, 10, 20, 50],//分页组件
             pageNumber:1,
             pageSize:5,	//默认每页条数
-            sidePagination:'server',//分页方式：client客户端分页，server服务端分页（*
-            striped:true,
-            clickToSelect: true, //是否启用点击选中行
-            queryParams:function(){
-                return  {
-                    page:this.pageNumber,
-                    rows:this.pageSize
-                }
-            },
             columns:[
                 {checkbox:true},
                 {field:'productTitle',title:'标题',formatter:function(value,row,index){
@@ -141,41 +175,33 @@
                         }
                     },width:300},
                 {field:'brandName',title:'品牌',width:100},
-                {field:'typeName',title:'类型',width:150},
                 {field:'productPrice',title:'价格',width:100},
-                {field:'colorName',title:'颜色',width:150},
-                {field:'sizeName',title:'尺寸',width:100},
                 {field:'productStock',title:'库存',width:100},
-                {field:'productTime',title:'商品添加时间',width:200},
+                {field:'productTime',title:'商品添加时间',width:100},
                 {field:'productSales',title:'销量',width:100},
-                {field:'productComments',title:'累计评论',width:100},
-                {field:'productConcern',title:'关注量',width:100},
-                {field:'shelfTime',title:'上架时间',width:200},
-                {field:'productState',title:'上\下架',formatter:function(value,row,index){
-                        return value == 1 ? "未上架" : "已上架";
-                 },width:100},
+                {field:'colorName',title:'颜色',width:100},
+                {field:'typeName',title:'类型',width:100},
+                {field:'sizeName',title:'尺寸',width:100},
+                {field:'shelfTime',title:'上架时间',width:100},
+                {field:'productState',title:'上下架',formatter:function(value,row,index){
+                        return value == 1 ? "下架" : "上架";
+                    },width:100},
                 {field:'productAudit',title:'审核状态',formatter:function(value,row,index){
-                        return value == 1 ? "待审核" : "审核通过";
-                 },width:100},
-                {field:'productSelling',title:'热卖状态',formatter:function(value,row,index){
-                        return value == 1 ? "非热卖" : "<font color='red'>热卖</font>";
+                        return value == 1 ? "待审核" : value == 0 ? "审核成功" : value == 2 ? "审核中" : value == 3 ? "审核未通过" : "审核失败";
+                    },width:100},
+                {field:'productSelling',title:'热卖',formatter:function(value,row,index){
+                        return value == 1 ? "不热卖" : "<font color='red'>热卖</font>";
                     },width:100},
                 {field:'123',title:'操作栏',formatter:function(value,row,index){
-                        var btn = "<a href='javascript:editProduct("+row.id+");'>增加库存</a>  ";
-                        if (row.productState == 1) {
+                        var btn = "<a href='javascript:editProduct("+row.id+");'>增加库存</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp";
+                        if (row.productState == 1 || row.productAudit != 0) {
                             btn += "<a href='javascript:editState("+row.id+","+row.productState+","+row.productAudit+");'>上架</a>  ";
 
                         }if (row.productState == 0) {
-                            btn += "<a href='javascript:editState("+row.id+","+row.productState+");'>下架</a>  ";
-                            if (row.productSelling == 1) {
-                                btn += "<a href='javascript:editSelling("+row.id+","+row.productSelling+");'>热卖</a>  ";
-                            }else{
-                                btn += "<a href='javascript:editSelling("+row.id+","+row.productSelling+");'>取消热卖</a>  ";
-                            }
-
+                            btn += "<a href='javascript:editState("+row.id+","+row.productState+");'>下架</a>  <a href='javascript:editSelling("+row.id+","+row.productSelling+");'>热卖</a>";
                         }
                         return  btn;
-                 },width:200}
+                 },width:250}
             ]
         })
     }
@@ -333,8 +359,8 @@
      * @param state
      */
     function editState(id,state,audit) {
-        if (audit == 1 && state == 1){
-            bootbox.alert("未审核商品不能做上架操作");
+        if (audit != 0 && state == 1){
+            bootbox.alert("未审核成功商品不能做上架操作");
             searchProduct();
         }else{
             $.ajax({
@@ -370,6 +396,114 @@
                 searchProduct();
             }
         })
+    }
+
+    /**
+     * Echart 柱形图展示
+     * @param dataAxis
+     * @param data
+     */
+    function getData(dataAxis,data){
+        $.ajax({
+            async: false,
+            url:"/product/getColumnChart",
+            type:"get",
+            dataType:"json",
+            success:function(list){
+                for(var i =0;i < list.length;i++){
+                    if (list[i].brandName == null) {
+                        dataAxis.push("");
+                        data.push();
+                    }else {
+                        dataAxis.push(list[i].brandName);
+                        data.push(list[i].productSales);
+                    }
+                }
+            }
+        })
+    }
+
+    function init() {
+        //将echart初始化到div中
+        var myChart=echarts.init(document.getElementById("main"));
+        var dataAxis = [];
+        var data = [];
+        getData(dataAxis,data);
+        var yMax = 500;//y轴最大值
+        var dataShadow = [];
+
+        for (var i = 0; i < data.length; i++) {
+            dataShadow.push(yMax);
+        }
+
+        var option = {
+            title: {
+                text: '特性示例：渐变色 阴影 点击缩放',
+                subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
+            },
+            xAxis: {
+                data: dataAxis,
+                axisLabel: {
+                    inside: true,
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLine: {
+                    show: false
+                },
+                z: 10
+            },
+            yAxis: {
+                axisLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#999'
+                    }
+                }
+            },
+            dataZoom: [
+                {
+                    type: 'inside'
+                }
+            ],
+            series: [
+                { // For shadow
+                    type: 'bar',
+                    itemStyle: {
+                        normal: {color: 'rgba(0,0,0,0.05)'}
+                    },
+                    barGap:'-100%',
+                    barCategoryGap:'40%',
+                    data: dataShadow,
+                    animation: false
+                },
+                {
+                    type: 'bar',
+                    data: data
+                }
+            ]
+        };
+
+        var zoomSize = 6;
+        myChart.on('click', function (params) {
+            console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+            myChart.dispatchAction({
+                type: 'dataZoom',
+                startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+                endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
+            });
+        });
+
+        myChart.setOption(option)  ;
     }
 </script>
 </html>

@@ -91,7 +91,7 @@ public class ProductController {
     }
 
     /**
-     * 修改回显
+     * 根据id增加库存
      * @param id
      * @return
      */
@@ -134,21 +134,13 @@ public class ProductController {
     }
 
     /**
-     * OSS阿里云上传图片
+     * 报表展示
+     * @return
      */
-    @RequestMapping(value = "/product/updaloadImgLogo")
-    @ResponseBody
-    public Map<String, String> updaloadImgLogo(MultipartFile img)throws IOException {
-        if (img == null || img.getSize() <= 0) {
-            throw new IOException("file不能为空");
-        }
-        OSSClientUtil ossClient=new OSSClientUtil();
-        String name = ossClient.uploadImg2Oss(img);
-        String imgUrl = ossClient.getImgUrl(name);
-        String[] split = imgUrl.split("\\?");
-        //System.out.println(split[0]);
-        Map<String, String> map = new HashMap<>();
-        map.put("img",split[0]);
-        return map;
+    @RequestMapping(value = "/product/getColumnChart",method = RequestMethod.GET)
+    public List<ProductBean> getColumnChart(){
+        List<ProductBean> list = productService.getSales();
+        return list;
     }
+
 }

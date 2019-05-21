@@ -33,4 +33,6 @@ public interface ProductServiceApi {
     @RequestMapping(value = "/product/editSelling",method = RequestMethod.POST)
     Boolean editSelling(@RequestParam("id") Integer id,@RequestParam("selling") Integer selling);
 
+    @RequestMapping(value = "/product/getColumnChart",method = RequestMethod.GET)
+    List<ProductBean> getSales();
 }

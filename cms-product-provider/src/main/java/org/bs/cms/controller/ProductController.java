@@ -120,4 +120,14 @@ public class ProductController {
         }
     }
 
+    /**
+     * 报表展示
+     * @return
+     */
+    @RequestMapping(value = "/product/getColumnChart",method = RequestMethod.GET)
+    public List<ProductBean> getColumnChart(){
+        List<ProductBean> list = productMapper.getSales();
+        return list;
+    }
+
 }

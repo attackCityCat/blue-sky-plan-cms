@@ -18,7 +18,7 @@ public interface ProductMapper {
             "tpt.product_sales as productSales , " +
             "tpt.product_comments as productComments , " +
             "tpt.product_concern as productConcern , " +
-            "tpt.product_state as productstate , " +
+            "tpt.product_state as productState , " +
             "tpt.product_audit as productAudit, " +
             "tpt.product_selling as productSelling, " +
             "tpt.shelf_time as shelfTime, " +
@@ -31,7 +31,7 @@ public interface ProductMapper {
             "left join cms_size tst on tpt.size_id = tst.id " +
             "left join cms_type stype on tpt.type_id = stype.id " +
             "left join cms_type btype on stype.pid = btype.id " +
-            "left join cms_product_color tc on tpt.color_id = tc.id")
+            "left join cms_product_color tc on tpt.color_id = tc.id ")
     List<ProductBean> findProductList();
 
     @Select("select * from cms_brand")
@@ -71,6 +71,8 @@ public interface ProductMapper {
     @Insert("insert into cms_product_img (url,product_id) values(#{url},#{productId})")
     void addProductImgInfo(ProductImgBean imgBean);
 
-    @Insert("insert into cms_brand (brand_logo,id) values(#{brandLogo},#{id})")
-    void addBrandLogo(BrandBean brandBean);
+
+    @Select("select cb.brand_name as brandName,product_sales as productSales from cms_product cp \n" +
+            "    left join cms_brand cb on cp.brand_id = cb.id ")
+    List<ProductBean> getSales();
 }
