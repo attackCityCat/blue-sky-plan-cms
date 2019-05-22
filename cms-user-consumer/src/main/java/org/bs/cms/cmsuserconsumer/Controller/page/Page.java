@@ -54,5 +54,15 @@ public class Page {
         return "http://127.0.0.1:8184/js/shop/shop.js";
     }
 
+    @RequestMapping("/page/toUpdate")
+    public String toUpdate(){
+        return "view/updateShopping";
+    }
+
+    @RequestMapping("/page/toNoState")
+    public String toNoState(){
+        return "view/NoState";
+    }
+
 
 }

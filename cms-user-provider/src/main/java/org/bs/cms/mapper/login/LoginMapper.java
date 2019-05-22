@@ -7,6 +7,6 @@ import org.springframework.stereotype.Component;
 @Component
 public interface LoginMapper {
 
-    @Select("select * from cms_user where useraccount = #{value}")
+    @Select("select user_id as userid,useraccount,username,userpassword,status,roleid,telephonenum,modifer,companyid from cms_user where useraccount = #{value}")
     UserBean findUserInfoByName(String useraccount);
 }

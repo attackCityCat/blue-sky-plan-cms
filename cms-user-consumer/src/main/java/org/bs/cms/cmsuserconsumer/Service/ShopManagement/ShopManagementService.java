@@ -19,4 +19,16 @@ public interface ShopManagementService {
 
     @RequestMapping(value = "/product/findProductList")
     Boolean delProduct(String ids);
+
+    @RequestMapping(value = "/shop/shenghe")
+    void shenghe(@RequestParam("ids") Integer[] ids);
+
+    @RequestMapping(value = "/product/findProductListTwo",method = RequestMethod.GET)
+    List<ProductBean> findProductListTwo(@RequestParam("productid") String productid);
+
+    @RequestMapping(value = "/product/editState",method = RequestMethod.POST)
+    void editState(@RequestParam("id") Integer id);
+
+    @RequestMapping(value = "/product/NoSatesProduct",method = RequestMethod.POST)
+    void editNoStates(@RequestParam("id") Integer id);
 }

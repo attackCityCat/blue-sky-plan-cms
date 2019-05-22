@@ -125,8 +125,16 @@ function initMyTable(){
 			{field:'productTime',title:'上架时间',width:200},
 			{field:'productSales',title:'销量',width:100},
 			{field:'productAudit',title:'审核状态',formatter:function(value,row,index){
-					return value == 1 ? "待审核" : "审核通过";
-				},width:100}
+					//0 审核成功 1 待审核 2 审核中 3 审核未通过
+					return value == 1 ? "待审核" : value == 2 ? "审核中" : value == 3 ? "审核未通过" : "审核成功";
+				},width:100},
+			{field:'123',title:'操作栏',formatter:function(value,row,index){
+					var btn = "";
+					if (row.productAudit == 2) {
+						btn += "<a href='javascript:editState("+row.id+");'>审核通过</a> <br> <a href='javascript:editNotState("+row.id+");'>审核未通过</a>";
+					}
+					return  btn;
+				},width:200}
 		]
 	})
 }
@@ -280,6 +288,26 @@ function editProduct(id){
 }
 
 
+function editNotState(id) {
+	bootbox.dialog({
+		title:'<i class="glyphicon glyphicon-user"></i>原因',
+		message:createAddContent('/page/toNoState'),
+		size: 'large',  // large  弹框略大     small  代表弹框略小
+		closeButton:true,
+		buttons:{
+			ok: {
+				label: "<i class='glyphicon glyphicon-floppy-saved'></i>保存",
+				className: 'btn-info',
+				callback: function(){
+					editProductStock(id);
+				}
+			}
+		}
+	})
+
+}
+
+
 
 /**
  *修改库存数量
@@ -288,7 +316,7 @@ function editProduct(id){
  */
 function editProductStock(id) {
 	$.ajax({
-		url:'/product/editProduct',
+		url:'/product/NoSatesProduct',
 		type:'post',
 		data:{
 			id:id,
@@ -306,24 +334,20 @@ function editProductStock(id) {
  * @param id
  * @param state
  */
-function editState(id,state,audit) {
-	if (audit == 1 && state == 1){
-		bootbox.alert("未审核商品不能做上架操作");
-		searchProduct();
-	}else{
+function editState(id) {
 		$.ajax({
 			url:'/product/editState',
 			type:'post',
 			data:{
-				id:id,
-				state:state
+				id:id
+
 			},
 			dataType:'json',
 			success:function(data){
 				searchProduct();
 			}
 		})
-	}
+
 }
 
 /**

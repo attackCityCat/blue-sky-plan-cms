@@ -31,6 +31,8 @@
     <!-- <script src="../static/lib/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> -->
     <script  src="/lib/zsh-ui/js/bootstrap-4.0.0-dist/js/bootstrap-table.min.js"></script>
     <script src ="/lib/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script src="/js/bootstrap-bootbox/bootbox.js"></script>
+    <script src="/js/bootStrap_util.js"></script>
 
 </head>
 <body>
@@ -71,9 +73,70 @@
 </body>
 <script type="text/javascript">
     
+
+
+    //批量审核
+    //0 审核成功 1 待审核 2 审核中 3 审核未通过
     $("#auditBtn").click(function () {
-        shengHetrue();
-    })
+
+        editMany("myTable","userid","/shop/shenghe",true,"initMyTable()");
+    });
+
+    editMany = function(tableId,userid,url,flag,fn){
+        var arr = $("#"+tableId).bootstrapTable('getSelections');
+        var ids = '';
+        names = '';
+        var n = 0;
+        for ( var i = 0; i < arr.length; i++) {
+            ids += ids == '' ? arr[i].id : ',' + arr[i].id;
+            names += names == '' ? arr[i].productTitle : ',' + arr[i].productTitle;
+            n++;
+        }
+
+        if (arr.length <= 0) {
+            bootbox.confirm({
+                size: "small",
+                message: "请选择要审核的数据",
+                callback: function(result){
+                    if (!result) {
+                        return;
+                    }
+                }
+            });
+            return;
+        }
+
+        if (flag) {
+            bootbox.dialog({
+                title:'<i class="glyphicon glyphicon-user"></i>选择审核人',
+                message:createAddContent('/page/toUpdate'),
+                size: 'small',  // large  弹框略大     small  代表弹框略小
+                closeButton:true,
+                buttons:{
+                    ok: {
+                        label: "<i class='glyphicon glyphicon-floppy-saved'></i>选择",
+                        className: 'btn-info',
+                        callback: function(){
+                            var editUserid = $('#productStock').val();
+                            bootbox.confirm({
+                                size: "small",
+                                message: "确定要审核吗?",
+                                callback: function(result){
+                                    if (!result) {
+                                        return;
+                                    }
+                                    edit(ids,editUserid,url,fn);
+                                }
+                            });
+                            return;
+                        }
+                    }
+                }
+            })
+
+        }
+        edit(ids,userid,url,fn);
+    }
 
 
     logout = function(){

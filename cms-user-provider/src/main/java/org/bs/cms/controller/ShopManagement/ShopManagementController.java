@@ -13,6 +13,8 @@ public class ShopManagementController {
     @Autowired
     private ShopManagementMapper shopManagementMapper;
 
+
+
     //审核商户上市的商品
     @PutMapping(value = "/editShop")
     public Boolean editAdmShop(){
@@ -21,6 +23,19 @@ public class ShopManagementController {
             shopManagementMapper.editAdmShop();
             return true;
         }catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    //系统管理员批量审核
+    @RequestMapping(value = "/shop/shenghe")
+    public Boolean shenghe(@RequestParam("ids") Integer[] ids){
+        try {
+
+            shopManagementMapper.shenghe(ids);
+            return true;
+        } catch (Exception e) {
             e.printStackTrace();
             return false;
         }
@@ -47,4 +62,28 @@ public class ShopManagementController {
     public List<ProductBean> findProductList(){
         return shopManagementMapper.findProductList();
     }
+
+    @GetMapping(value = "/product/findProductListTwo")
+    public List<ProductBean> findProductListTwo(@RequestParam("productid") String productid){
+        String[] split = productid.split(",");
+        Integer[] arr = new Integer[split.length];
+        for (int i = 0;i < split.length;i++){
+            arr[i] = Integer.valueOf(split[i]);
+        }
+        return shopManagementMapper.findProductListTwo(arr);
+    }
+
+
+    @PostMapping(value = "/product/editState")
+    public void editState(@RequestParam("id") Integer id){
+        shopManagementMapper.editState(id);
+    }
+
+
+    @PostMapping(value = "/product/NoSatesProduct")
+    public void editNoStates(@RequestParam("id") Integer id){
+        shopManagementMapper.editNoStates(id);
+    }
+
+
 }

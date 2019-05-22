@@ -8,6 +8,11 @@ eureka:
 spring:
   application:
     name: cms-user-consumer
+  data:
+    mongodb:
+      port: 27017
+      host: localhost
+      database: 1810a
 
   main:
     allow-bean-definition-overriding: true #允许相同key情况下beanDefinition实例的覆盖
