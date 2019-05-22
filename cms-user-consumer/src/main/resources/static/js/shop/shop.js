@@ -139,6 +139,82 @@ function initMyTable(){
 	})
 }
 
+
+// 审核不通过
+function editNotState(id){
+	bootbox.dialog({
+		title:'<i class="glyphicon glyphicon-user"></i>审核',
+		message:createAddContent('/page/toNoState'),
+		size: 'large',  // large  弹框略大     small  代表弹框略小
+		closeButton:true,
+		buttons:{
+			ok: {
+				label: "<i class='glyphicon glyphicon-floppy-saved'></i>保存",
+				className: 'btn-info',
+				callback: function(){
+					editProductStock(id);
+					searchProduct();
+					return;
+				}
+			}
+		}
+	})
+}
+
+
+
+
+/**
+ *审核未通过
+ * @param id
+ *
+ */
+editProductStock = function(id) {
+	$.ajax({
+		url:'/product/NoSatesProduct',
+		type:'post',
+		data:{
+			id:id,
+			num:$("#inputProductStock").val()
+		},
+		dataType:'json',
+		async:false,
+		success:function(){
+			searchProduct();
+			return;
+		}
+	})
+}
+
+/**
+ *审核通过
+ * @param id
+ * @param state
+ */
+editState = function(id) {
+	$.ajax({
+		url:'/product/editState',
+		type:'post',
+		data:{
+			id:id
+		},
+		dataType:'json',
+		async:false,
+		success:function(data){
+			if(data){
+				searchProduct();
+				return;
+			}else{
+				searchProduct();
+				return;
+			}
+
+		}
+	})
+
+}
+
+
 //审核
 function shengHetrue(){
 	$.ajax({
@@ -267,87 +343,6 @@ function initBrandSelect(){
 			$("#inputBrandId").html(html);
 		}
 	})
-}
-// 修改库存弹框
-function editProduct(id){
-	bootbox.dialog({
-		title:'<i class="glyphicon glyphicon-user"></i>增加库存',
-		message:createAddContent('/page/toUpdate'),
-		size: 'small',  // large  弹框略大     small  代表弹框略小
-		closeButton:true,
-		buttons:{
-			ok: {
-				label: "<i class='glyphicon glyphicon-floppy-saved'></i>保存",
-				className: 'btn-info',
-				callback: function(){
-					editProductStock(id);
-				}
-			}
-		}
-	})
-}
-
-
-function editNotState(id) {
-	bootbox.dialog({
-		title:'<i class="glyphicon glyphicon-user"></i>原因',
-		message:createAddContent('/page/toNoState'),
-		size: 'large',  // large  弹框略大     small  代表弹框略小
-		closeButton:true,
-		buttons:{
-			ok: {
-				label: "<i class='glyphicon glyphicon-floppy-saved'></i>保存",
-				className: 'btn-info',
-				callback: function(){
-					editProductStock(id);
-				}
-			}
-		}
-	})
-
-}
-
-
-
-/**
- *修改库存数量
- * @param id
- *
- */
-function editProductStock(id) {
-	$.ajax({
-		url:'/product/NoSatesProduct',
-		type:'post',
-		data:{
-			id:id,
-			num:$("#inputProductStock").val()
-		},
-		dataType:'json',
-		success:function(data){
-			searchProduct();
-		}
-	})
-}
-
-/**
- *修改上下架状态
- * @param id
- * @param state
- */
-function editState(id) {
-		$.ajax({
-			url:'/product/editState',
-			type:'post',
-			data:{
-				id:id
-
-			},
-			dataType:'json',
-			success:function(data){
-				searchProduct();
-			}
-		})
-
 }
 
 /**

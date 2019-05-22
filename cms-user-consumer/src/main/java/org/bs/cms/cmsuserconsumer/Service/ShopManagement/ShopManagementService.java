@@ -27,7 +27,7 @@ public interface ShopManagementService {
     List<ProductBean> findProductListTwo(@RequestParam("productid") String productid);
 
     @RequestMapping(value = "/product/editState",method = RequestMethod.POST)
-    void editState(@RequestParam("id") Integer id);
+    Boolean editState(@RequestParam("id") Integer id);
 
     @RequestMapping(value = "/product/NoSatesProduct",method = RequestMethod.POST)
     void editNoStates(@RequestParam("id") Integer id);

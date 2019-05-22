@@ -92,8 +92,14 @@ public class ShopManagementController {
     }
 
     @PostMapping(value = "/product/editState")
-    public void editState(@RequestParam("id") Integer id){
-        shopManagementService.editState(id);
+    public Boolean editState(@RequestParam("id") Integer id){
+        try{
+            shopManagementService.editState(id);
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }
     }
 
 

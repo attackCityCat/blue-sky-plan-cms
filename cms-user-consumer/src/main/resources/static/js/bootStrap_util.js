@@ -235,12 +235,13 @@ edit = function(id,editUserid,url,fn){
 		success:function(data){
 			if (data) {
 				alertbox('small','提示','提交成功');
-				eval(fn);
+				searchProduct();
 				return;
 			}
 			alertbox('small','提示','提交失败');
 		}
-	});
+	})
+
 }
 
 
