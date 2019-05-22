@@ -35,19 +35,6 @@ function getData() {
 					{
 						url : '/role/getroleinfo',
 						method : 'get',
-						striped : true,
-						cache : false,
-						pagination : true,
-						sortable : true,
-						sortOrder : "asc",
-						sidePagination : "server",
-						pageNumber : 1,
-						pageSize : 10,
-						pageList : [ 10, 25, 50, 100 ],
-						strictSearch : true,
-						showColumns : false,
-						uniqueId : "roleId",
-						queryParamsType : '',
 						columns : [
 								{
 									align:'center',
@@ -83,266 +70,51 @@ function getData() {
 										}
 									}
 								},
-								{
-									field : 'loadsum',
-									align: 'center',
-									title : '操作',
-									formatter : function(value, row, index) {
-										return [
-												'<button class="btn btn btn-xs btn-info m-r-5"><i class="fa fa-user-circle-o"></i><span class="like user"  data-toggle="modal" data-target="#relateUserModal" onclick="getRoleId(\''
-														+ row.roleId + '\')">',
-												'关联用户',
-												'</span> </button>',
-												'<button class="btn btn btn-xs btn-success m-r-5"><i class="fa fa-sliders"></i><span class="like func"  data-toggle="modal" data-target="#relateFuncModal" onclick="getResource(\''
-														+ row.roleId
-														+ '\',\''
-														+ row.resourceIds
-														+ '\')">',
-												'关联功能',
-												'</span></button> ',
-												'<button class="btn btn btn-xs btn-primary m-r-5"><i class="fa fa-edit"></i><span class="like func"  data-toggle="modal" data-target="#roleModal" onclick="updateRole(\''
-														+ row.roleId + '\')">',
-												'修改', '</span> </button>' ].join('');
-									}
-								} ]
-					});
+							    {field:'123',title:'操作栏',formatter:function(value,row,index){
+										var string = '';
+										if (row.roleid > 1) {
+											string += '<button class="btn btn-xs btn-danger m-r-5" data-toggle="modal" data-target="#modalAddUser" onclick="editProductStock(\''
+												+ row.roleid
+												+ '\')"><i class="fa fa-trash"></i>关联用户</button>';
+											string += '<button class="btn btn-xs btn-info m-r-5" data-toggle="modal" data-target="#modalAddUser" onclick="editProductStock(\''
+												+ row.roleid
+												+ '\')"><i class="fa fa-edit"></i>关联功能</button>';
+										}
+										return [ string ].join('');
+									},width:200}
+								]
+					})
 }
 
-// 填充用户列表组件
-function getUserData() {
-	$('#userTable').bootstrapTable('refresh');
-	$('.selected-user').html('');
-	$('#userTable')
-			.bootstrapTable(
-					{
-						url : '/user/getuserinfo',
-						method : 'get',
-						cache : false,
-						pagination : true,
-						sortable : true,
-						sortOrder : "asc",
-						sidePagination : "server",
-						pageNumber : 1,
-						pageSize : 10,
-						pageList : [ 10, 25, 50, 100 ],
-						strictSearch : true,
-						showColumns : false,
-						uniqueId : "userId",
-						queryParamsType : '',
-						queryParams : function(params) {
-							return {
-								username : '',
-								status : 1,
-								pageSize : params.pageSize,
-								pageNumber : params.pageNumber
-							}
-						},
-						responseHandler : function(res) {
-							var rows = res.data.rows;
-							if (rows == null) {
-								rows = [];
-							}
-							return {
-								"total" : res.data.total,
-								"rows" : rows
-							};
-						},
-						columns : [
-								{
-									checkbox : true,
-									visible : true,
-									formatter : function(i, row) {// 每次加载
-																	// checkbox时判断当前
-																	// row的
-																	// id是否已经存在全局
-																	// Set()里
-										if ($.inArray(row.username, Array
-												.from(window.userArr)) != -1
-												&& $
-														.inArray(
-																row.username,
-																Array
-																		.from(window.userlist)) != -1) {// 集合需要先转换成数组
-											return {
-												checked : true,// 存在则选中
-												disabled : false
-											// 设置是否可用
-											}
-										} else if ($.inArray(row.username,
-												Array.from(window.userArr)) == -1
-												&& $
-														.inArray(
-																row.username,
-																Array
-																		.from(window.userlist)) != -1) {
-											return {
-												disabled : false
-											}
-										} else if ($.inArray(row.username,
-												Array.from(window.userArr)) != -1
-												&& $
-														.inArray(
-																row.username,
-																Array
-																		.from(window.userlist)) == -1) {
-											return {
-												checked : true
-											}
-										}
-									}
-								},
-								{
-									field : 'username',
-									title : '用户名'
-								},
-								{
-									field : 'modifyTime',
-									title : '修改时间',
-									formatter : function(value, row, index) {
-										if (value != undefined) {
-											var crtTime = new Date(value);
-											return dateFtt(
-													"yyyy-MM-dd hh:mm:ss",
-													crtTime);
-										}
-									}
-								}, {
-									field : 'creator',
-									title : '创建人'
-								}, {
-									field : 'modifer',
-									title : '修改人'
-								} ],
-						onCheck : function(row, $element) {
-							var username = row.username;
-							var userId = row.userId;
-							if (preventRepeatUser(username))
-								return;
-							var txt = '<div class="user-form d-flex  justify-content-around '
-									+ username
-									+ '"><input type="text" disabled="true"  value='
-									+ username
-									+ '><input type="hidden" value='
-									+ userId
-									+ '><div class="btn btn-primary btn-sm delete" isnew="yes" onClick=handleClick(this,\''
-									+ userId + '\')>删除</div></div>';
-							$('.selected-user').append(txt);
-						},
-						onPreBody : function(data) {
-							if (data != null) {
-								userlists = data;
-								$
-										.each(
-												userlists,
-												function(index, row) {
-													if (row.roleId != undefined
-															|| row.roleId != '') {
-														if (row.roleId == window.roleId) {
-															var selectUser = [ row.username ];
-															if (window.userlist
-																	.indexOf(row.username) < 1) {
-																window.userlist
-																		.push(row.username);
-															}
-															$('#userTable')
-																	.bootstrapTable(
-																			'checkBy',
-																			{
-																				field : 'username',
-																				values : selectUser
-																			});
-															$(
-																	'.'
-																			+ row.username
-																			+ ' input')
-																	.attr(
-																			'disabled',
-																			true);
-															$(
-																	'.'
-																			+ row.username
-																			+ ' .delete').attr('isnew','no');
-																	/*.css(
-																			{
-																				"pointer-events" : "none",
-																				"background-color" : "rgb(235, 235, 228)",
-																				"color" : "rgb(84, 84, 84)",
-																				"border-color" : "#A9A9A9"
-																			});*/
-														}
-													}
-												});
-							}
-						},
-						onUncheck : function(row, $element) {
-							var ele = $('.' + row.username + '').find("div");
-							var userId = row.userId;
-							if ($(ele).attr("isnew") == "yes") {
-								$(ele).parent().remove();
-								
-							}else{
-								$.ajax({
-									type:"post",
-									data:{
-										'roleId':"",
-										'userId':"'"+userId+"'",
-										'sou':-2
-									},
-									cache : false,
-									async : false,
-									url : '/user/save',
-									success : function(data, textStatus, jqXHR) {
-										message = '操作用户成功';
-										$(ele).parent().remove();
-									},
-									error : function(XMLHttpRequest, textStatus, errorThrown) {
-										message = '请求失败';
-									}
-								});
-							}
-//							$('.' + row.username + '').remove();
-							window.userArr.splice(window.userArr
-									.indexOf(row.username), 1);
-						},
-						onCheckAll : function(rows) {
-							var str = '';
-							for (var i = 0; i < rows.length; i++) {
-								var username = rows[i].username;
-								if (preventRepeatUser(username))
-									continue;
-								str += '<div class="user-form d-flex justify-content-around'
-										+ username
-										+ '"><input type="text" value='
-										+ username
-										+ '><input type="hidden" value='
-										+ username
-										+ '><div class="btn btn-primary btn-sm delete" onClick=handleClick(this,\''
-										+ rows[i].username
-										+ '\')>删除</div></div>';
-							}
-							$('.selected-user').append(str);
-						},
-						onUncheckAll : function(row) {
-							var selectrow = [];
-							$.each(row, function(index, row) {
-								selectrow.push(row.username);
-							});
-							$('.user-form>input')
-									.each(
-											function(index, input) {
-												var val = $(input).val();
-												if ($.inArray(val,
-														window.userlist) == -1
-														&& $.inArray(val,
-																selectrow) != -1) {
-													removeByValue(
-															window.userArr, val);
-													$(this).parent().remove();
-												}
-											});
-						}
-					});
+
+       function editProductStock(roleid,userid) {
+	          $.ajax({
+		             url:'/role/editUser',
+		             type:'post',
+		             data:{
+			              roleid:roleid,
+			              userid:userid
+		                  },
+				     dataType:'json',
+		             success:function(data){
+			                if(data){
+				                   searchProduct();
+			                }else{
+				                   searchProduct();
+			                }
+
+		             }
+	          })
+       }
+
+
+// 刷新页面函数
+function searchProduct(){
+	$('#table').bootstrapTable('refresh')
 }
+
+
+
 
 // 删除用户列表选中项
 function handleClick(e, userId) {
@@ -428,11 +200,6 @@ function selectUser() {
 	} 
 }
 
-// 获取当前需要关联用户的角色ID
-function getRoleId(roleId) {
-	window.roleId = roleId;
-	getUserData();
-}
 
 // 阻止添加重复的需要提交的用户数据
 function preventRepeatUser(index) {
@@ -452,81 +219,7 @@ function removeByValue(arr, val) {
 	}
 }
 
-// 获取功能列表
-function getResource(roleId, resourceIds) {
-	var resourceIdsarr = [];
-	if (resourceIds != undefined) {
-		resourceIdsarr = resourceIds.split(',');
-	}
-	window.roleId = roleId;
-	var setting = {
-		view : {
-			selectedMulti : false,
-			fontCss : {
-				'font-size' : '16px',
-				'font-family' : '微软雅黑'
-			}
-		},
-		check : {
-			enable : true,
-				chkboxType: { "Y" : "", "N" : "" }
-		},
-		data : {
-			key : {
-				title : "title"
-			},
-			simpleData : {
-				enable : true
-			}
-		},
-		callback : {
-			onCheck : onCheck
-		// 单击事件
-		}
-	};
-	$.ajax({
-		type : 'post',
-		url : '/resource/getallresource',
-		cache : false,
-		async : false,
-		dataType : 'json',
-		success : function(data, textStatus, jqXHR) {
-			if (data.status == '0') {
-				var zNodes = [];
-				var isCheck = false;
-				$.each(data.data, function(index, row) {
-					if (resourceIdsarr.length > 0) {
-						if (resourceIdsarr.indexOf(row.id) >= 0) {
-							isCheck = true;
-						} else {
-							isCheck = false;
-						}
-					}
-					zNodes.push({
-						'id' : row.id,
-						'pId' : row.parentId,
-						'name' : row.name,
-						'title' : '',
-						'checked' : isCheck,
-						'open' : true
-					})
-				});
-				$.fn.zTree.init($("#tree"), setting, zNodes);
-			} else {
-//				layer.open({
-//					content : data
-//				});
-				alert(data);
-			}
-		},
-		error : function(XMLHttpRequest, textStatus, errorThrown) {
-//			layer.open({
-//				content : '请求失败'
-//			});
-			alert('请求失败');
-		}
-	});
-}
+
 
 // 功能列表点击事件
 function onCheck(event, treeId, treeNode) {

@@ -9,6 +9,8 @@ public class RoleBean implements Serializable {
 
     private String rolename;
 
+    private Integer status;
+
     public Integer getRoleid() {
         return roleid;
     }
@@ -25,11 +27,24 @@ public class RoleBean implements Serializable {
         this.rolename = rolename;
     }
 
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "RoleBean{" +
                 "roleid=" + roleid +
                 ", rolename='" + rolename + '\'' +
+                ", status=" + status +
                 '}';
     }
 }

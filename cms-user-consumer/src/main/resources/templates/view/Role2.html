@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>蓝天计划角色管理平台</title>
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootStrap_util.js"></script>
+
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootstrap3/css/bootstrap.css"/>
+
+    <!-- 引入选项卡的js、css -->
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootStrap-addTabs/bootstrap.addtabs.css">
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootStrap-addTabs/bootstrap.addtabs.min.js"></script>
+
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootstrap-table/bootstrap-table.css">
+    <script src="/js/bootstrap/bootstrap/bootstrap-table/bootstrap-table.js"></script>
+    <script src="/js/bootstrap/bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+
+    <script src="/js/bootstrap/bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script src="/js/bootstrap/bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+
+    <script src="/js/bootstrap/bootstrap/bootstrap-bootbox/bootbox.js"></script>
+    <!-- 引入文件上传的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootstrap-fileinput/css/fileinput.css">
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootstrap-fileinput/js/fileinput.js"></script>
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootstrap-fileinput/js/locales/zh.js"></script>
+
+</head>
+<body>
+<div id="toolbar">
+</div>
+
+<div class="table" id="myTable" style="width: 100%"></div>
+</body>
+<script type="text/javascript">
+    // 初始化加载
+    $(function(){
+        initMyTable();
+    })
+
+    // 页面加载表格
+    function initMyTable(){
+        $('#myTable').bootstrapTable({
+            url:'/role/getroleinfo',
+            method : 'get',
+            //toolbar:'#toolbar',
+            //pagination:true, //是否展示分页
+            //pageList:[1,2,3,5, 10, 20, 50],//分页组件
+            //pageNumber:1,
+            //pageSize:5,	//默认每页条数
+            //sidePagination:'server',//分页方式：client客户端分页，server服务端分页（*
+            //striped:true,
+            //clickToSelect: true, //是否启用点击选中行
+            //queryParams:function(){
+                // return  {
+                //     page:this.pageNumber,
+                //     rows:this.pageSize
+                // }
+            //},
+            columns : [
+                {
+                    align:'center',
+                    field : 'rolename',
+                    title : '角色'
+                },
+                {
+                    align:'center',
+                    field : 'status',
+                    title : '是否有效',
+                    formatter : function(value, row, index) {
+                        if (value != undefined) {
+                            if (value == '0') {
+                                return '否';
+                            } else {
+                                return '是';
+                            }
+                        }
+                    }
+                },
+
+
+                {
+                    align:'center',
+                    field : 'modifyTime',
+                    title : '最后修改时间',
+                    formatter : function(value, row, index) {
+                        if (value != undefined) {
+                            var crtTime = new Date(value);
+                            return dateFtt(
+                                "yyyy-MM-dd hh:mm:ss",
+                                crtTime);
+                        }
+                    }
+                },
+                {field:'123',title:'操作栏',formatter:function(value,row,index){
+                        var btn = "";
+                        if (row.roleid > 1) {
+                            btn += "<a href='javascript:editProduct(" + row.roleid + ");'>关联用户</a>   ";
+                            btn += "<a href='javascript:editState(" + row.roleid + ");'>关联功能</a>  ";
+                        }
+                        return  btn;
+                    }}
+            ]
+        })
+    }
+    // 新增弹框
+    $("#addBtn").click(function(){
+        bootbox.dialog({
+            title:'<i class="glyphicon glyphicon-user"></i>新增',
+            message:$.parseHTML(createAddContent('/page/toAddProduct')),
+            size: 'large',
+            closeButton:true,
+            buttons:{
+                ok: {
+                    label: "<i class='glyphicon glyphicon-floppy-saved'></i>保存",
+                    className: 'btn-info',
+                    callback: function(){
+                        saveProduct();
+                    }
+                }
+            }
+        })
+        uploadImg();
+        initBrandSelect();
+        initColorSelect();
+        initSizeSelect();
+        getLinkage('typeSelect',0,'/product/findType');
+    })
+    // 刷新页面函数
+    function searchProduct(){
+        $('#myTable').bootstrapTable('refresh')
+    }
+    // 刷新页面函数
+    function searchLogo(){
+        $('#myTab').bootstrapTable('refresh')
+    }
+    // 新增提交
+    function saveProduct(){
+        $.ajax({
+            url:'/product/saveProduct',
+            type:'post',
+            data:$("#productForm").serialize(),
+            dataType:'json',
+            success:function(data){
+                if (data) {
+                    bootbox.alert("保存成功");
+                    searchProduct();
+                }else{
+                    bootbox.alert("保存失败");
+                }
+            }
+        })
+    }
+    // 同步请求 根据新增弹框引用html页面
+    var res;
+    function createAddContent(url){
+        $.ajax({
+            url:url,
+            async:false,
+            success:function(data){
+                res = data;
+            }
+        });
+        return res;
+    }
+
+
+    //加载尺寸下拉
+    function initSizeSelect(){
+        $.ajax({
+            url:'/product/findSize',
+            type:'get',
+            data:{},
+            dataType:'json',
+            success:function(data){
+                var html = '<option value="-1">请选择</option>';
+                for (var i = 0; i < data.length; i++) {
+                    html += "<option value='"+data[i].id+"'>"+data[i].size_name+"</option>";
+                }
+                $("#inputSize").html(html);
+            }
+        })
+    }
+    //加载颜色下拉
+    function initColorSelect(){
+        $.ajax({
+            url:'/product/findColor',
+            type:'get',
+            data:{},
+            dataType:'json',
+            success:function(data){
+                var html = '<option value="-1">请选择</option>';
+                for (var i = 0; i < data.length; i++) {
+                    html += "<option value='"+data[i].id+"'>"+data[i].color_name+"</option>";
+                }
+                $("#inputColorId").html(html);
+            }
+        })
+    }
+    //加载品牌下拉
+    function initBrandSelect(){
+        $.ajax({
+            url:'/product/findBrand',
+            type:'get',
+            data:{},
+            dataType:'json',
+            success:function(data){
+                var html = '<option value="-1">请选择</option>';
+                for (var i = 0; i < data.length; i++) {
+                    html += "<option value='"+data[i].id+"'>"+data[i].brand_name+"</option>";
+                }
+                $("#inputBrandId").html(html);
+            }
+        })
+    }
+    // 修改库存弹框
+    function editProduct(roleid){
+        bootbox.dialog({
+            title:'<i class="glyphicon glyphicon-user"></i>增加库存',
+            message:createAddContent('/page/toUpdateRole'),
+            size: 'small',  // large  弹框略大     small  代表弹框略小
+            closeButton:true,
+            buttons:{
+                ok: {
+                    label: "<i class='glyphicon glyphicon-floppy-saved'></i>保存",
+                    className: 'btn-info',
+                    callback: function(){
+                        editProductStock(roleid);
+                    }
+                }
+            }
+        })
+    }
+    /**
+     *修改库存数量
+     * @param id
+     *
+     */
+    function editProductStock(roleid) {
+        $.ajax({
+            url:'/role/editUser',
+            type:'post',
+            data:{
+                roleid:roleid,
+                userid:$("#productStock").val()
+            },
+            dataType:'json',
+            success:function(data){
+                if(data){
+                    searchProduct();
+                }else {
+                    searchProduct();
+                }
+
+            }
+        })
+    }
+
+    /**
+     *修改上下架状态
+     * @param id
+     * @param state
+     */
+    function editState(roleid) {
+        if (roleid==2){
+            bootbox.dialog({
+                title:'<i class="glyphicon glyphicon-user"></i>功能展示',
+                message:createAddContent('/page/toRoleUse'),
+                size: 'small',  // large  弹框略大     small  代表弹框略小
+                data:{
+                    roleid:roleid
+                },
+                closeButton:true,
+                buttons:{
+                    ok: {
+                        label: "<i class='glyphicon glyphicon-floppy-saved'></i>了解",
+                        className: 'btn-info',
+                        callback: function(){
+                            searchProduct();
+                        }
+                    }
+                }
+            })
+        }else{
+            bootbox.dialog({
+                title:'<i class="glyphicon glyphicon-user"></i>功能展示',
+                message:createAddContent('/page/toRoleUse2'),
+                size: 'small',  // large  弹框略大     small  代表弹框略小
+                data:{
+                    roleid:roleid
+                },
+                closeButton:true,
+                buttons:{
+                    ok: {
+                        label: "<i class='glyphicon glyphicon-floppy-saved'></i>了解",
+                        className: 'btn-info',
+                        callback: function(){
+                            searchProduct();
+                        }
+                    }
+                }
+            })
+        }
+
+
+
+    }
+
+    /**
+     * 设置热卖  and  取消热卖
+     * @param id
+     * @param selling
+     */
+    function editSelling(id,selling) {
+        $.ajax({
+            url:'/product/editSelling',
+            type:'post',
+            data:{
+                id:id,
+                selling:selling
+            },
+            dataType:'json',
+            success:function(data){
+                searchProduct();
+            }
+        })
+    }
+
+    createIframe = function(url){
+        $("#tabs").html("<iframe src='"+url+"' style='width:99%; height:99%'></iframe>");
+    }
+
+    logout = function(){
+        location.href="/logout";
+    }
+</script>
+</html>

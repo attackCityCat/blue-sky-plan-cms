@@ -31,7 +31,7 @@ public class Page {
 
     @RequestMapping("toRole")
     public  String toRole(){
-        return "view/role";
+        return "view/Role2";
     }
 
     @RequestMapping("toAdv")
@@ -62,6 +62,21 @@ public class Page {
     @RequestMapping("/page/toNoState")
     public String toNoState(){
         return "view/NoState";
+    }
+
+    @RequestMapping("/page/toUpdateRole")
+    public String toUpdateRole(){
+        return "view/UpdateRole";
+    }
+
+    @RequestMapping("/page/toRoleUse")
+    public String toRoleUse(){
+        return "view/RoleUse";
+    }
+
+    @RequestMapping("/page/toRoleUse2")
+    public String toRoleUse2(){
+        return "view/RoleUse2";
     }
 
 

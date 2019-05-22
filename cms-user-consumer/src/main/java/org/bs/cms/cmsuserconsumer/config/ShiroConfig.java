@@ -47,9 +47,10 @@ public class ShiroConfig {
 //        filterChainDefinitionMap.put("/logout", "logout");
 //        filterChainDefinitionMap.put("/*/*", "authc");
 
+         filterChainDefinitionMap.put("/toUser", "roles[系统管理员]");
+         filterChainDefinitionMap.put("/toShopping", "roles[审核管理员]");
+         filterChainDefinitionMap.put("/", "roles[店铺管理员]");
 
-
-        //拦截到/login/logout 请求，自动进行登出操作
 
 
 
