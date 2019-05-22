@@ -32,5 +32,17 @@ public class ShopManagementController {
     @GetMapping(value = "/product/findProductList")
     public List<ProductBean> findProductList(){
         return shopManagementService.findProductList();
+<<<<<<< Updated upstream
+=======
+    }
+    /**
+     * 报表展示
+     * @return
+     */
+    @RequestMapping(value = "/product/getColumnChart",method = RequestMethod.GET)
+    public List<ProductBean> getColumnChart(){
+        List<ProductBean> list = shopManagementService.getSales();
+        return list;
+>>>>>>> Stashed changes
     }
 }

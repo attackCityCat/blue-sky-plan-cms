@@ -16,7 +16,16 @@ public interface ShopManagementService {
 
     @RequestMapping(value = "/product/findProductList",method = RequestMethod.GET)
     List<ProductBean> findProductList();
+<<<<<<< Updated upstream
 
     @RequestMapping(value = "/product/findProductList")
     Boolean delProduct(String ids);
+=======
+
+    @RequestMapping(value = "/product/findProductList")
+    Boolean delProduct(String ids);
+
+    @RequestMapping(value = "/product/getColumnChart",method = RequestMethod.GET)
+    List<ProductBean> getSales();
+>>>>>>> Stashed changes
 }

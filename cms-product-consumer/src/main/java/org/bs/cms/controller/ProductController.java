@@ -1,8 +1,11 @@
 package org.bs.cms.controller;
 
+
+import com.alibaba.fastjson.JSON;
 import org.bs.cms.pojo.*;
 import org.bs.cms.service.ProductService;
 import org.bs.cms.utils.OSSClientUtil;
+import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -85,7 +88,7 @@ public class ProductController {
      * @param ids
      * @return
      */
-    @DeleteMapping(value = "/product/delProduct")
+    @RequestMapping(value = "/product/delProduct")
     public Boolean delProduct(@RequestParam("ids") String ids){
            return productService.delProduct(ids);
     }
@@ -100,14 +103,38 @@ public class ProductController {
         return productService.editProduct(id,num);
     }
 
+    @Autowired
+    private AmqpTemplate amqpTemplate;
+    /**
+     * 根据ID修改价格
+     * 同时将要修改的商品 和价格通过队列发送出去 从而达到修改用户购物车的商品
+     * @param id
+     * @param num
+     * @return
+     */
+    @RequestMapping(value = "/product/editPrice",method = RequestMethod.POST)
+    public Boolean editPrice(@RequestParam("id") Integer id,@RequestParam("num") Integer num){
+        Boolean aBoolean = productService.editPrice(id, num);
+        if (aBoolean){
+            EditPriceBean editPriceBean = new EditPriceBean();
+            editPriceBean.setProductId(id);
+            editPriceBean.setProductPrice(num);
+            String string = JSON.toJSONString(editPriceBean);
+            amqpTemplate.convertAndSend("EditShop", string);
+        }
+        return aBoolean;
+    }
+
     /**
      * 修改上下架状态
+     * 同时将要下架的商品 和价格通过队列发送出去 从而达到删除用户购物车的商品
      * @param id
      * @param state
      * @return
      */
     @RequestMapping(value = "/product/editState",method = RequestMethod.POST)
     public Boolean editState(@RequestParam("id") Integer id,@RequestParam("state") Integer state){
+        amqpTemplate.convertAndSend("delShop",id);
         return productService.editState(id,state);
     }
     @RequestMapping(value = "/product/editSelling",method = RequestMethod.POST)

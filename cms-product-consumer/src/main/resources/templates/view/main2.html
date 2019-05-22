@@ -68,6 +68,7 @@
     <button id="delBtn" type="button" class="btn btn-danger glyphicon glyphicon-remove">删除</button>
 </div>
 
+<<<<<<< Updated upstream
 <div class="table" id="myTable"></div>
 
         <center>
@@ -77,12 +78,28 @@
 
         </div>
 
+=======
+<div class="table" id="myTable" style="overflow:hidden;overflow-y:hidden"></div>
+
+        <center>
+            <!--<font color="#00008b" size="6">品牌销量报表</font>-->
+        </center>
+        <div id="main" style="width: 2000px;height:350px;">
+
+        </div>
+
+
+>>>>>>> Stashed changes
 </body>
 <script type="text/javascript">
     // 初始化加载
     $(function(){
         initMyTable();
+<<<<<<< Updated upstream
         init();
+=======
+        //init();
+>>>>>>> Stashed changes
     })
     // 上传图片
     function uploadImg(){
@@ -164,7 +181,11 @@
             pagination:true,
             pageList:[1,2,3,5, 10, 20, 50],//分页组件
             pageNumber:1,
+<<<<<<< Updated upstream
             pageSize:5,	//默认每页条数
+=======
+            pageSize:10,	//默认每页条数
+>>>>>>> Stashed changes
             columns:[
                 {checkbox:true},
                 {field:'productTitle',title:'标题',formatter:function(value,row,index){
@@ -175,8 +196,13 @@
                         }
                     },width:300},
                 {field:'brandName',title:'品牌',width:100},
+<<<<<<< Updated upstream
                 {field:'productPrice',title:'价格',width:100},
                 {field:'productStock',title:'库存',width:100},
+=======
+                {field:'productPrice',title:'价格',width:50},
+                {field:'productStock',title:'库存',width:50},
+>>>>>>> Stashed changes
                 {field:'productTime',title:'商品添加时间',width:100},
                 {field:'productSales',title:'销量',width:100},
                 {field:'colorName',title:'颜色',width:100},
@@ -185,7 +211,11 @@
                 {field:'shelfTime',title:'上架时间',width:100},
                 {field:'productState',title:'上下架',formatter:function(value,row,index){
                         return value == 1 ? "下架" : "上架";
+<<<<<<< Updated upstream
                     },width:100},
+=======
+                    },width:50},
+>>>>>>> Stashed changes
                 {field:'productAudit',title:'审核状态',formatter:function(value,row,index){
                         return value == 1 ? "待审核" : value == 0 ? "审核成功" : value == 2 ? "审核中" : value == 3 ? "审核未通过" : "审核失败";
                     },width:100},
@@ -193,7 +223,12 @@
                         return value == 1 ? "不热卖" : "<font color='red'>热卖</font>";
                     },width:100},
                 {field:'123',title:'操作栏',formatter:function(value,row,index){
+<<<<<<< Updated upstream
                         var btn = "<a href='javascript:editProduct("+row.id+");'>增加库存</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp";
+=======
+                        var btn = "<a href='javascript:editProduct("+row.id+");'>增加库存</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+                            "<a href='javascript:editPrice("+row.id+");'>修改价格</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+>>>>>>> Stashed changes
                         if (row.productState == 1 || row.productAudit != 0) {
                             btn += "<a href='javascript:editState("+row.id+","+row.productState+","+row.productAudit+");'>上架</a>  ";
 
@@ -201,7 +236,11 @@
                             btn += "<a href='javascript:editState("+row.id+","+row.productState+");'>下架</a>  <a href='javascript:editSelling("+row.id+","+row.productSelling+");'>热卖</a>";
                         }
                         return  btn;
+<<<<<<< Updated upstream
                  },width:250}
+=======
+                 },width:400}
+>>>>>>> Stashed changes
             ]
         })
     }
@@ -231,10 +270,6 @@
     // 刷新页面函数
     function searchProduct(){
         $('#myTable').bootstrapTable('refresh')
-    }
-    // 刷新页面函数
-    function searchLogo(){
-        $('#myTab').bootstrapTable('refresh')
     }
     // 新增提交
     function saveProduct(){
@@ -330,6 +365,39 @@
                         editProductStock(id);
                     }
                 }
+            }
+        })
+    }
+    // 修改价格弹框
+    function editPrice(id){
+        bootbox.dialog({
+            title:'<i class="glyphicon glyphicon-user"></i>价格修改',
+            message:createAddContent('/page/toPrice'),
+            size: 'small',  // large  弹框略大     small  代表弹框略小
+            closeButton:true,
+            buttons:{
+                ok: {
+                    label: "<i class='glyphicon glyphicon-floppy-saved'></i>保存",
+                    className: 'btn-info',
+                    callback: function(){
+                        editProductPrice(id);
+                    }
+                }
+            }
+        })
+    }
+    // 修改商品价格
+    function editProductPrice(id) {
+        $.ajax({
+            url:'/product/editPrice',
+            type:'post',
+            data:{
+                id:id,
+                num:$("#inputProductPrice").val()
+            },
+            dataType:'json',
+            success:function(data){
+                searchProduct();
             }
         })
     }

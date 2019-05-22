@@ -53,7 +53,7 @@ public class ProductController {
             return false;
         }
     }
-    @DeleteMapping(value = "/product/delProduct")
+    @RequestMapping(value = "/product/delProduct")
     public Boolean delProduct(@RequestParam("ids") String ids){
         try {
             String[] split = ids.split(",");
@@ -73,6 +73,16 @@ public class ProductController {
 
         try {
             productMapper.editProduct(id,num);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+    @RequestMapping(value = "/product/editPrice",method = RequestMethod.POST)
+    public Boolean editPrice(@RequestParam("id") Integer id,@RequestParam("num") Integer num){
+        try {
+            productMapper.editPrice(id,num);
             return true;
         } catch (Exception e) {
             e.printStackTrace();

@@ -72,7 +72,16 @@ public interface ProductMapper {
     void addProductImgInfo(ProductImgBean imgBean);
 
 
+<<<<<<< Updated upstream
     @Select("select cb.brand_name as brandName,product_sales as productSales from cms_product cp \n" +
             "    left join cms_brand cb on cp.brand_id = cb.id ")
     List<ProductBean> getSales();
+=======
+    @Select("select sum(cp.product_sales) as productSales,cb.brand_name as brandName from cms_product cp " +
+            "    left join cms_brand cb on cp.brand_id = cb.id  GROUP BY cb.brand_name ")
+    List<ProductBean> getSales();
+
+    @Update("update cms_product set product_price = #{num} where product_id = #{id}")
+    void editPrice(Integer id, Integer num);
+>>>>>>> Stashed changes
 }

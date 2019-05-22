@@ -46,4 +46,11 @@ public interface ShopManagementMapper {
             "		</foreach> " +
             ")</script>")
     void delProduct(Integer[] arr);
+<<<<<<< Updated upstream
+=======
+
+    @Select("select sum(cp.product_sales) as productSales,cb.brand_name as brandName from cms_product cp " +
+            "          left join cms_brand cb on cp.brand_id = cb.id  GROUP BY cb.brand_name ")
+    List<ProductBean> getSales();
+>>>>>>> Stashed changes
 }

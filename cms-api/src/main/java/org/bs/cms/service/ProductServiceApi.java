@@ -21,7 +21,7 @@ public interface ProductServiceApi {
     List<TypeBean> findType(@RequestParam("pid") Integer pid);
     @RequestMapping(value = "/product/saveProduct",method = RequestMethod.POST)
     void saveProduct(@RequestBody ProductBean productBean);
-    @DeleteMapping(value = "/product/delProduct")
+    @RequestMapping(value = "/product/delProduct")
     Boolean delProduct(@RequestParam("ids") String ids);
 
     @RequestMapping(value = "/product/editProduct",method = RequestMethod.POST)
@@ -35,4 +35,10 @@ public interface ProductServiceApi {
 
     @RequestMapping(value = "/product/getColumnChart",method = RequestMethod.GET)
     List<ProductBean> getSales();
+<<<<<<< Updated upstream
+=======
+
+    @RequestMapping(value = "/product/editPrice",method = RequestMethod.POST)
+    Boolean editPrice(@RequestParam("id") Integer id,@RequestParam("num") Integer num);
+>>>>>>> Stashed changes
 }
