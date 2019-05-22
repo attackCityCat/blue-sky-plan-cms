@@ -69,9 +69,10 @@ public class ShopManagementController {
         //获取session
         HttpSession session = request.getSession();
         Integer userid = (Integer) session.getAttribute("userid");
+        System.out.println(userid);
         if (userid == 1){
             return shopManagementService.findProductList();
-        }else if(userid == 2){
+        }else if(userid == 2 ){
             Query query = new Query(Criteria.where("userid").is(userid));
             List<ExamineBean> list = mongoTemplate.find(query,ExamineBean.class);
             String productid = "";
