@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ea9cf5c-9b2a-4630-9c0c-8c6b24a5a59e" name="Default Changelist" comment="" />
+    <list default="true" id="0ea9cf5c-9b2a-4630-9c0c-8c6b24a5a59e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/cms-api/target/" />
@@ -41,6 +44,8 @@
       <find>stateBtn</find>
       <find>echarts</find>
       <find>jquery</find>
+      <find>modal</find>
+      <find>myModalLabel</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -234,7 +239,7 @@
       <workItem from="1558091178873" duration="1624000" />
       <workItem from="1558255249826" duration="3589000" />
       <workItem from="1558312098763" duration="5617000" />
-      <workItem from="1558487760695" duration="31119000" />
+      <workItem from="1558487760695" duration="34720000" />
     </task>
     <task id="LOCAL-00001" summary="蓝天计划电商平台CMS端 V1.1.0">
       <created>1557923307839</created>
@@ -292,16 +297,23 @@
       <option name="project" value="LOCAL" />
       <updated>1558531805914</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="4444  5.22 21:29 一键上下架  饼状报表">
+      <created>1558531880895</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1558531880895</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51191000" />
+    <option name="totallyTimeSpent" value="54792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25773746" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25773746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -311,7 +323,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49893278" visible="true" weight="0.34749454" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893278" visible="true" weight="0.34749454" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978677" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -353,8 +365,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="4444  5.22 21:29 一键上下架  饼状报表" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cms-eureka/.mvn/wrapper/MavenWrapperDownloader.java" />
-    <entry file="file://$PROJECT_DIR$/cms-eureka/pom.xml" />
     <entry file="file://$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/pojo/Role/RoleBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -726,10 +736,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/img/auth.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/img/authorization.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="466" column="22" lean-forward="true" selection-start-line="466" selection-start-column="22" selection-end-line="466" selection-end-column="22" />
+        <state relative-caret-position="172">
+          <caret line="267" column="64" selection-start-line="267" selection-start-column="52" selection-end-line="267" selection-end-column="64" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
