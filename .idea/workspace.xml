@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ea9cf5c-9b2a-4630-9c0c-8c6b24a5a59e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/service/ProductServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/service/ProductServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-api/target/classes/org/bs/cms/service/ProductServiceApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/cms-api/target/classes/org/bs/cms/service/ProductServiceApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/config/RabbitMqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/config/RabbitMqConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/controller/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-product-consumer/src/main/java/org/bs/cms/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/mapper/product/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-product-provider/src/main/java/org/bs/cms/mapper/product/ProductMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-product-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cms-product-provider/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/ShopManagement/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/ShopManagement/ShopManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/ShopManagement/ShopManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/ShopManagement/ShopManagementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/ShopManagement/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/ShopManagement/ShopManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/ShopManagement/ShopManagementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/ShopManagement/ShopManagementMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-provider/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="0ea9cf5c-9b2a-4630-9c0c-8c6b24a5a59e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/cms-api/target/" />
@@ -39,22 +21,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6070">
-              <caret line="252" column="53" lean-forward="true" selection-start-line="252" selection-start-column="53" selection-end-line="252" selection-end-column="53" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,7 +47,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hyd" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -267,7 +234,7 @@
       <workItem from="1558091178873" duration="1624000" />
       <workItem from="1558255249826" duration="3589000" />
       <workItem from="1558312098763" duration="5617000" />
-      <workItem from="1558487760695" duration="30877000" />
+      <workItem from="1558487760695" duration="31119000" />
     </task>
     <task id="LOCAL-00001" summary="蓝天计划电商平台CMS端 V1.1.0">
       <created>1557923307839</created>
@@ -318,11 +285,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558487947247</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="4444  5.22 21:29 一键上下架  饼状报表">
+      <created>1558531805914</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1558531805914</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50949000" />
+    <option name="totallyTimeSpent" value="51191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -375,7 +349,8 @@
     <MESSAGE value="2222222" />
     <MESSAGE value="33333    5.22 9:10   队列   hyd" />
     <MESSAGE value="33333    5.22 9:18   队列   hyd" />
-    <option name="LAST_COMMIT_MESSAGE" value="33333    5.22 9:18   队列   hyd" />
+    <MESSAGE value="4444  5.22 21:29 一键上下架  饼状报表" />
+    <option name="LAST_COMMIT_MESSAGE" value="4444  5.22 21:29 一键上下架  饼状报表" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/cms-eureka/.mvn/wrapper/MavenWrapperDownloader.java" />
@@ -753,8 +728,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6070">
-          <caret line="252" column="53" lean-forward="true" selection-start-line="252" selection-start-column="53" selection-end-line="252" selection-end-column="53" />
+        <state relative-caret-position="350">
+          <caret line="466" column="22" lean-forward="true" selection-start-line="466" selection-start-column="22" selection-end-line="466" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
