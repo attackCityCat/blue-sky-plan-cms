@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script src="/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+    <script src="/js/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="/js/bootstrap-fileinput/js/locales/zh.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap-fileinput/css/fileinput.css">
+    <script type="text/javascript" src="/js/bootstrap-select/bootstrap-select.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-select/i18n/defaults-zh_CN.js"></script>
+    <script src="/js/area.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap-select/bootstrap-select.min.css">
+</head>
+<style>
+    .row{
+        margin-top:10px;
+    }
+</style>
+<body>
+<div class="container-fluid">
+    <form id="addForm" class="form-horizontal">
+        <div class="row">
+            <div class="col-xs-2">用户名：</div>
+            <div class="col-xs-4">
+                <input type="text" class="form-control" name="username">
+            </div>
+            <div class="col-xs-2">  账  号：</div>
+            <div class="col-xs-4">
+                <input type="text" class="form-control" name="useraccount">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2"> 手机号码：</div>
+            <div class="col-xs-4">
+                <input type="text" class="form-control" name="telephonenum">
+            </div>
+            <div class="col-xs-2"> 所属公司：</div>
+            <div class="col-xs-4">
+                <input type="password" class="form-control" name="company">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2">角色：</div>
+            <div class="col-xs-4">
+                <select class="selectpicker" multiple id="inputRole" name="roleid">
+                </select>
+            </div>
+            <div class="col-xs-2"></div>
+            <div class="col-xs-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2">头像：</div>
+            <div class="col-xs-10">
+                <input type="hidden" id="testimg" name="userimg" />
+                <!-- projectfile -->
+                <input type="file" multiple class="projectfile" accept="image/*" name="img" id="cimg">
+                </label>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+<script type="text/javascript">
+    $(function(){
+        inArea(0,'user/findAddArea.do','proSelect','ciSelect');
+    })
+
+    $('#cimg').fileinput({
+        language: 'zh', //设置语言
+        uploadUrl: 'upload/upload2.do', //上传的地址
+        allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+        showUpload: true, //是否显示上传按钮
+        showCaption: false,//是否显示标题
+        browseClass: "btn btn-primary", //按钮样式
+        //dropZoneEnabled: false,//是否显示拖拽区域
+        //minImageWidth: 50, //图片的最小宽度
+        //minImageHeight: 50,//图片的最小高度
+        //maxImageWidth: 1000,//图片的最大宽度
+        //maxImageHeight: 1000,//图片的最大高度
+        //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+        //minFileCount: 0,
+        maxFileCount: 2, //表示允许同时上传的最大文件个数
+        enctype: 'multipart/form-data',
+        validateInitialCount:true,
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+
+    }).on('fileuploaded', function(event, data, previewId, index) {
+        var imgval = $('#testimg').val();
+        if(imgval == null || imgval == "" || imgval == undefined){
+            imgval = "http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/"+data.response.img;
+        }else{
+            imgval += ","+"http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/"+data.response.img;
+        }
+        $('#testimg').val(imgval);
+    });
+    $('.date').datetimepicker({
+        language: 'zh-CN',//显示中文
+//	  format: 'yyyy-mm-dd hh:ii:ss',//显示格式
+        format: 'yyyy-mm-dd',//显示格式
+        minView: "month",//设置只显示到月份
+        initialDate: new Date(),//初始化当前日期
+        autoclose: true,//选中自动关闭
+        todayBtn: true//显示今日按钮
+    });
+
+
+
+
+    $(".selectpicker").html(html);
+    $.ajax({
+        url:'/role/getrolename',
+        type:'get',
+        data:{},
+        dataType:'json',
+        success:function(data){
+            var html = '';
+            for (var i = 0; i < data.length; i++) {
+                html += "<option value='"+data[i].roleid+"'>"+data[i].rolename+"</option>"
+            }
+            $(".selectpicker").html(html);
+        }
+    })
+
+
+</script>
+</html>

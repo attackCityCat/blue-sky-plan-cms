@@ -1,10 +1,11 @@
 package org.bs.cms.controller.ShopManagement;
 
 import org.bs.cms.mapper.ShopManagement.ShopManagementMapper;
+import org.bs.cms.pojo.ProductBean;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 public class ShopManagementController {
@@ -13,17 +14,49 @@ public class ShopManagementController {
     private ShopManagementMapper shopManagementMapper;
 
     //审核商户上市的商品
-    @PostMapping(value = "/editShop/{ids}")
-    public Boolean editShop(@RequestParam Integer[] ids){
+    @PutMapping(value = "/editShop")
+    public Boolean editAdmShop(){
         try {
             //管理员的商品管理审核状态改变
-            shopManagementMapper.editAdmShop(ids);
-            //商户的商品管理审核成功
-            shopManagementMapper.editMerchantShop(ids);
+            shopManagementMapper.editAdmShop();
             return true;
         }catch (Exception e){
             e.printStackTrace();
             return false;
         }
     }
+
+
+    @PostMapping(value = "/product/delProduct")
+    public Boolean delProduct(@RequestParam("ids") String ids){
+        try {
+            String[] split = ids.split(",");
+            Integer[] arr = new Integer[split.length];
+            for (int i = 0;i < split.length;i++){
+                arr[i] = Integer.valueOf(split[i]);
+            }
+            shopManagementMapper.delProduct(arr);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    @GetMapping(value = "/product/findProductList")
+    public List<ProductBean> findProductList(){
+        return shopManagementMapper.findProductList();
+    }
+<<<<<<< Updated upstream
+=======
+    /**
+     * 报表展示
+     * @return
+     */
+    @RequestMapping(value = "/product/getColumnChart",method = RequestMethod.GET)
+    public List<ProductBean> getColumnChart(){
+        List<ProductBean> list = shopManagementMapper.getSales();
+        return list;
+    }
+>>>>>>> Stashed changes
 }

@@ -8,6 +8,11 @@ eureka:
 spring:
   application:
     name: cms-product-consumer
+  rabbitmq:
+    host: 192.168.1.145
+    port: 5672
+    username: rbdq
+    password: 123456
 
   main:
     allow-bean-definition-overriding: true #允许相同key情况下beanDefinition实例的覆盖

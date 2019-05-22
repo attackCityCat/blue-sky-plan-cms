@@ -225,7 +225,7 @@ del = function(id,url,fn){
 	
 	$.ajax({
 		url:url,
-		type:'delete',
+		type:'post',
 		data:{
 			ids:id
 		},

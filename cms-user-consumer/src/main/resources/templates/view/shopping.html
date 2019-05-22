@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>蓝天计划商品管理</title>
+
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lib/linearicons/style.css">
+    <link rel="stylesheet" href="/lib/chartist/css/chartist-custom.css">
+    <link rel="stylesheet" href="/css/bootstrap-table.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="/css/commom.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/lantian.png">
+    <!-- Javascript -->
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/lib/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/lib/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/lib/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="/lib/chartist/js/chartist.min.js"></script>
+    <script src="/js/klorofil-common.js"></script>
+    <script src="js/shop/shop.js"></script>
+    <!-- <script src="../static/lib/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> -->
+    <script  src="/lib/zsh-ui/js/bootstrap-4.0.0-dist/js/bootstrap-table.min.js"></script>
+    <script src ="/lib/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+
+</head>
+<body>
+<!-- WRAPPER -->
+<!-- WRAPPER -->
+
+    <!-- MAIN -->
+
+        <!-- MAIN CONTENT -->
+
+                        <!-- 待审核商品表 -->
+                        <div class="panel panel-headline">
+                            <div class="panel-heading">
+                                <span class="ft fa fa-table ft-22"></span>
+                                <h3 class="panel-title">待审核商品列表</h3>
+
+                                <div class="right">
+                                    <button type="button" class="btn-toggle-collapse"><i
+                                            class="lnr lnr-chevron-up"></i></button>
+                                    <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div id="toolbar">
+                                    <button id="auditBtn" type="button" class="btn btn-danger glyphicon glyphicon-remove">一键审核</button>
+                                </div>
+                                <div class="table" id="myTable"></div>
+
+                                <div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- END 待审核商品表 -->
+
+
+<!-- END WRAPPER -->
+
+</body>
+<script type="text/javascript">
+    
+    $("#auditBtn").click(function () {
+        shengHetrue();
+    })
+
+
+    logout = function(){
+        location.href="/logout";
+    }
+</script>
+</html>

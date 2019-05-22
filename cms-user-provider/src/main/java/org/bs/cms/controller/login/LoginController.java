@@ -11,10 +11,9 @@ public class LoginController {
     @Autowired
     private LoginMapper loginMapper;
 
-    @RequestMapping(value="/login/{useraccount}",method= RequestMethod.GET)
-    public UserBean login(@RequestParam(value="useraccount")String useraccount) {
-        //验证用户是否存在
-        return loginMapper.findUserInfoByName(useraccount);
+    @GetMapping("findUserInfoByName")
+    public UserBean findUserInfoByName(@RequestParam(value="username") String username) {
+        return loginMapper.findUserInfoByName(username);
     }
 
 }
