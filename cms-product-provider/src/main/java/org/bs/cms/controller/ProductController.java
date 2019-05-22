@@ -140,4 +140,45 @@ public class ProductController {
         return list;
     }
 
+    /**
+     * 一键上架
+     * @return
+     */
+    @RequestMapping(value = "/product/editStateOne")
+    public Boolean editStateOne(@RequestParam("ids") String ids){
+        try {
+            String[] split = ids.split(",");
+            Integer[] arr = new Integer[split.length];
+            for (int i = 0;i < split.length;i++){
+                arr[i] = Integer.valueOf(split[i]);
+            }
+            productMapper.editStateOne(arr);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    /**
+     * 一键下架
+     * @return
+     */
+    @RequestMapping(value = "/product/editStateTwo")
+    public Boolean editStateTwo(@RequestParam("ids") String ids){
+        try {
+            String[] split = ids.split(",");
+            Integer[] arr = new Integer[split.length];
+            for (int i = 0;i < split.length;i++){
+                arr[i] = Integer.valueOf(split[i]);
+            }
+            productMapper.editStateTwo(arr);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+
 }

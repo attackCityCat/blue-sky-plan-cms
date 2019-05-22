@@ -19,11 +19,10 @@ public class PageController {
     public String toUpdate(){
         return "view/updateProduct";
     }
-<<<<<<< Updated upstream
-=======
+
     @RequestMapping(value = "toPrice")
     public String toPrice(){
         return "view/updatePrice";
     }
->>>>>>> Stashed changes
+
 }

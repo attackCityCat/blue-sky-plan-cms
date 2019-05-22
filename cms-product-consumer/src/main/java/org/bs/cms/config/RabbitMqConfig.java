@@ -25,7 +25,7 @@ public class RabbitMqConfig {
     @Bean
     public Queue getQueue1(){
         //此处为队列的名称
-        return new Queue("delShop",true);
+        return new Queue("delShopa",true);
     }
 
 

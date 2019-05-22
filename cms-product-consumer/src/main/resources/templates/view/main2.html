@@ -66,40 +66,19 @@
 <div id="toolbar">
     <button id="addBtn" type="button" class="btn btn-info glyphicon glyphicon-plus">新增</button>
     <button id="delBtn" type="button" class="btn btn-danger glyphicon glyphicon-remove">删除</button>
+    <button id="stateBtn" type="button" class="btn btn-warning glyphicon glyphicon-pencil">一键上架</button>
+    <button id="stateBtn2" type="button" class="btn btn-warning glyphicon glyphicon-pencil">一键下架</button>
 </div>
 
-<<<<<<< Updated upstream
 <div class="table" id="myTable"></div>
 
-        <center>
-            <font color="#00008b" size="6">品牌销量报表</font>
-        </center>
-        <div id="main" style="width: 100%;height:350px;">
+<iframe width="100%" height="350" src="https://code.hcharts.cn/demos/hhhhii/share/result,js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-        </div>
-
-=======
-<div class="table" id="myTable" style="overflow:hidden;overflow-y:hidden"></div>
-
-        <center>
-            <!--<font color="#00008b" size="6">品牌销量报表</font>-->
-        </center>
-        <div id="main" style="width: 2000px;height:350px;">
-
-        </div>
-
-
->>>>>>> Stashed changes
 </body>
 <script type="text/javascript">
     // 初始化加载
     $(function(){
         initMyTable();
-<<<<<<< Updated upstream
-        init();
-=======
-        //init();
->>>>>>> Stashed changes
     })
     // 上传图片
     function uploadImg(){
@@ -136,6 +115,84 @@
             $('#testimg').val(imgval);
         });
     }
+    // 一键上架
+    $("#stateBtn").click(function () {
+
+        var arr = $("#myTable").bootstrapTable('getSelections');
+        var bol = true;
+        var ids = '';
+        for ( var i = 0; i < arr.length; i++) {
+            ids += ids == '' ? arr[i].id : ',' + arr[i].id;
+            if(arr[i].productAudit!=0){
+                bol=false;
+            }
+        }
+        if (arr.length <= 0) {
+            alertbox("small","提示","请选择要上架的商品");
+            return;
+        }
+        if (!bol){
+            bootbox.alert("选中数据包含未审核通过,修改失败");
+            return;
+        }
+
+            $.ajax({
+                url:'/product/editStateOne',
+                type:'post',
+                data:{
+                    ids:ids
+                },
+                dataType:'json',
+                success:function(data){
+                    if (data) {
+                        bootbox.alert("修改成功");
+                        searchProduct();
+                    }else{
+                        bootbox.alert("选中数据包含未审核通过,修改失败");
+                    }
+                }
+            })
+
+    })
+    // 一键下架
+    $("#stateBtn2").click(function () {
+
+        var arr = $("#myTable").bootstrapTable('getSelections');
+        var bol = true;
+        var ids = "";
+
+        for ( var i = 0; i < arr.length; i++) {
+            ids += ids == '' ? arr[i].id : ',' + arr[i].id;
+            if(arr[i].productState!=0){
+                bol=false;
+            }
+        }
+        if (arr.length <= 0) {
+            alertbox("small","提示","请选择要下架的商品");
+            return;
+        }
+        if (!bol){
+            bootbox.alert("选中数据包含已下架商品");
+            return;
+        }
+
+        $.ajax({
+            url:'/product/editStateTwo',
+            type:'post',
+            data:{
+              ids:ids
+            },
+            dataType:'json',
+            success:function(data){
+                if (data) {
+                    bootbox.alert("修改成功");
+                    searchProduct();
+                }else{
+                    bootbox.alert("修改失败");
+                }
+            }
+        })
+    })
     // 批量删除
     $("#delBtn").click(function () {
         delMany("myTable","/product/delProduct",true,"searchProduct()");
@@ -179,13 +236,10 @@
             toolbar:'#toolbar',
             fit:true,
             pagination:true,
-            pageList:[1,2,3,5, 10, 20, 50],//分页组件
+            pageList:[1,2,3,5,8, 10, 20, 50],//分页组件
             pageNumber:1,
-<<<<<<< Updated upstream
             pageSize:5,	//默认每页条数
-=======
-            pageSize:10,	//默认每页条数
->>>>>>> Stashed changes
+            pageSize:8,	//默认每页条数
             columns:[
                 {checkbox:true},
                 {field:'productTitle',title:'标题',formatter:function(value,row,index){
@@ -196,13 +250,10 @@
                         }
                     },width:300},
                 {field:'brandName',title:'品牌',width:100},
-<<<<<<< Updated upstream
                 {field:'productPrice',title:'价格',width:100},
                 {field:'productStock',title:'库存',width:100},
-=======
                 {field:'productPrice',title:'价格',width:50},
                 {field:'productStock',title:'库存',width:50},
->>>>>>> Stashed changes
                 {field:'productTime',title:'商品添加时间',width:100},
                 {field:'productSales',title:'销量',width:100},
                 {field:'colorName',title:'颜色',width:100},
@@ -211,11 +262,7 @@
                 {field:'shelfTime',title:'上架时间',width:100},
                 {field:'productState',title:'上下架',formatter:function(value,row,index){
                         return value == 1 ? "下架" : "上架";
-<<<<<<< Updated upstream
                     },width:100},
-=======
-                    },width:50},
->>>>>>> Stashed changes
                 {field:'productAudit',title:'审核状态',formatter:function(value,row,index){
                         return value == 1 ? "待审核" : value == 0 ? "审核成功" : value == 2 ? "审核中" : value == 3 ? "审核未通过" : "审核失败";
                     },width:100},
@@ -223,12 +270,9 @@
                         return value == 1 ? "不热卖" : "<font color='red'>热卖</font>";
                     },width:100},
                 {field:'123',title:'操作栏',formatter:function(value,row,index){
-<<<<<<< Updated upstream
                         var btn = "<a href='javascript:editProduct("+row.id+");'>增加库存</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp";
-=======
                         var btn = "<a href='javascript:editProduct("+row.id+");'>增加库存</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
                             "<a href='javascript:editPrice("+row.id+");'>修改价格</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
->>>>>>> Stashed changes
                         if (row.productState == 1 || row.productAudit != 0) {
                             btn += "<a href='javascript:editState("+row.id+","+row.productState+","+row.productAudit+");'>上架</a>  ";
 
@@ -236,11 +280,7 @@
                             btn += "<a href='javascript:editState("+row.id+","+row.productState+");'>下架</a>  <a href='javascript:editSelling("+row.id+","+row.productSelling+");'>热卖</a>";
                         }
                         return  btn;
-<<<<<<< Updated upstream
                  },width:250}
-=======
-                 },width:400}
->>>>>>> Stashed changes
             ]
         })
     }
@@ -493,7 +533,7 @@
 
     function init() {
         //将echart初始化到div中
-        var myChart=echarts.init(document.getElementById("main"));
+        var myChart=echarts.init(document.getElementById("report"));
         var dataAxis = [];
         var data = [];
         getData(dataAxis,data);
@@ -570,7 +610,6 @@
                 endValue: dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
             });
         });
-
         myChart.setOption(option)  ;
     }
 </script>

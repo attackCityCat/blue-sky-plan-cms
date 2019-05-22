@@ -35,10 +35,13 @@ public interface ProductServiceApi {
 
     @RequestMapping(value = "/product/getColumnChart",method = RequestMethod.GET)
     List<ProductBean> getSales();
-<<<<<<< Updated upstream
-=======
 
     @RequestMapping(value = "/product/editPrice",method = RequestMethod.POST)
     Boolean editPrice(@RequestParam("id") Integer id,@RequestParam("num") Integer num);
->>>>>>> Stashed changes
+
+    @RequestMapping(value = "/product/editStateOne")
+    Boolean editStateOne(@RequestParam("ids") String ids);
+
+    @RequestMapping(value = "/product/editStateTwo")
+    Boolean editStateTwo(@RequestParam("ids") String ids);
 }

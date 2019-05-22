@@ -134,7 +134,9 @@ public class ProductController {
      */
     @RequestMapping(value = "/product/editState",method = RequestMethod.POST)
     public Boolean editState(@RequestParam("id") Integer id,@RequestParam("state") Integer state){
-        amqpTemplate.convertAndSend("delShop",id);
+        if (state == 0) {
+            amqpTemplate.convertAndSend("delShopa",id.toString());
+        }
         return productService.editState(id,state);
     }
     @RequestMapping(value = "/product/editSelling",method = RequestMethod.POST)
@@ -169,5 +171,23 @@ public class ProductController {
         List<ProductBean> list = productService.getSales();
         return list;
     }
+
+    /**
+     * 一键上架
+     * @return
+     */
+    @RequestMapping(value = "/product/editStateOne")
+    public Boolean editStateOne(@RequestParam("ids") String ids){
+            return productService.editStateOne(ids);
+    }
+    /**
+     * 一键下架
+     * @return
+     */
+    @RequestMapping(value = "/product/editStateTwo")
+    public Boolean editStateTwo(@RequestParam("ids") String ids){
+        return productService.editStateTwo(ids);
+    }
+
 
 }

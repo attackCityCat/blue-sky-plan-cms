@@ -47,8 +47,7 @@ public class ShopManagementController {
     public List<ProductBean> findProductList(){
         return shopManagementMapper.findProductList();
     }
-<<<<<<< Updated upstream
-=======
+
     /**
      * 报表展示
      * @return
@@ -58,5 +57,4 @@ public class ShopManagementController {
         List<ProductBean> list = shopManagementMapper.getSales();
         return list;
     }
->>>>>>> Stashed changes
 }
