@@ -34,5 +34,39 @@
 </center>
 </body>
 <script type="text/javascript">
+    $(function(){
+        f();
+    })
+
+    function f() {
+        for (var i= 1; i<=5 ; i++ ) {
+            bootbox.dialog({
+                title: '<i class="glyphicon glyphicon-user"></i>权限不足',
+                message: createAddContent('/page/toReal403'),
+                size: 'large',  // large  弹框略大     small  代表弹框略小
+                closeButton: true,
+                buttons: {
+                    ok: {
+                        label: "<i class='glyphicon glyphicon-floppy-saved'></i>重试",
+                        className: 'btn-info'
+
+                    }
+                }
+            })
+        }
+    }
+
+    // 同步请求 根据新增弹框引用html页面
+    var res;
+    function createAddContent(url){
+        $.ajax({
+            url:url,
+            async:false,
+            success:function(data){
+                res = data;
+            }
+        });
+        return res;
+    }
 </script>
 </html>

@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f62ff864-775c-43f6-8084-807a641afc00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Real403.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/403.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/403.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Real403.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,19 +31,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/AddUser.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="483">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,19 +43,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+            <state relative-caret-position="200">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -74,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
-              <caret line="61" column="31" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="31" />
+            <state relative-caret-position="300">
+              <caret line="38" column="28" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="28" />
               <folding>
                 <element signature="e#722#723#0" expanded="true" />
                 <element signature="e#756#757#0" expanded="true" />
@@ -87,13 +72,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Real403.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/RoleUse.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="23" column="6" lean-forward="true" selection-start-line="7" selection-end-line="23" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="124" column="77" selection-start-line="124" selection-start-column="71" selection-end-line="124" selection-end-column="77" />
+            <state relative-caret-position="156">
+              <caret line="110" column="74" selection-start-line="110" selection-start-column="74" selection-end-line="110" selection-end-column="74" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1533">
+              <caret line="59" column="41" lean-forward="true" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/403.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+            <state relative-caret-position="192">
+              <caret line="45" column="56" lean-forward="true" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -111,17 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
-              <caret line="44" column="22" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Role2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
-              <caret line="37" column="111" selection-start-line="4" selection-start-column="3" selection-end-line="37" selection-end-column="111" />
+            <state relative-caret-position="300">
+              <caret line="42" column="6" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="42" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -230,12 +243,12 @@
         <option value="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/UserRole/UserRoleMapper.java" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/user/user.js" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Real403.html" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/403.html" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Real403.html" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/403.html" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" />
       </list>
     </option>
   </component>
@@ -263,8 +276,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="280" />
-    <option name="y" value="535" />
+    <option name="x" value="76" />
+    <option name="y" value="81" />
     <option name="width" value="1400" />
     <option name="height" value="990" />
   </component>
@@ -286,6 +299,51 @@
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
               <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
               <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -317,16 +375,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
@@ -356,15 +404,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
@@ -525,7 +564,7 @@
       <workItem from="1558592767776" duration="1278000" />
       <workItem from="1558594739950" duration="3077000" />
       <workItem from="1558599138960" duration="8255000" />
-      <workItem from="1558611221623" duration="1041000" />
+      <workItem from="1558611221623" duration="6509000" />
     </task>
     <task id="LOCAL-00001" summary="蓝天计划电商平台CMS端 V1.1.0">
       <created>1557923307839</created>
@@ -639,11 +678,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558604278158</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 &#10;dyl第十五次提交代码 &#10;权限登录">
+      <created>1558612399388</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1558612399388</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159848000" />
+    <option name="totallyTimeSpent" value="165316000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -668,7 +714,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49971956" visible="true" weight="0.2920998" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49971956" visible="true" weight="0.25987527" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8266966" weight="0.42827442" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -678,9 +724,9 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.17330343" side_tool="true" weight="0.47547975" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32848233" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32952183" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4991587" weight="0.36694387" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4991587" weight="0.41238317" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -750,22 +796,13 @@
     <MESSAGE value="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 &#10;dyl第十二次提交代码 &#10;给用户付角色,查看角色功能" />
     <MESSAGE value="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 &#10;dyl第十三次提交代码 &#10;给用户付角色,查看角色功能&#10;完善" />
     <MESSAGE value="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 &#10;dyl第十四次提交代码 &#10;权限登录" />
-    <option name="LAST_COMMIT_MESSAGE" value="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 &#10;dyl第十四次提交代码 &#10;权限登录" />
+    <MESSAGE value="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 &#10;dyl第十五次提交代码 &#10;权限登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 &#10;dyl第十五次提交代码 &#10;权限登录" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/blue_sky_plan_cms$CmsEurekaApplication.ic" NAME="CmsEurekaApplication Coverage Results" MODIFIED="1558319423543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/bootstrap-bootbox/bootbox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1575">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="e#97#104#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35900">
@@ -1009,26 +1046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1956">
-          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/RoleUse.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/role.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="755">
@@ -1039,7 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Real403.html" />
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/AddUser.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1054,10 +1070,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java">
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Role2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="925">
-          <caret line="61" column="31" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="31" />
+          <caret line="37" column="111" selection-start-line="4" selection-start-column="3" selection-end-line="37" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="28" />
           <folding>
             <element signature="e#722#723#0" expanded="true" />
             <element signature="e#756#757#0" expanded="true" />
@@ -1067,51 +1110,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html">
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/RoleUse.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="44" column="22" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="22" />
+        <state relative-caret-position="425">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="7" selection-end-line="23" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Role2.html">
+    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="37" column="111" selection-start-line="4" selection-start-column="3" selection-end-line="37" selection-end-column="111" />
+        <state relative-caret-position="300">
+          <caret line="42" column="6" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="42" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/403.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        <state relative-caret-position="192">
+          <caret line="45" column="56" lean-forward="true" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Real403.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1533">
+          <caret line="59" column="41" lean-forward="true" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="124" column="77" selection-start-line="124" selection-start-column="71" selection-end-line="124" selection-end-column="77" />
+        <state relative-caret-position="156">
+          <caret line="110" column="74" selection-start-line="110" selection-start-column="74" selection-end-line="110" selection-end-column="74" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1166,11 +1216,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>cms-user-provider</last-edited>
+          <last-edited>cms-user-consumer</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
