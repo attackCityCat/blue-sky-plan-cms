@@ -180,5 +180,92 @@ public class ProductController {
         }
     }
 
+    /**
+     * 一键热卖
+     * @param ids
+     * @return
+     */
+    @RequestMapping(value = "/product/editSellingUp")
+    public Boolean editSellingUpAll(@RequestParam("ids") String ids){
+        try {
+            String[] split = ids.split(",");
+            Integer[] arr = new Integer[split.length];
+            for (int i = 0;i < split.length;i++){
+                arr[i] = Integer.valueOf(split[i]);
+            }
+            productMapper.editSellingUpAll(arr);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    /**
+     * 一键取消热卖
+     * @param ids
+     * @return
+     */
+    @RequestMapping(value = "/product/editSellingDownAll")
+    public Boolean editSellingDownAll(@RequestParam("ids") String ids){
+        try {
+            String[] split = ids.split(",");
+            Integer[] arr = new Integer[split.length];
+            for (int i = 0;i < split.length;i++){
+                arr[i] = Integer.valueOf(split[i]);
+            }
+            productMapper.editSellingDownAll(arr);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    /**
+     * 新增轮播图
+     * @param imgBean
+     * @return
+     */
+    @RequestMapping(value = "/product/saveImgAll",method = RequestMethod.POST)
+    public Boolean saveImgAll(@RequestBody ImgBean imgBean){
+        try {
+            productMapper.saveImgAll(imgBean);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    /**
+     * 查询轮播
+     * @return
+     */
+    @RequestMapping(value = "/product/findProductImgList",method = RequestMethod.GET)
+    public List<ImgBean> findProductImgList(){
+        return productMapper.findProductImgList();
+    }
+
+    /**
+     *  批量删除轮播图
+     * @param ids
+     * @return
+     */
+    @RequestMapping(value = "/product/delProductImg")
+    public Boolean delProductImg(@RequestParam("ids") String ids){
+        try {
+            String[] split = ids.split(",");
+            Integer[] arr = new Integer[split.length];
+            for (int i = 0;i < split.length;i++){
+                arr[i] = Integer.valueOf(split[i]);
+            }
+            productMapper.delProductImg(arr);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 
 }

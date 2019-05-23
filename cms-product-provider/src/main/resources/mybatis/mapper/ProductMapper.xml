@@ -41,4 +41,8 @@
             1
             )
     </insert>
+    <!--新增轮播图-->
+    <insert id="saveImgAll">
+         insert into cms_img(url) values (#{url})
+    </insert>
 </mapper>

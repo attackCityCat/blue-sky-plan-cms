@@ -44,4 +44,19 @@ public interface ProductServiceApi {
 
     @RequestMapping(value = "/product/editStateTwo")
     Boolean editStateTwo(@RequestParam("ids") String ids);
+
+    @RequestMapping(value = "/product/editSellingUp")
+    Boolean editSellingUpAll(@RequestParam("ids") String ids);
+
+    @RequestMapping(value = "/product/editSellingDownAll")
+    Boolean editSellingDownAll(@RequestParam("ids") String ids);
+
+    @RequestMapping(value = "/product/saveImgAll",method = RequestMethod.POST)
+    void saveImgAll(ImgBean imgBean);
+
+    @RequestMapping(value = "/product/findProductImgList",method = RequestMethod.GET)
+    List<ImgBean> findProductImgList();
+
+    @RequestMapping(value = "/product/delProductImg")
+    Boolean delProductImg(@RequestParam("ids") String ids);
 }

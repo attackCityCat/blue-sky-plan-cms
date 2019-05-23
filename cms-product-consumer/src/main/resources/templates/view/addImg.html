@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootStrap_util.js"></script>
+
+
+    <script type="text/javascript" src="/js/bootstrap/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap3/css/bootstrap.css"/>
+
+
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap-table/bootstrap-table.css">
+    <script src="/js/bootstrap/bootstrap-table/bootstrap-table.js"></script>
+    <script src="/js/bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+
+
+    <script src="/js/bootstrap/bootstrap-bootbox/bootbox.js"></script>
+
+    <!-- 引入文件上传的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap-fileinput/css/fileinput.css">
+    <script type="text/javascript" src="/js/bootstrap/bootstrap-fileinput/js/fileinput.js"></script>
+    <script type="text/javascript" src="/js/bootstrap/bootstrap-fileinput/js/locales/zh.js"></script>
+
+</head>
+<body>
+    <div id="toolbar">
+        <button id="addImgBtn" type="button" class="btn btn-info glyphicon glyphicon-plus">添加图片</button>
+        <button id="delImgBtn" type="button" class="btn btn-danger glyphicon glyphicon-remove">删除</button>
+    </div>
+    <div class="table" id="myTable"></div>
+</body>
+<script type="text/javascript">
+    // 初始化加载
+    $(function(){
+        initMyTable();
+    })
+    // 批量删除
+    $("#delImgBtn").click(function () {
+        delMany("myTable","/product/delProductImg",true,"searchProduct()");
+    });
+    delMany = function(tableId,url,flag,fn){
+        var arr = $("#"+tableId).bootstrapTable('getSelections');
+        var ids = '';
+        names = '';
+        var n = 0;
+        for ( var i = 0; i < arr.length; i++) {
+            ids += ids == '' ? arr[i].id : ',' + arr[i].id;
+            names += names == '' ? arr[i].url : ',' + arr[i].url;
+            n++;
+        }
+
+        if (arr.length <= 0) {
+            alertbox("small","提示","请选择要删除的数据");
+            return;
+        }
+
+        if (flag) {
+            bootbox.confirm({
+                size: "small",
+                message: "确定要删除"+ids+"吗?",
+                callback: function(result){
+                    if (!result) {
+                        return;
+                    }
+                    del(ids,url,fn);
+                }
+            });
+            return;
+        }
+        del(ids,url,fn);
+    }
+    // 新增弹框
+    $("#addImgBtn").click(function(){
+        bootbox.dialog({
+            title:'<i class="glyphicon glyphicon-user"></i>新增',
+            message:$.parseHTML(createAddContent('/page/toAddImgAll')),
+            size: 'large',
+            closeButton:true,
+            buttons:{
+                ok: {
+                    label: "<i class='glyphicon glyphicon-floppy-saved'></i>保存",
+                    className: 'btn-info',
+                    callback: function(){
+                        saveImgAll();
+                    }
+                }
+            }
+        })
+        uploadImg();
+    })
+    // 新增提交
+    function saveImgAll(){
+        $.ajax({
+            url:'/product/saveImgAll',
+            type:'post',
+            data:$("#imgForm").serialize(),
+            dataType:'json',
+            success:function(data){
+                if (data) {
+                    bootbox.alert("保存成功");
+                    searchProduct();
+                }else{
+                    bootbox.alert("保存失败");
+                }
+            }
+        })
+    }
+    // 刷新页面函数
+    function searchProduct(){
+        $('#myTable').bootstrapTable('refresh')
+    }
+    // 页面加载表格
+    function initMyTable(){
+        $('#myTable').bootstrapTable({
+            url:'/product/findProductImgList',
+            toolbar:'#toolbar',
+            fit:true,
+            pagination:true,
+            pageList:[1,2,3,5,8, 10, 20, 50],//分页组件
+            pageNumber:1,
+            pageSize:5,	//默认每页条数
+            pageSize:8,	//默认每页条数
+            columns:[
+                {checkbox:true},
+                {field:'id',title:'主键',width:100},
+                {field:'url',title:'图片',formatter:function(value,rows,index){
+                        return "<img src='"+value+"' width='100px' heigth='100px'>";
+                    },width:100}
+            ]
+        })
+    }
+    // 同步请求 根据新增弹框引用html页面
+    var res;
+    function createAddContent(url){
+        $.ajax({
+            url:url,
+            async:false,
+            success:function(data){
+                res = data;
+            }
+        });
+        return res;
+    }
+    // 上传图片
+    function uploadImg(){
+        $('#headImg').fileinput({
+            language: 'zh', //设置语言
+            uploadUrl: '/product/updaloadImg', //上传的地址
+            allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+            showUpload: true, //是否显示上传按钮
+            showCaption: false,//是否显示标题
+            browseClass: "btn btn-primary", //按钮样式
+            dropZoneEnabled: false,//是否显示拖拽区域
+            //minImageWidth: 50, //图片的最小宽度
+            //minImageHeight: 50,//图片的最小高度
+            //maxImageWidth: 1000,//图片的最大宽度
+            //maxImageHeight: 1000,//图片的最大高度
+            //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+            //minFileCount: 0,
+            maxFileCount: 7, //表示允许同时上传的最大文件个数
+            enctype: 'multipart/form-data',
+            validateInitialCount:true,
+            previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+            msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+
+        }).on('fileuploaded', function(event, data, previewId, index) {
+
+            var imgval = $('#testimg').val();
+
+            if(imgval == null || imgval == "" || imgval == undefined){
+                imgval = data.response.imgg;
+
+            }else{
+                imgval += ","+data.response.imgg;/*","+"http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/"+data.response;*/
+            }
+            $('#testimg').val(imgval);
+        });
+    }
+</script>
+</html>

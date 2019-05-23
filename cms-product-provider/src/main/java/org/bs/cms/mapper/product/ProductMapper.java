@@ -96,4 +96,33 @@ public interface ProductMapper {
             "            </foreach>  " +
             "            )</script>")
     void editStateTwo(@RequestParam("ids") Integer[] ids);
+
+    @Update("<script> " +
+            "            update  cms_product set product_selling = 0 where product_id in (  " +
+            "            <foreach collection='array' index='index' item='item' separator=','>  " +
+            "            #{item}  " +
+            "            </foreach>  " +
+            "            )</script>")
+    void editSellingUpAll(Integer[] arr);
+
+    @Update("<script> " +
+            "            update  cms_product set product_selling = 1 where product_id in (  " +
+            "            <foreach collection='array' index='index' item='item' separator=','>  " +
+            "            #{item}  " +
+            "            </foreach>  " +
+            "            )</script>")
+    void editSellingDownAll(Integer[] arr);
+
+    void saveImgAll(@RequestBody ImgBean imgBean);
+
+    @Select("select * from cms_img")
+    List<ImgBean> findProductImgList();
+
+    @Delete("<script>"+
+            "  	delete from cms_img where id in ( " +
+            "		<foreach collection='array' index='index' item='item' separator=','> " +
+            "			#{item} " +
+            "		</foreach> " +
+            ")</script>")
+    Boolean delProductImg(Integer[] arr);
 }

@@ -68,6 +68,8 @@
     <button id="delBtn" type="button" class="btn btn-danger glyphicon glyphicon-remove">删除</button>
     <button id="stateBtn" type="button" class="btn btn-warning glyphicon glyphicon-pencil">一键上架</button>
     <button id="stateBtn2" type="button" class="btn btn-warning glyphicon glyphicon-pencil">一键下架</button>
+    <button id="sellingBtn" type="button" class="btn btn-danger glyphicon glyphicon-pencil">一键热卖</button>
+    <button id="sellingBtn2" type="button" class="btn btn-danger glyphicon glyphicon-pencil">一键取消热卖</button>
 </div>
 
 <div class="table" id="myTable"></div>
@@ -115,6 +117,80 @@
             $('#testimg').val(imgval);
         });
     }
+    // 一键取消热卖
+    $("#sellingBtn2").click(function () {
+        var arr = $("#myTable").bootstrapTable('getSelections');
+        var bol = true;
+        var ids = '';
+        for ( var i = 0; i < arr.length; i++) {
+            ids += ids == '' ? arr[i].id : ',' + arr[i].id;
+            if (arr[i].productSelling != 0) {
+                bol = false;
+            }
+        }
+        if (!bol) {
+            alertbox('small','提示','没有热卖商品，不需要取消');
+            return;
+        }
+        if (arr.length <= 0) {
+            alertbox("small","提示","请选择要取消热卖的商品");
+            return;
+        }
+        $.ajax({
+            url:'/product/editSellingDownAll',
+            type:'post',
+            data:{
+                ids:ids
+            },
+            dataType:'json',
+            success:function(data){
+                if (data) {
+                    bootbox.alert("设置成功");
+                    searchProduct();
+                }else{
+                    bootbox.alert("设置失败");
+                }
+            }
+        })
+
+    })
+    // 一键热卖
+    $("#sellingBtn").click(function () {
+        var arr = $("#myTable").bootstrapTable('getSelections');
+        var bol = true;
+        var ids = '';
+        for ( var i = 0; i < arr.length; i++) {
+            ids += ids == '' ? arr[i].id : ',' + arr[i].id;
+            if(arr[i].productState!=0){
+                bol=false;
+            }
+        }
+        if (arr.length <= 0) {
+            alertbox("small","提示","请选择要热卖的商品");
+            return;
+        }
+        if (!bol){
+            bootbox.alert("选中数据包含下架商品,设置失败");
+            return;
+        }
+        $.ajax({
+            url:'/product/editSellingUpAll',
+            type:'post',
+            data:{
+                ids:ids
+            },
+            dataType:'json',
+            success:function(data){
+                if (data) {
+                    bootbox.alert("设置成功");
+                    searchProduct();
+                }else{
+                    bootbox.alert("设置失败");
+                }
+            }
+        })
+
+    })
     // 一键上架
     $("#stateBtn").click(function () {
 

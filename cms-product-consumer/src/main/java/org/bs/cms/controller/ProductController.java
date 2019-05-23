@@ -189,5 +189,57 @@ public class ProductController {
         return productService.editStateTwo(ids);
     }
 
+    /**
+     * 一键热卖
+     * @param ids
+     * @return
+     */
+    @RequestMapping(value = "/product/editSellingUpAll")
+    public Boolean editSellingUpAll(@RequestParam("ids") String ids){
+        return productService.editSellingUpAll(ids);
+    }
+    /**
+     * 一键取消热卖
+     * @param ids
+     * @return
+     */
+    @RequestMapping(value = "/product/editSellingDownAll")
+    public Boolean editSellingDownAll(@RequestParam("ids") String ids){
+        return productService.editSellingDownAll(ids);
+    }
 
+    /**
+     * 新增轮播图
+     * @param imgBean
+     * @return
+     */
+    @RequestMapping(value = "/product/saveImgAll",method = RequestMethod.POST)
+    public Boolean saveImgAll(ImgBean imgBean){
+        try {
+            productService.saveImgAll(imgBean);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    /**
+     * 查询轮播
+     * @return
+     */
+    @RequestMapping(value = "/product/findProductImgList",method = RequestMethod.GET)
+    public List<ImgBean> findProductImgList(){
+        return productService.findProductImgList();
+    }
+
+    /**
+     * 批量删除
+     * @param ids
+     * @return
+     */
+    @RequestMapping(value = "/product/delProductImg")
+    public Boolean delProductImg(@RequestParam("ids") String ids){
+        return productService.delProductImg(ids);
+    }
 }

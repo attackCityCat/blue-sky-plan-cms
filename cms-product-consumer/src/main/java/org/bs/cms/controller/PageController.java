@@ -24,5 +24,17 @@ public class PageController {
     public String toPrice(){
         return "view/updatePrice";
     }
+    @RequestMapping(value = "toEcharts")
+    public String toEcharts(){
+        return "view/echarts";
+    }
+    @RequestMapping(value = "/toAddImg")
+    public String toAddImg(){
+        return "view/addImg";
+    }
+    @RequestMapping(value = "/toAddImgAll")
+    public String toAddImgAll(){
+        return "view/addImgAll";
+    }
 
 }
