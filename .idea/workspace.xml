@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f62ff864-775c-43f6-8084-807a641afc00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Real403.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/user/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/UserRole/UserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/UserRole/UserRoleMapper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,20 +35,76 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Role2.html">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Real403.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4325">
-              <caret line="173" column="33" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="33" />
+            <state relative-caret-position="331">
+              <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/AddUser.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="102" column="34" lean-forward="true" selection-start-line="102" selection-start-column="34" selection-end-line="102" selection-end-column="34" />
+            <state relative-caret-position="308">
+              <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
               <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1339#1355#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="49" column="31" lean-forward="true" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+              <folding>
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#813#814#0" expanded="true" />
+                <element signature="e#846#847#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="138" column="104" selection-start-line="138" selection-start-column="70" selection-end-line="138" selection-end-column="104" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -53,76 +112,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/NoState.html">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/403.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="300">
+              <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/UpdateRole.html">
+        <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+            <state relative-caret-position="350">
+              <caret line="44" column="22" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/updateShopping.html">
+        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Role2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/user/user.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="132" column="22" lean-forward="true" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/Role/RoleController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+            <state relative-caret-position="400">
+              <caret line="37" column="111" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="37" selection-end-column="111" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/UserRole/UserRoleController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="17" column="42" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/UserRole/UserRoleController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/UserRole/UserRoleMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -133,15 +147,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bootbox</find>
-      <find>getRoleId</find>
       <find>ed</find>
       <find>getroleinfoByRoleid</find>
       <find>Roletable</find>
@@ -149,7 +161,6 @@
       <find>myModal</find>
       <find>toRoleUse</find>
       <find>productStock</find>
-      <find>editProduct</find>
       <find>editProductStock</find>
       <find>editState</find>
       <find>btn-toggle-collapse</find>
@@ -170,6 +181,9 @@
       <find>getrolename</find>
       <find>/role/getrolename</find>
       <find>roleId</find>
+      <find>userService</find>
+      <find>findRoleSet</find>
+      <find>editProduct</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,8 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/login.html" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/login/LoginService.java" />
         <option value="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/login/LoginController.java" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/css/main.css" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/back-up/css/main.css" />
@@ -202,7 +214,6 @@
         <option value="$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/pojo/examine/ExamineBean.java" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/NoState.html" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java" />
         <option value="$PROJECT_DIR$/cms-product-provider/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/cms-user-provider/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/bootStrap_util.js" />
@@ -222,21 +233,24 @@
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/UpdateRole.html" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/role/role.js" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/role.html" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/toTalk.html" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Role2.html" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/home/home.js" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/Home/HomeController.java" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/talk.html" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html" />
         <option value="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/user/UserController.java" />
-        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/user/user.js" />
         <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html" />
         <option value="$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/UserRole/UserRoleMapper.java" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/user/user.js" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Real403.html" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/403.html" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html" />
+        <option value="$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java" />
       </list>
     </option>
   </component>
@@ -275,6 +289,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -285,6 +301,107 @@
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
               <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-product-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
               <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -316,6 +433,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
@@ -336,7 +463,40 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Role" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="ShopManagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
@@ -355,7 +515,9 @@
               <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
@@ -363,29 +525,60 @@
               <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cmsuserconsumer" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
@@ -449,6 +642,38 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="ShopManagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -460,14 +685,23 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cms" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="UserRole" type="462c0819:PsiDirectoryNode" />
+              <item name="ShopManagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="cms-user-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -480,7 +714,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spring-Cloud-Admin-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -513,7 +747,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CmsUserConsumerApplication">
+  <component name="RunManager" selected="Spring Boot.CmsProductConsumerApplication">
     <configuration name="CmsEurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cms-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.bs.cms.cmseureka.CmsEurekaApplication" />
@@ -601,7 +835,9 @@
       <workItem from="1558574657272" duration="3510000" />
       <workItem from="1558578209632" duration="9018000" />
       <workItem from="1558591070259" duration="1643000" />
-      <workItem from="1558592767776" duration="483000" />
+      <workItem from="1558592767776" duration="1278000" />
+      <workItem from="1558594739950" duration="3077000" />
+      <workItem from="1558599138960" duration="5091000" />
     </task>
     <task id="LOCAL-00001" summary="蓝天计划电商平台CMS端 V1.1.0">
       <created>1557923307839</created>
@@ -701,18 +937,34 @@
       <option name="project" value="LOCAL" />
       <updated>1558591745411</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 &#10;dyl第十三次提交代码 &#10;给用户付角色,查看角色功能&#10;完善">
+      <created>1558593289154</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1558593289154</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146680000" />
+    <option name="totallyTimeSpent" value="155643000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1843" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2114414" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992248" visible="true" weight="0.2136848" />
+      <window_info id="Structure" order="1" sideWeight="0.5007752" side_tool="true" weight="0.2114414" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -725,15 +977,15 @@
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8266966" weight="0.42827442" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32952183" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32952183" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.17330343" side_tool="true" weight="0.47547975" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32942432" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32848233" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4991587" weight="0.36760125" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4991587" weight="0.36694387" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -801,107 +1053,13 @@
     <MESSAGE value="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 &#10;dyl第十次提交代码 &#10;给用户付角色" />
     <MESSAGE value="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 &#10;dyl第十一次提交代码 &#10;给用户付角色,查看角色功能" />
     <MESSAGE value="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 &#10;dyl第十二次提交代码 &#10;给用户付角色,查看角色功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 &#10;dyl第十二次提交代码 &#10;给用户付角色,查看角色功能" />
+    <MESSAGE value="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 &#10;dyl第十三次提交代码 &#10;给用户付角色,查看角色功能&#10;完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="蓝天计划电商平台CMS端   登陆系统  5.20 12：09 &#10;dyl第十三次提交代码 &#10;给用户付角色,查看角色功能&#10;完善" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/blue_sky_plan_cms$CmsEurekaApplication.ic" NAME="CmsEurekaApplication Coverage Results" MODIFIED="1558319423543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/bootstrap/bootstrap/bootStrap_util.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/shop/shop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="176" column="18" lean-forward="true" selection-start-line="176" selection-start-column="18" selection-end-line="176" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/user/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="74" column="62" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/company/CompanyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/pojo/Role/RoleUse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="e#164#165#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/AddUser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3025">
-          <caret line="121" column="51" selection-start-line="121" selection-start-column="51" selection-end-line="121" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/Role/RoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/Role/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/Role/RoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/bootstrap-bootbox/bootbox.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1575">
@@ -938,28 +1096,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/role.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1775">
-          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/role/role.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2425">
           <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1023,59 +1163,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="42" column="41" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3550">
-          <caret line="142" column="24" selection-start-line="142" selection-start-column="24" selection-end-line="142" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/user_list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="46" column="60" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/user/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/user/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1086,41 +1177,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3675">
-          <caret line="147" column="24" selection-start-line="147" selection-start-column="24" selection-end-line="147" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/RoleUse2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/RoleUse.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Role2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4325">
-          <caret line="173" column="33" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/NoState.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1138,20 +1198,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/Role/RoleController.java">
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/user/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="3400">
+          <caret line="136" column="16" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/UserRole/UserRoleController.java">
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/Role/RoleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="42" />
+        <state relative-caret-position="600">
+          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1162,27 +1222,211 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/static/js/user/user.js">
+    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/UserRole/UserRoleMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="132" column="22" lean-forward="true" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="22" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/UserRole/UserRoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/user/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="34" column="42" lean-forward="true" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Service/user/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-api/src/main/java/org/bs/cms/pojo/User/UserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/CredentialsMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="12" column="67" lean-forward="true" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/ShopManagement/ShopManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/ShopManagement/ShopManagementMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/controller/ShopManagement/ShopManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="51" column="13" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/shopping.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="129" column="59" lean-forward="true" selection-start-line="129" selection-start-column="59" selection-end-line="129" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/NoState.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="18" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="102" column="34" lean-forward="true" selection-start-line="102" selection-start-column="34" selection-end-line="102" selection-end-column="34" />
+        <state relative-caret-position="1956">
+          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms-user-provider/src/main/java/org/bs/cms/mapper/UserRole/UserRoleMapper.java">
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/RoleUse.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="356">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/role.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Role2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="37" column="111" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="37" selection-end-column="111" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-product-consumer/src/main/resources/templates/view/main2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/AddUser.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Advertisement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="138" column="104" selection-start-line="138" selection-start-column="70" selection-end-line="138" selection-end-column="104" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/403.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/resources/templates/view/Real403.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1339#1355#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/config/UserRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="49" column="31" lean-forward="true" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms-user-consumer/src/main/java/org/bs/cms/cmsuserconsumer/Controller/page/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+          <folding>
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

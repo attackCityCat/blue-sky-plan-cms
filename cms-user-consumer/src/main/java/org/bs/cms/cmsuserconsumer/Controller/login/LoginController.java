@@ -47,7 +47,6 @@ public class LoginController {
             UserBean userInfo = (UserBean) subject.getPrincipal();
             session.setAttribute(session.getId(), userInfo);
             session.setAttribute("userid",userInfo.getUserid());
-            System.out.println(userInfo.getUserid());
             map.put("code", 0);
             map.put("message", "登陆成功！");
 

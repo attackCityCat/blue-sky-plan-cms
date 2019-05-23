@@ -36,6 +36,11 @@ public class ShiroConfig {
 
         Map<String, String> filterChainDefinitionMap = new LinkedHashMap<String, String>();
 
+        filterChainDefinitionMap.put("/toUser", "roles[系统管理员]");
+        filterChainDefinitionMap.put("/toRole", "roles[系统管理员]");
+        filterChainDefinitionMap.put("/toShopping", "roles[审核管理员]");
+        filterChainDefinitionMap.put("http://localhost:8184/page/toMain2", "roles[商铺管理员]");
+
         filterChainDefinitionMap.put("/login/login", "anon");
         filterChainDefinitionMap.put("/js/**","anon");
         filterChainDefinitionMap.put("/login/logout", "logout");
@@ -47,9 +52,7 @@ public class ShiroConfig {
 //        filterChainDefinitionMap.put("/logout", "logout");
 //        filterChainDefinitionMap.put("/*/*", "authc");
 
-         filterChainDefinitionMap.put("/toUser", "perms[系统管理员]");
-         filterChainDefinitionMap.put("/toShopping", "perms[审核管理员]");
-         filterChainDefinitionMap.put("/", "perms[店铺管理员]");
+
 
          //filterChainDefinitionMap.put("/toUser", "roles[系统管理员]");
          //filterChainDefinitionMap.put("/toShopping", "roles[审核管理员]");

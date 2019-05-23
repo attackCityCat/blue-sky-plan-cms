@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无权访问</title>
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootStrap_util.js"></script>
+
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootstrap3/css/bootstrap.css"/>
+
+    <!-- 引入选项卡的js、css -->
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootStrap-addTabs/bootstrap.addtabs.css">
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootStrap-addTabs/bootstrap.addtabs.min.js"></script>
+
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootstrap-table/bootstrap-table.css">
+    <script src="/js/bootstrap/bootstrap/bootstrap-table/bootstrap-table.js"></script>
+    <script src="/js/bootstrap/bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+
+    <script src="/js/bootstrap/bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script src="/js/bootstrap/bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+
+    <script src="/js/bootstrap/bootstrap/bootstrap-bootbox/bootbox.js"></script>
+    <!-- 引入文件上传的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootstrap-fileinput/css/fileinput.css">
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootstrap-fileinput/js/fileinput.js"></script>
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootstrap-fileinput/js/locales/zh.js"></script>
+</head>
+<body>
+
+<center>
+    <h2>你无权访问</h2>
+</center>
+</body>
+<script type="text/javascript">
+    $(function(){
+        uploadImg();
+    })
+
+    function uploadImg() {
+        for (var i = 1;i >0;i++){
+            bootbox.dialog({
+                title:'<i class="glyphicon glyphicon-user"></i>选择用户',
+                message:createAddContent('/page/toReal403'),
+                size: 'small',  // large  弹框略大     small  代表弹框略小
+                closeButton:true,
+                buttons:{
+                    ok: {
+                        label: "<i class='glyphicon glyphicon-floppy-saved'></i>保存",
+                        className: 'btn-info',
+
+                    }
+                }
+            })
+        }
+    }
+</script>
+</html>

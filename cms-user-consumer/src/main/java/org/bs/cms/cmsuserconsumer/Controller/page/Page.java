@@ -29,6 +29,16 @@ public class Page {
         return "view/user";
     }
 
+    @RequestMapping("to403")
+    public String to403(){
+        return "view/403";
+    }
+
+    @RequestMapping("/page/toReal403")
+    public String toReal403(){
+        return "view/Real403";
+    }
+
     @RequestMapping("toRole")
     public  String toRole(){
         return "view/Role2";

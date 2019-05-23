@@ -134,7 +134,7 @@ function getRoleName() {
 		dataType : 'json',
 		success : function(data) {
 			var html = '';
-			for (var i = 0; i < data.length; i++) {
+			for  (var i = 0; i < data.length; i++) {
 				html += "<option value='"+data[i].roleid+"'>"+data[i].rolename+"</option>"
 			}
 				$("#roleId").html(html);

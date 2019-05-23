@@ -28,21 +28,15 @@ public class UserRealm extends AuthorizingRealm {
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         System.out.println("执行授权逻辑");
 
-        Integer userId = (Integer) SecurityUtils.getSubject().getPrincipal();
-
+        UserBean userBean = (UserBean) SecurityUtils.getSubject().getPrincipal();
+        Integer userId = userBean.getUserid();
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
 
 
-
         HashSet<String> roleSet = userService.findRoleSet(userId);
-
         //添加资源授权字符串  角色名
         info.setRoles(roleSet);
 
-        HashSet<String> perms = new HashSet<>();
-        perms.add("user:add");//权限名   写死了   真正开发时需要换成数据库中查出的值
-        //添加资源授权字符串  权限名
-        info.setStringPermissions(perms);
         return info;
     }
 
