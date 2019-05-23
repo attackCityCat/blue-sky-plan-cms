@@ -61,7 +61,7 @@ public class Page {
 
     @RequestMapping("toShopHelp")
     public String toShopHelp(){
-        return "http://127.0.0.1:8184/js/shop/shop.js";
+        return "http://localhost:8184/page/toMain2";
     }
 
     @RequestMapping("/page/toUpdate")

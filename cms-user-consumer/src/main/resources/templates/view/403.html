@@ -34,26 +34,5 @@
 </center>
 </body>
 <script type="text/javascript">
-    $(function(){
-        uploadImg();
-    })
-
-    function uploadImg() {
-        for (var i = 1;i >0;i++){
-            bootbox.dialog({
-                title:'<i class="glyphicon glyphicon-user"></i>选择用户',
-                message:createAddContent('/page/toReal403'),
-                size: 'small',  // large  弹框略大     small  代表弹框略小
-                closeButton:true,
-                buttons:{
-                    ok: {
-                        label: "<i class='glyphicon glyphicon-floppy-saved'></i>保存",
-                        className: 'btn-info',
-
-                    }
-                }
-            })
-        }
-    }
 </script>
 </html>

@@ -34,6 +34,7 @@ public class UserRealm extends AuthorizingRealm {
 
 
         HashSet<String> roleSet = userService.findRoleSet(userId);
+        System.out.println(roleSet);
         //添加资源授权字符串  角色名
         info.setRoles(roleSet);
 

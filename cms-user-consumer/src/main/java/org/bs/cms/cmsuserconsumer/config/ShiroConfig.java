@@ -36,15 +36,18 @@ public class ShiroConfig {
 
         Map<String, String> filterChainDefinitionMap = new LinkedHashMap<String, String>();
 
-        filterChainDefinitionMap.put("/toUser", "roles[系统管理员]");
-        filterChainDefinitionMap.put("/toRole", "roles[系统管理员]");
-        filterChainDefinitionMap.put("/toShopping", "roles[审核管理员]");
-        filterChainDefinitionMap.put("http://localhost:8184/page/toMain2", "roles[商铺管理员]");
+        filterChainDefinitionMap.put("/toUser", "roles[系统人员]");
+        filterChainDefinitionMap.put("/toRole", "roles[系统人员]");
+
+
 
         filterChainDefinitionMap.put("/login/login", "anon");
         filterChainDefinitionMap.put("/js/**","anon");
         filterChainDefinitionMap.put("/login/logout", "logout");
         filterChainDefinitionMap.put("/*","authc");
+
+
+        filterChainDefinitionMap.put("/toShopping", "roles[商品审核管理员]");
 
 //        filterChainDefinitionMap.put("/resources/**", "anon");
 //        filterChainDefinitionMap.put("/static/**", "anon"); //匿名访问静态资源
