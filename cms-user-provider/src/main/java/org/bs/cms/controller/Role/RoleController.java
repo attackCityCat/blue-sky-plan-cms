@@ -3,6 +3,7 @@ package org.bs.cms.controller.Role;
 import org.bs.cms.mapper.Role.RoleMapper;
 import org.bs.cms.pojo.Role.RoleBean;
 import org.bs.cms.pojo.Role.RoleUse;
+import org.bs.cms.pojo.User.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -37,5 +38,10 @@ public class RoleController {
     @GetMapping(value = "/role/getroleinfoByRoleid")
     public List<RoleUse> queryRoleById(@RequestParam(value = "roleid") Integer roleid){
         return roleMapper.queryRoleById(roleid);
+    }
+
+    @GetMapping(value = "role/getUser")
+    public List<UserBean> getUser(){
+        return roleMapper.getUser();
     }
 }

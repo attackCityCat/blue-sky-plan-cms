@@ -50,6 +50,7 @@ function prepareUp(url) {
 	$(".mask").show();
 }
 
+
 // 从后台获取时间
 var getDefautlDate = function() {
 	$.ajax({

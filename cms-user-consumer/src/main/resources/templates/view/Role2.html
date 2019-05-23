@@ -8,6 +8,17 @@
     <script type="text/javascript" src="/js/bootstrap/bootstrap/bootstrap3/js/bootstrap.js"></script>
     <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootstrap3/css/bootstrap.css"/>
 
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="/css/commom.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/lantian.png">
+
     <!-- 引入选项卡的js、css -->
     <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootStrap-addTabs/bootstrap.addtabs.css">
     <script type="text/javascript" src="/js/bootstrap/bootstrap/bootStrap-addTabs/bootstrap.addtabs.min.js"></script>
@@ -28,10 +39,25 @@
 
 </head>
 <body>
-<div id="toolbar">
-</div>
+<div class="panel panel-headline">
+    <div class="panel-heading">
+        <span class="ft fa fa-table ft-22"></span>
+        <h3 class="panel-title">角色列表</h3>
 
-<div class="table" id="myTable" style="width: 100%"></div>
+        <div class="right">
+            <button type="button" class="btn-toggle-collapse"><i
+                    class="lnr lnr-chevron-up"></i></button>
+            <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+        </div>
+    </div>
+    <div class="panel-body">
+        <table class="table table-hover" id="myTable">
+        </table>
+        <div>
+        </div>
+
+    </div>
+</div>
 </body>
 <script type="text/javascript">
     // 初始化加载
@@ -93,7 +119,7 @@
                         }
                     }
                 },
-                {field:'123',title:'操作栏',formatter:function(value,row,index){
+                {align:'center',field:'123',title:'操作栏',formatter:function(value,row,index){
                         var btn = "";
                         if (row.roleid > 1) {
                             btn += "<a href='javascript:editProduct(" + row.roleid + ");'>关联用户</a>   ";
@@ -217,7 +243,7 @@
     // 修改库存弹框
     function editProduct(roleid){
         bootbox.dialog({
-            title:'<i class="glyphicon glyphicon-user"></i>增加库存',
+            title:'<i class="glyphicon glyphicon-user"></i>选择用户',
             message:createAddContent('/page/toUpdateRole'),
             size: 'small',  // large  弹框略大     small  代表弹框略小
             closeButton:true,

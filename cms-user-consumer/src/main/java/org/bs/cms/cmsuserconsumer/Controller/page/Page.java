@@ -79,5 +79,10 @@ public class Page {
         return "view/RoleUse2";
     }
 
+    @RequestMapping("toTalk")
+    public String toTalk(){
+        return "view/talk";
+    }
+
 
 }

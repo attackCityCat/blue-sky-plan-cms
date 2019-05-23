@@ -2,6 +2,7 @@ package org.bs.cms.cmsuserconsumer.Service.Role;
 
 import org.bs.cms.pojo.Role.RoleBean;
 import org.bs.cms.pojo.Role.RoleUse;
+import org.bs.cms.pojo.User.UserBean;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,4 +20,7 @@ public interface RoleService {
 
     @RequestMapping(value="/role/getroleinfoByRoleid",method= RequestMethod.GET)
     List<RoleUse> queryRoleById(@RequestParam(value = "roleid") Integer roleid);
+
+    @RequestMapping(value="/role/getUser",method= RequestMethod.GET)
+    List<UserBean> getUser();
 }

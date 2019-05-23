@@ -83,21 +83,19 @@ function getData() {
 									formatter : function(value, row, index) {
 										var string = '';
 										var userid = row.userid;
-										if (row.status == "0") {
-											string += '<button class="btn btn-xs btn-info" onclick="delorrUser(\''
-												+ row.userid
-												+ '\')">恢复</button>';
+										if (row.userid > 1) {
 
-										} else {
 											string += '<button class="btn btn-xs btn-danger m-r-5" onclick="delorrUser(\''
 												+ row.userid
 												+ '\')"><i class="fa fa-trash"></i>删除</button>';
-										}
-										string += '<button class="btn btn-xs btn-info m-r-5" data-toggle="modal" data-target="#modalAddUser" onclick="updateUser('
+
+											string += '<button class="btn btn-xs btn-info m-r-5" data-toggle="modal" data-target="#modalAddUser" onclick="updateUser('
 												+ JSON.stringify(row).replace(
-														/"/g, '&quot;')
+													/"/g, '&quot;')
 												+ ')"><i class="fa fa-edit"></i>修改</button>';
-										return [ string ].join('');
+
+										}
+										return [string].join('');
 									}
 								}]
 					});
@@ -244,6 +242,7 @@ function updateUser(row) {
 function clearModal() {
 	$("#username").val("");
 	$("#nickrname").val("");
+	$("#useraccount").val("");
 	$("#password").val("");
 	$("#company2").get(0).selectedIndex = 0;
 //	$("#company2 option").removeAttr("selected");

@@ -47,9 +47,13 @@ public class ShiroConfig {
 //        filterChainDefinitionMap.put("/logout", "logout");
 //        filterChainDefinitionMap.put("/*/*", "authc");
 
-         filterChainDefinitionMap.put("/toUser", "roles[系统管理员]");
-         filterChainDefinitionMap.put("/toShopping", "roles[审核管理员]");
-         filterChainDefinitionMap.put("/", "roles[店铺管理员]");
+         filterChainDefinitionMap.put("/toUser", "perms[系统管理员]");
+         filterChainDefinitionMap.put("/toShopping", "perms[审核管理员]");
+         filterChainDefinitionMap.put("/", "perms[店铺管理员]");
+
+         //filterChainDefinitionMap.put("/toUser", "roles[系统管理员]");
+         //filterChainDefinitionMap.put("/toShopping", "roles[审核管理员]");
+         //filterChainDefinitionMap.put("/", "roles[店铺管理员]");
 
 
 

@@ -9,12 +9,8 @@
     <form   class="form-horizontal">
         <div class="col-xs-12">
             <div class="col-sm-12">
-                <select id="provinceSelect" class="form-control" >
-                </select>
-                <select name="productStock" class="form-control" id="productStock" width="100px">
+                <select id="productStock" name="role" class="form-control" title="请选择" data-width="100px" style="">
                     <option value="">请选择</option>
-                    <option value="2">张三</option>
-                    <option value="4">妲己</option>
                 </select>
             </div>
         </div>
@@ -22,4 +18,24 @@
 </div>
 </body>
 </div>
+<script>
+    $(function(){
+        //初始化下拉框
+        //动态加载
+        $.ajax({
+            type: 'get',
+            url: 'role/getUser',
+            dataType: "json",
+            success: function (data) {
+                //拼接下拉框
+                for(var i=0;i<data.length;i++){
+                    $("#productStock").append("<option value='"+data[i].userid+"'>"+data[i].username+"</option>");
+                }
+                //这一步不要忘记 不然下拉框没有数据
+                $("#productStock").selectpicker("refresh");
+            }
+        });
+
+    });
+</script>
 </html>

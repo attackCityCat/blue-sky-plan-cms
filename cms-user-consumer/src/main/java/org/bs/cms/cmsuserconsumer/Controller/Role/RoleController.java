@@ -3,6 +3,7 @@ package org.bs.cms.cmsuserconsumer.Controller.Role;
 import org.bs.cms.cmsuserconsumer.Service.Role.RoleService;
 import org.bs.cms.pojo.Role.RoleBean;
 import org.bs.cms.pojo.Role.RoleUse;
+import org.bs.cms.pojo.User.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -37,5 +38,10 @@ public class RoleController {
     public List<RoleUse> queryRoleById(Integer roleid){
         System.out.println(roleid);
         return roleService.queryRoleById(roleid);
+    }
+
+    @GetMapping(value = "role/getUser")
+    public List<UserBean> getUser(){
+        return roleService.getUser();
     }
 }

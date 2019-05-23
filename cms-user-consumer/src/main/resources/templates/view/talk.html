@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>蓝天计划评论管理平台</title>
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootStrap_util.js"></script>
+
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootstrap3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootstrap3/css/bootstrap.css"/>
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="/css/commom.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/lantian.png">
+
+    <!-- 引入选项卡的js、css -->
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootStrap-addTabs/bootstrap.addtabs.css">
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootStrap-addTabs/bootstrap.addtabs.min.js"></script>
+
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootstrap-table/bootstrap-table.css">
+    <script src="/js/bootstrap/bootstrap/bootstrap-table/bootstrap-table.js"></script>
+    <script src="/js/bootstrap/bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+
+    <script src="/js/bootstrap/bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script src="/js/bootstrap/bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css">
+
+    <script src="/js/bootstrap/bootstrap/bootstrap-bootbox/bootbox.js"></script>
+    <!-- 引入文件上传的css、js -->
+    <link rel="stylesheet" href="/js/bootstrap/bootstrap/bootstrap-fileinput/css/fileinput.css">
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootstrap-fileinput/js/fileinput.js"></script>
+    <script type="text/javascript" src="/js/bootstrap/bootstrap/bootstrap-fileinput/js/locales/zh.js"></script>
+
+</head>
+<body>
+<div class="panel panel-headline">
+    <div class="panel-heading">
+        <span class="ft fa fa-table ft-22"></span>
+        <h3 class="panel-title">评论列表</h3>
+
+        <div class="right">
+            <button type="button" class="btn-toggle-collapse"><i
+                    class="lnr lnr-chevron-up"></i></button>
+            <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+        </div>
+    </div>
+    <div class="panel-body">
+        <table class="table table-hover" id="myTable">
+        </table>
+        <!-- END 账户信息 -->
+        <div class="row">
+            <div class="col-md-8">
+                <!-- 下载趋势 -->
+                <div class="panel">
+                    <div class="panel-heading cl">
+                        <span class="ft fa fa-line-chart ft-22"></span>
+                        <div class="col-md-3">
+                            <select id="mychart" class="form-control input-sm">
+                                <option value="下载趋势图">下载趋势图</option>
+                                <option value="展示趋势图">展示趋势图</option>
+                                <option value="消费趋势图">消费趋势图</option>
+                                <!-- <option value="计划趋势图">计划趋势图</option> -->
+                            </select>
+                        </div>
+                        <form class="form-inline date" id="sandbox-container">
+                            <span> 日期: </span>
+                            <div class="form-group form-group-sm">
+                                <div>
+                                    <input name="start_time" type="text" class="form-control "
+                                           id="start_time" placeholder="2019-01-01"
+                                           readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="form-group form-group-sm">
+                                <input name="end_time" type="text" class="form-control"
+                                       id="end_time" placeholder="2019-01-01" readonly="readonly">
+                            </div>
+                            <button class="btn btn-primary btn-sm" type="button"
+                                    onclick="chartSearch()">查询</button>
+                        </form>
+                        <div class="right">
+                            <button type="button" class="btn-toggle-collapse ">
+                                <i class="lnr lnr-chevron-up"></i>
+                            </button>
+                            <button type="button" class="btn-remove ">
+                                <i class="lnr lnr-cross"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+
+                        <!-- select date end -->
+                        <div id="visits-trends-chart" class="ct-chart"></div>
+                    </div>
+                </div>
+                <!-- END 下载趋势-->
+            </div>
+            <div class="col-md-4 p-l-0">
+                <!-- 广告排期-->
+                <div class="panel panel-headline">
+                    <div class="panel-heading cl">
+                        <span class="ft fa fa-list-ol ft-22"></span>
+                        <h3 class="panel-title">广告排期</h3>
+                        <div class="right">
+                            <button type="button" class="btn-toggle-collapse">
+                                <i class="lnr lnr-chevron-up"></i>
+                            </button>
+                            <button type="button" class="btn-remove">
+                                <i class="lnr lnr-cross"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <div class="bar no-border inline-center bg-primary">
+                                <span class="flex-1 t-c lnr lnr-list"></span> <span
+                                    class="flex-1 t-c">广告排期</span>
+                                <div id="advert_puts" class="flex-1 t-c"></div>
+                            </div>
+                            <div class="bar no-border inline-center">
+                                <span class="flex-1 t-c lnr lnr-exit-up"></span> <span
+                                    class="flex-1 t-c">广告投放</span>
+                                <div id="advert_schedules" class="flex-1 t-c"></div>
+                            </div>
+                            <div class="bar no-border inline-center">
+											<span class="flex-1 t-c"> <a href="/adm/index"><span
+                                                    class="lnr lnr-plus-circle"></span> 广告管理 </span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END 广告排期 -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- 广告计划表 -->
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="ft">
+                            <span class="ft fa fa-table ft-22"></span>
+                            <h3 id="liebiaoTitle" class="panel-title">广告计划列表</h3>
+                        </div>
+                        <form id="myForm"></form>
+                        <div class="right">
+                            <button type="button"
+                                    class="btn btn-default pd-0 b-s text-primary no-border">
+                                <span class="lnr lnr-download"></span><a
+                                    href="javascript:exportExcel()">导出</a>
+                            </button>
+                            <button type="button" class="btn-toggle-collapse">
+                                <i class="lnr lnr-chevron-up"></i>
+                            </button>
+                            <button type="button" class="btn-remove">
+                                <i class="lnr lnr-cross"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-hover" id="table">
+                            <thead>
+                                <tr>
+                                    <th>广告计划</th>
+                                    <th>日期</th>
+                                    <th>状态</th>
+                                    <th>展示</th>
+                                    <th>下载</th>
+                                    <th>转化率</th>
+                                    <th>消费(元)</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>腾讯视频</td>
+                                    <td>2016-11-21 20:43:52</td>
+                                    <td>暂停</td>
+                                    <td>30688989</td>
+                                    <td>1282282</td>
+                                    <td>4.18</td>
+                                    <td>769369.2</td>
+                                    <td><a class="detail" href="/home/detaillist?flg=p&amp;id=1">每日明细</a> |
+                                        <a href="/report/reportList?planId=1">效果报告</a> <a
+                                            href="javascript:updatePlanStatus(1,1)"><i
+                                                class="iconfont icon-bofang"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>腾讯视频</td>
+                                    <td>2016-11-21 20:43:52</td>
+                                    <td>暂停</td>
+                                    <td>30688989</td>
+                                    <td>1282282</td>
+                                    <td>4.18</td>
+                                    <td>769369.2</td>
+                                    <td><a class="detail" href="/home/detaillist?flg=p&amp;id=1">每日明细</a> |
+                                        <a href="/report/reportList?planId=1">效果报告</a> <a
+                                            href="javascript:updatePlanStatus(1,1)"><i
+                                                class="iconfont icon-bofang"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>腾讯视频</td>
+                                    <td>2016-11-21 20:43:52</td>
+                                    <td>暂停</td>
+                                    <td>30688989</td>
+                                    <td>1282282</td>
+                                    <td>4.18</td>
+                                    <td>769369.2</td>
+                                    <td><a class="detail" href="/home/detaillist?flg=p&amp;id=1">每日明细</a> |
+                                        <a href="/report/reportList?planId=1">效果报告</a> <a
+                                            href="javascript:updatePlanStatus(1,1)"><i
+                                                class="iconfont icon-bofang"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                            <!-- 分页 -->
+                            <!-- <div class="ft">
+                                <div>
+                                    显示第 1 到第 5 条记录，总共 17 条记录每页显示
+                                    <div class="btn-group dropup">
+                                        <button type="button" class="btn btn-default">5</button>
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rt">
+                                <ul class="pagination m-0">
+                                    <li><a href="#">&laquo;</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">&raquo;</a></li>
+                                </ul>
+                            </div> -->
+                            <!-- end 分页 -->
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END 广告计划表 -->
+            </div>
+        </div>
+    </div>
+</div>
+        <div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

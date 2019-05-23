@@ -4,7 +4,7 @@ $(document).ready(function() {
 		window.userArr = [];
 		window.userlist = [];
 		window.selectResourceIds = [];
-		getData();
+	    initMyTable();
 	$('#relateUserModal').on('hide.bs.modal', function() {
 		window.roleId = '';
 		window.userArr = [];
@@ -22,90 +22,116 @@ $(document).ready(function() {
 	});
 });
 
-// 带条件搜索角色列表
-function checkRole() {
-	$('#table').bootstrapTable('destroy');
-	getData();
+// 初始化加载
+$(function(){
+	initMyTable();
+})
+
+// 页面加载表格
+function initMyTable(){
+	$('#table').bootstrapTable({
+		url:'/role/getroleinfo',
+		method : 'get',
+		//toolbar:'#toolbar',
+		//pagination:true, //是否展示分页
+		//pageList:[1,2,3,5, 10, 20, 50],//分页组件
+		//pageNumber:1,
+		//pageSize:5,	//默认每页条数
+		//sidePagination:'server',//分页方式：client客户端分页，server服务端分页（*
+		//striped:true,
+		//clickToSelect: true, //是否启用点击选中行
+		//queryParams:function(){
+		// return  {
+		//     page:this.pageNumber,
+		//     rows:this.pageSize
+		// }
+		//},
+		columns : [
+			{
+				align:'center',
+				field : 'rolename',
+				title : '角色'
+			},
+			{
+				align:'center',
+				field : 'status',
+				title : '是否有效',
+				formatter : function(value, row, index) {
+					if (value != undefined) {
+						if (value == '0') {
+							return '否';
+						} else {
+							return '是';
+						}
+					}
+				}
+			},
+
+
+			{
+				align:'center',
+				field : 'modifyTime',
+				title : '最后修改时间',
+				formatter : function(value, row, index) {
+					if (value != undefined) {
+						var crtTime = new Date(value);
+						return dateFtt(
+							"yyyy-MM-dd hh:mm:ss",
+							crtTime);
+					}
+				}
+			},
+			{field:'123',title:'操作栏',formatter:function(value,row,index){
+					var btn = "";
+					if (row.roleid > 1) {
+						btn += "<a href='javascript:editProduct(" + row.roleid + ");'>关联用户</a>   ";
+						btn += "<a href='javascript:editState(" + row.roleid + ");'>关联功能</a>  ";
+					}
+					return  btn;
+				}}
+		]
+	})
 }
 
-// 填充角色列表组件
-function getData() {
-	$('#table')
-			.bootstrapTable(
-					{
-						url : '/role/getroleinfo',
-						method : 'get',
-						columns : [
-								{
-									align:'center',
-									field : 'rolename',
-									title : '角色'
-								},
-								{
-									align:'center',
-									field : 'status',
-									title : '是否有效',
-									formatter : function(value, row, index) {
-										if (value != undefined) {
-											if (value == '0') {
-												return '否';
-											} else {
-												return '是';
-											}
-										}
-									}
-								},
-
-
-								{
-									align:'center',
-									field : 'modifyTime',
-									title : '最后修改时间',
-									formatter : function(value, row, index) {
-										if (value != undefined) {
-											var crtTime = new Date(value);
-											return dateFtt(
-													"yyyy-MM-dd hh:mm:ss",
-													crtTime);
-										}
-									}
-								},
-							    {field:'123',title:'操作栏',formatter:function(value,row,index){
-										var string = '';
-										if (row.roleid > 1) {
-											string += '<button class="btn btn-xs btn-danger m-r-5" data-toggle="modal" data-target="#modalAddUser" onclick="editProductStock(\''
-												+ row.roleid
-												+ '\')"><i class="fa fa-trash"></i>关联用户</button>';
-											string += '<button class="btn btn-xs btn-info m-r-5" data-toggle="modal" data-target="#modalAddUser" onclick="editProductStock(\''
-												+ row.roleid
-												+ '\')"><i class="fa fa-edit"></i>关联功能</button>';
-										}
-										return [ string ].join('');
-									},width:200}
-								]
-					})
+// 修改库存弹框
+function editProduct(roleid){
+	bootbox.dialog({
+		title:'<i class="glyphicon glyphicon-user"></i>选择用户',
+		message:createAddContent('/page/toUpdateRole'),
+		size: 'small',  // large  弹框略大     small  代表弹框略小
+		closeButton:true,
+		buttons:{
+			ok: {
+				label: "<i class='glyphicon glyphicon-floppy-saved'></i>保存",
+				className: 'btn-info',
+				callback: function(){
+					editProductStock(roleid);
+				}
+			}
+		}
+	})
 }
 
 
-       function editProductStock(roleid,userid) {
-	          $.ajax({
-		             url:'/role/editUser',
-		             type:'post',
-		             data:{
-			              roleid:roleid,
-			              userid:userid
-		                  },
-				     dataType:'json',
-		             success:function(data){
-			                if(data){
-				                   searchProduct();
-			                }else{
-				                   searchProduct();
-			                }
+function editProductStock(roleid) {
+	$.ajax({
+		url:'/role/editUser',
+		type:'post',
+		data:{
+			roleid:roleid,
+			userid:$("#productStock").val()
+		},
+		dataType:'json',
+		success:function(data){
+			if(data){
+				searchProduct();
+			}else {
+				searchProduct();
+			}
 
-		             }
-	          })
-       }
+		}
+	})
+}
 
 
 // 刷新页面函数
