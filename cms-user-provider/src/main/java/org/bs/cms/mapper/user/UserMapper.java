@@ -15,13 +15,13 @@ public interface UserMapper {
     @Select("select user_id as userid,useraccount,username,userpassword,telephonenum,status from cms_user where user_id = #{value}")
     UserBean queryById(Integer userid);
 
-    @Update("update cms_user set status=#{status},username = #{username},telephonenum=#{telephonenum}")
+    @Update("update cms_user set roleid=#{roleid},companyid = #{companyid},username = #{username},telephonenum=#{telephonenum} where user_id = #{userid}")
     void edit(UserBean userBean);
 
     @Select("select u.user_id as userid,u.username,u.userpassword,u.useraccount,u.status,u.roleid,r.rolename,u.companyid,m.companyname,u.telephonenum,u.modifer from cms_user u left join cms_role r on u.roleid = r.roleid left join cms_company m on u.companyid = m.companyid")
     List<UserBean> queryAll();
 
-    @Insert("insert into cms_user(username,useraccount,userpassword,status,roleid,telephonenum,companyid,modifer)values(#{username},#{useraccount},#{userpassword},0,#{roleid},#{telephonenum},#{companyid},'张三')")
+    @Insert("insert into cms_user(username,useraccount,userpassword,status,roleid,telephonenum,companyid,modifer)values(#{username},#{useraccount},#{userpassword},1,#{roleid},#{telephonenum},#{companyid},'张三')")
     void save(UserBean userBean);
 
     @Delete("delete from cms_user where user_id = #{value}")

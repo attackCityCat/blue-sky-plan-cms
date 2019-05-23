@@ -150,25 +150,27 @@ function getRoleName() {
 
 // 注册/修改用户
 function saveUser() {
-	var url = '';
-	if ($("#rcBalance").val() != '') {
-		url = {
-			'userid' : window.userid
-		};
-	} else {
-		if ($("#company2").val().trim() == "") {
-			alert("请选择公司");
+	if(window.userId != ""&&window.userId != 0){
+		var url = {
+			'username': $("#username").val(),
+			'useraccount': $("#useraccount").val(),
+			'userpassword': $("#userpassword").val(),
+			'companyid': $("#company2").val(),
+			'telephonenum': $("#telephonenum").val(),
+			'roleid': $("#roleId").val(),
+			'userid':window.userId
 		}
-		url = {
-			'username' : $("#username").val(),
-			'useraccount' : $("#useraccount").val(),
-			'userpassword' : $("#userpassword").val(),
-			'companyid' : $("#company2").val(),
-			'telephonenum' : $("#telephonenum").val(),
-			'roleid' : $("#roleId").val(),
-			'userid' : window.userId,
+	}else {
+		var url = {
+			'username': $("#username").val(),
+			'useraccount': $("#useraccount").val(),
+			'userpassword': $("#userpassword").val(),
+			'companyid': $("#company2").val(),
+			'telephonenum': $("#telephonenum").val(),
+			'roleid': $("#roleId").val()
 		}
 	}
+
 	$.ajax({
 		type : 'post',
 		url : '/save',

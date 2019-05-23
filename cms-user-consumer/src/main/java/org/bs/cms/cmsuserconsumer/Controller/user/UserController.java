@@ -40,11 +40,20 @@ public class UserController {
 
     @PostMapping(value = "/save")
     public Boolean save(UserBean userBean){
-
+        if(userBean.getUserid()!=null){
+            String userpassword = userBean.getUserpassword();
+            SimpleHash sh = new SimpleHash("md5", userpassword, userBean.getUseraccount(), 1);
+            userBean.setUserpassword(sh.toHex());
+            return userService.edit(userBean);
+        }else{
             String userpassword = userBean.getUserpassword();
             SimpleHash sh = new SimpleHash("md5", userpassword, userBean.getUseraccount(), 1);
             userBean.setUserpassword(sh.toHex());
             return userService.save(userBean);
+        }
+
+
+
 
 
     }
