@@ -180,6 +180,7 @@ function saveUser() {
 		dataType : 'json',
 		success : function(data, textStatus, jqXHR) {
 			if (data) {
+				checkUser();
 				$('#table').bootstrapTable('refresh');
 				getData();
 				
